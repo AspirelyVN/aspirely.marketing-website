@@ -15,16 +15,5 @@ jobs:
       - name: Build and push image
         run: |
           docker build \
-          --build-arg GOOGLE_SHEET_ID=${{ secrets.GOOGLE_SHEET_ID }} \
-          --build-arg GOOGLE_SERVICE_EMAIL=${{ secrets.GOOGLE_SERVICE_EMAIL }} \
-          --build-arg GOOGLE_PRIVATE_KEY=${{ secrets.GOOGLE_PRIVATE_KEY }} \
-          --build-arg RESEND_API_KEY=${{ secrets.RESEND_API_KEY }} \
           -t registry.aspirely.edu.vn/aspirely-marketing-website:${GITHUB_SHA} .
           docker push registry.aspirely.edu.vn/aspirely-marketing-website:${GITHUB_SHA}
-
-      - name: Update deployment.yaml image tag
-        run: |
-          sed -i "s|image: .*|image: registry.aspirely.edu.vn/aspirely-marketing-website:${GITHUB_SHA}|g" /opt/infrastructures/aspirely-marketing-website-deployment/deployment.yaml
-
-      - name: Deploy to k3s
-        run: kubectl apply -f /opt/infrastructures/aspirely-marketing-website-deployment/

@@ -2,9 +2,6 @@ import { NextRequest, NextResponse } from "next/server";
 import { google } from "googleapis";
 import { Resend } from "resend";
 
-const SHEET_ID = process.env.GOOGLE_SHEET_ID!;
-const resend = new Resend(process.env.RESEND_API_KEY!);
-
 function formatDateTime(date: Date) {
   const pad = (n: number) => n.toString().padStart(2, "0");
   return `${pad(date.getDate())}/${pad(date.getMonth() + 1)}/${date.getFullYear()} ${pad(date.getHours())}:${pad(date.getMinutes())}:${pad(date.getSeconds())}`;
@@ -16,6 +13,9 @@ export async function POST(req: NextRequest) {
   if (!name || !phone || !email || !course) {
     return NextResponse.json({ message: "Thiếu thông tin." }, { status: 400 });
   }
+
+  const SHEET_ID = process.env.GOOGLE_SHEET_ID!;
+  const resend = new Resend(process.env.RESEND_API_KEY!);
 
   try {
     const auth = new google.auth.GoogleAuth({
