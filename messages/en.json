@@ -1,0 +1,56 @@
+{
+  "header": {
+    "teachers": "Teachers",
+    "workshop": "Free Workshops",
+    "recruit": "Recruitment",
+    "login": "LOGIN",
+    "languages": {
+      "vi": "Vietnamese",
+      "en": "English",
+      "zh": "Chinese"
+    }
+  },
+  "home": {
+    "slogan1": "Learn your way",
+    "slogan2": "Practice like real life",
+    "successStories": "Success Stories",
+    "upcomingWorkshops": "Upcoming Workshops"
+  },
+  "hero": {
+    "title": "FREE TRIAL CLASS",
+    "placeholder": {
+      "name": "Full name",
+      "phone": "Phone number",
+      "email": "Email",
+      "course": "Select course"
+    },
+    "button": "REGISTER NOW",
+    "cta": "SPEAK\nTO THE\nWORLD!",
+    "contact": "GET STARTED",
+    "courses": {
+      "group1": "English",
+      "group2": "Chinese",
+      "en1": "English Communication",
+      "en2": "IELTS Preparation",
+      "en3": "Business English",
+      "zh1": "Basic Chinese",
+      "zh2": "Chinese Communication",
+      "zh3": "Business Chinese"
+    },
+    "error": "Please complete all fields."
+  },
+  "tutors": {
+    "title": {
+      "part1": "Meet our",
+      "part2": "teachers",
+      "part3": ""
+    },
+    "cta": "Free trial class",
+    "tutor": {
+      "name": "{name}",
+      "accent": "{accent}",
+      "experience": "{experience}",
+      "language": "{language}"
+    }
+  }
+}

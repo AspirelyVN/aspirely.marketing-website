@@ -1,0 +1,56 @@
+{
+  "header": {
+    "teachers": "教師",
+    "workshop": "免費講座",
+    "recruit": "招聘資訊",
+    "login": "登入",
+    "languages": {
+      "vi": "越南語",
+      "en": "英文",
+      "zh": "中文"
+    }
+  },
+  "home": {
+    "slogan1": "按照你的方式學習",
+    "slogan2": "像真實生活一樣練習",
+    "successStories": "成功故事",
+    "upcomingWorkshops": "即將舉行的講座"
+  },
+  "hero": {
+    "title": "免費試聽課程",
+    "placeholder": {
+      "name": "姓名",
+      "phone": "電話號碼",
+      "email": "電子郵件",
+      "course": "選擇課程"
+    },
+    "button": "立即報名",
+    "cta": "SPEAK\nTO THE\nWORLD!",
+    "contact": "馬上開始",
+    "courses": {
+      "group1": "英文",
+      "group2": "中文",
+      "en1": "英語會話",
+      "en2": "雅思考試準備",
+      "en3": "商務英語",
+      "zh1": "初級中文",
+      "zh2": "中文會話",
+      "zh3": "商務中文"
+    },
+    "error": "請填寫所有欄位。"
+  },
+  "tutors": {
+    "title": {
+      "part1": "認識我們的",
+      "part2": "教師",
+      "part3": ""
+    },
+    "cta": "免費試聽課",
+    "tutor": {
+      "name": "{name}",
+      "accent": "{accent}",
+      "experience": "{experience}",
+      "language": "{language}"
+    }
+  }
+}

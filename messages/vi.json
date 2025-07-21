@@ -1,0 +1,57 @@
+{
+  "header": {
+    "teachers": "Giáo viên",
+    "workshop": "Workshop miễn phí",
+    "recruit": "Tuyển dụng",
+    "login": "ĐĂNG NHẬP",
+    "languages": {
+      "vi": "Tiếng Việt",
+      "en": "English",
+      "zh": "中文"
+    }
+  },
+  "home": {
+    "slogan1": "Học theo cách của bạn",
+    "slogan2": "Thực hành như ngoài đời thực",
+    "successStories": "Câu chuyện thành công",
+    "upcomingWorkshops": "Workshop Sắp Diễn Ra"
+  },
+  "hero": {
+    "title": "ĐĂNG KÝ HỌC THỬ \n MIỄN PHÍ",
+    "placeholder": {
+      "name": "Họ và tên",
+      "phone": "Số điện thoại",
+      "email": "Email",
+      "course": "Chọn khoá học"
+    },
+    "button": "ĐĂNG KÝ NGAY",
+    "cta": "SPEAK \n TO THE \n WORLD!",
+    "contact": "BẮT ĐẦU NGAY",
+    "courses": {
+      "group1": "Tiếng Anh",
+      "group2": "Tiếng Trung",
+      "en1": "Tiếng Anh Giao Tiếp",
+      "en2": "Luyện thi IELTS",
+      "en3": "Tiếng Anh Doanh Nghiệp",
+      "zh1": "Tiếng Trung Cơ Bản",
+      "zh2": "Tiếng Trung Giao Tiếp",
+      "zh3": "Tiếng Trung Doanh Nghiệp"
+    },
+    "error": "Vui lòng điền đầy đủ thông tin."
+  },
+  "tutors": {
+    "title": {
+      "part1": "Gặp gỡ",
+      "part2": "giáo viên",
+      "part3": "của chúng tôi"
+    },
+    "cta": "Học thử miễn phí",
+    "tutor": {
+      "name": "{name}",
+      "accent": "{accent}",
+      "experience": "{experience}",
+      "language": "{language}",
+      "about": "{about}"
+    }
+  }
+}
