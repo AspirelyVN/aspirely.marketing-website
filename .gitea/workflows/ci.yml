@@ -14,7 +14,12 @@ jobs:
 
       - name: Build and push image
         run: |
-          docker build -t registry.aspirely.edu.vn/aspirely-marketing-website:${GITHUB_SHA} .
+          docker build \
+          --build-arg GOOGLE_SHEET_ID=${{ secrets.GOOGLE_SHEET_ID }} \
+          --build-arg GOOGLE_SERVICE_EMAIL=${{ secrets.GOOGLE_SERVICE_EMAIL }} \
+          --build-arg GOOGLE_PRIVATE_KEY=${{ secrets.GOOGLE_PRIVATE_KEY }} \
+          --build-arg RESEND_API_KEY=${{ secrets.RESEND_API_KEY }} \
+          -t registry.aspirely.edu.vn/aspirely-marketing-website:${GITHUB_SHA} .
           docker push registry.aspirely.edu.vn/aspirely-marketing-website:${GITHUB_SHA}
 
       - name: Update deployment.yaml image tag
