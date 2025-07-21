@@ -1,31 +1,25 @@
-name: NextJS CI
+name: Build, Push, Deploy Aspirely Marketing Website
 
 on: [push, pull_request]
 
 jobs:
-  build-and-test:
+  build-push-deploy:
     runs-on: ubuntu-latest
-    env:
-      GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
-      GOOGLE_SERVICE_EMAIL: ${{ secrets.GOOGLE_SERVICE_EMAIL }}
-      GOOGLE_PRIVATE_KEY: ${{ secrets.GOOGLE_PRIVATE_KEY }}
-      RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
+      - name: Login to self-hosted registry
+        run: echo ${{ secrets.REGISTRY_PASS }} | docker login 23.88.120.37:5000 -u ${{ secrets.REGISTRY_USER }} --password-stdin
 
-      - name: Install dependencies
-        run: npm ci
+      - name: Build and push image
+        run: |
+          docker build -t 23.88.120.37:5000/aspirely-marketing-website:${GITHUB_SHA} .
+          docker push 23.88.120.37:5000/aspirely-marketing-website:${GITHUB_SHA}
 
-      - name: Lint code
-        run: npm run lint
+      - name: Update deployment.yaml image tag
+        run: |
+          sed -i "s|image: .*|image: registry.local:5000/aspirely-marketing-website:${GITHUB_SHA}|g" /opt/infrastructures/aspirely-marketing-website-deployment/deployment.yaml
 
-      - name: Build app
-        run: npm run build
-
-      - name: Run tests
-        run: npm test || true
+      - name: Deploy to k3s
+        run: kubectl apply -f /opt/infrastructures/aspirely-marketing-website-deployment/
