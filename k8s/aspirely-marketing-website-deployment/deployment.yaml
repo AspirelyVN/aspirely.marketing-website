@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: aspirely-marketing-website
-          image: registry.aspirely.edu.vn/aspirely-marketing:latest
+          image: ghcr.io/aspirelyvn/aspirely.marketing-website:latest
           ports:
             - containerPort: 3000
           envFrom:
