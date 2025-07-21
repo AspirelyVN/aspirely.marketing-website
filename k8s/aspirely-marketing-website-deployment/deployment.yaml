@@ -23,5 +23,5 @@ spec:
             - secretRef:
                 name: aspirely-marketing-website-env
           imagePullPolicy: Always
-          imagePullSecrets:
-          - name: ghcr-secret
+      imagePullSecrets:
+      - name: ghcr-secret
