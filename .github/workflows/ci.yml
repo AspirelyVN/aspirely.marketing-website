@@ -16,5 +16,8 @@ jobs:
         run: |
           docker build -t ghcr.io/aspirelyvn/aspirely.marketing-website:${{ github.sha }} .
 
-      - name: Push Docker image
+      - name: Push Docker image (sha)
         run: docker push ghcr.io/aspirelyvn/aspirely.marketing-website:${{ github.sha }}
+
+      - name: Push Docker image (latest)
+        run: docker push ghcr.io/aspirelyvn/aspirely.marketing-website:latest
