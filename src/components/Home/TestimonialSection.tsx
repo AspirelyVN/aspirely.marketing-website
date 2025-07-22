@@ -8,27 +8,21 @@ const TESTIMONIALS = [
     age: 20,
     location: "TP. HCM",
     image: "/students/PhuongNghi.jpg",
-    content: `Trang web dễ dùng, load nhanh, giao diện hiện đại, có cả video và tương tác trực tiếp. Học online nhưng vẫn có cảm giác như được kèm riêng 1-1. 
-
-Lịch học linh hoạt theo từng khung giờ nên mình dễ xếp lịch học đại học.`,
+    content: `Trang web dễ dùng, load nhanh, giao diện xịn và học online rất tiện lợi mà không cần rời khỏi nhà. Giáo trình được cá nhân hóa nên học đúng trình độ, không áp lực hay gò bó. Mình thích nhất là lịch học linh hoạt, phù hợp cả sinh viên bận rộn như mình.`,
   },
   {
     name: "Nhi Nguyễn",
     age: 21,
     location: "TP. HCM",
     image: "/students/NhiNguyen.jpg",
-    content: `Giáo viên bản ngữ, phát âm chuẩn. Cô Aimie dạy rất dễ hiểu, kiên nhẫn và thân thiện. Giảng giải rõ ràng, phù hợp cả với người học chậm như mình.
-
-Sau vài buổi học, mình thấy tự tin nói hơn hẳn.`,
+    content: `Giảng viên người Anh phát âm cực chuẩn, sửa lỗi kỹ và luôn tập trung vào chất lượng chứ không chạy theo chỉ tiêu. Cô Aimie thân thiện, giảng giải rõ ràng, đặc biệt rất kiên nhẫn với học viên học chậm như mình. Sau một thời gian học, mình tự tin nói tiếng Anh hơn hẳn.`,
   },
   {
-    name: "ABC",
-    age: 24,
+    name: "Mỹ Mỹ",
+    age: 22,
     location: "TP. HCM",
-    image: "/students/ABC.jpg",
-    content: `Giáo trình được cá nhân hóa đúng trình độ nên không bị áp lực. Giáo viên tập trung vào chất lượng thực sự, không gò bó hay chạy theo chỉ tiêu.
-
-Cô Mỹ Quyên thì cực tận tâm, phát âm chuẩn Đài nhờ sống lâu năm tại đó, dạy cả từ lóng cực thú vị.`,
+    image: "/students/MyMy.jpg",
+    content: `Ban đầu mình khá lo lắng về khả năng nói tiếng Anh, nhưng nhờ chương trình học thực tế và giáo viên tận tâm, mình đã tiến bộ rõ rệt. Các chủ đề đa dạng, dễ áp dụng vào đời sống. Cô sửa phát âm chi tiết từng từ, tạo cảm giác thoải mái khi luyện nói. Cảm ơn trung tâm đã giúp mình tự tin giao tiếp hơn mỗi ngày.`,
   },
 ];
 
