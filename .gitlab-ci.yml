@@ -8,6 +8,7 @@ stages:
   - update-tag
 
 variables:
+  DOCKER_BUILDKIT: "1"
   IMAGE_NAME: "aspirely.marketing-website"
   IMAGE_TAG: "$CI_COMMIT_SHORT_SHA"
   FULL_IMAGE: "$HARBOR_URL/$HARBOR_PROJECT/$IMAGE_NAME:$IMAGE_TAG"
@@ -17,7 +18,7 @@ build:
   tags:
     - aspirely
   script:
-    - docker build -t $FULL_IMAGE .
+    - docker build --build-arg BUILDKIT_INLINE_CACHE=1 --progress=plain -t $FULL_IMAGE .
 
 push:
   stage: push
