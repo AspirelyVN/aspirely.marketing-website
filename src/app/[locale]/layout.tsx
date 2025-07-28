@@ -41,9 +41,6 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className={`${raleway.variable} ${inter.variable}`}>
-      <head>
-        <link rel="icon" href="/img/favicon.ico" sizes="any" />
-      </head>
       <body>
         <NextIntlClientProvider>
           <Header />

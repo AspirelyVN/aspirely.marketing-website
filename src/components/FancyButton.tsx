@@ -31,7 +31,7 @@ export default function FancyButton({
         if (onClick) onClick(e)
       }}
       className={clsx(
-        "relative overflow-hidden rounded-full font-bold group transition-all duration-300",
+        "relative overflow-hidden rounded-full font-bold group transition-all duration-300 cursor-pointer",
         isOutline ? "bg-transparent border" : "",
         className
       )}
