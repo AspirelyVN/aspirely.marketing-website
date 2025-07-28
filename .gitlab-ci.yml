@@ -33,7 +33,7 @@ update-tag:
   tags:
     - aspirely
   script:
-    - git clone https://oauth2:$GITOPS_ACCESS_TOKEN@gitlab.aspirely.edu.vn/aspirely/gitops.git
+    - git clone https://oauth2:$GITOPS_ACCESS_TOKEN@gitlab.com/aspirely/gitops.git
     - cd gitops/apps/aspirely.marketing-website
     - 'sed -i "s|image: .*aspirely.marketing-website:.*|image: $FULL_IMAGE|" deployment.yaml'
     - git config user.email "ci@gitlab.com"
