@@ -1,6 +1,6 @@
 "use client"
-import { ReactNode, MouseEvent } from "react"
-import clsx from "clsx"
+import { ReactNode, MouseEvent } from "react";
+import clsx from "clsx";
 
 type FancyButtonProps = {
   children: ReactNode

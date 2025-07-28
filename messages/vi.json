@@ -6,8 +6,8 @@
     "login": "ĐĂNG NHẬP",
     "languages": {
       "vi": "Tiếng Việt",
-      "en": "English",
-      "zh": "中文"
+      "en": "Tiếng Anh",
+      "zh": "Tiếng Trung"
     }
   },
   "home": {
@@ -46,12 +46,208 @@
       "part3": "của chúng tôi"
     },
     "cta": "Học thử miễn phí",
-    "tutor": {
-      "name": "{name}",
-      "accent": "{accent}",
-      "experience": "{experience}",
-      "language": "{language}",
-      "about": "{about}"
-    }
+    "greeting": "Xin chào mọi người!",
+    "specialties": "Chuyên môn",
+    "noVideo": "Không có video",
+    "upcomingWorkshopsTitle": "Buổi học sắp tới với {name}:",
+    "seeWorkshops": "Không chắc? Xem các buổi workshop của {name}",
+    "chooseSchedule": "Chọn lịch học",
+    "studentReviews": "Đánh giá từ học viên",
+    "freeTrialButton": "HỌC THỬ MIỄN PHÍ",
+    "list": [
+      {
+        "id": 1,
+        "name": "Aimie C: Giáo viên",
+        "flag": "https://purecatamphetamine.github.io/country-flag-icons/3x2/GB.svg",
+        "accent": "Giọng Anh - Anh",
+        "experience": "Giáo viên chứng nhận: Hơn 5 năm kinh nghiệm",
+        "language": "Nói tiếng Anh (bản ngữ)",
+        "image": "/tutors/Aimie.jpg",
+        "video": "https://www.w3schools.com/html/mov_bbb.mp4",
+        "about": "Tôi là Aimie, giáo viên tiếng Anh đến từ Vương quốc Anh với hơn 5 năm kinh nghiệm giảng dạy tại Anh, Việt Nam và Thái Lan. Tôi rất mong được gặp bạn và đồng hành cùng bạn trên hành trình nâng cao trình độ tiếng Anh của mình!",
+        "skills": ["Giao tiếp", "IELTS 4 kỹ năng", "Tiếng Anh doanh nghiệp"],
+        "reviews": [
+          {
+            "name": "Minh T.",
+            "country": "Việt Nam",
+            "content": "Cô Aimie dạy rất nhiệt tình và dễ hiểu. Giọng Anh chuẩn!"
+          }
+        ],
+        "availability": {
+          "2025-07-01": ["12:00", "14:30", "16:00"],
+          "2025-07-02": ["12:00", "14:30", "16:00"],
+          "2025-07-03": ["14:30", "16:00"]
+        },
+        "workshops": [
+          {
+            "title": "Giao tiếp cơ bản cho người mới bắt đầu",
+            "date": "2025-07-15",
+            "time": "19:00",
+            "description": "Workshop giúp cải thiện phản xạ nghe nói cơ bản."
+          },
+          {
+            "title": "Chiến lược làm bài IELTS Writing",
+            "date": "2025-07-20",
+            "time": "20:00",
+            "description": "Tập trung vào cấu trúc và ý tưởng cho Task 1 & 2."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "My Quyên: Giáo viên",
+        "flag": "https://purecatamphetamine.github.io/country-flag-icons/3x2/TW.svg",
+        "accent": "Giọng Đài Loan",
+        "experience": "Giáo viên chứng nhận: Hơn 3 năm kinh nghiệm",
+        "language": "Nói tiếng Đài (thành thạo), tiếng Việt (bản ngữ)",
+        "image": "/tutors/Quyen.jpg",
+        "video": "https://www.w3schools.com/html/mov_bbb.mp4",
+        "about": "Tôi là My Quyên, giáo viên đến từ Đài Loan, với kinh nghiệm 3+ năm giảng dạy người Việt và người nước ngoài. Tôi tập trung giúp học viên nói tiếng Anh một cách tự nhiên và tự tin.",
+        "skills": ["Giao tiếp hàng ngày", "Phát âm", "Ngữ pháp"],
+        "reviews": [
+          {
+            "name": "Thu N.",
+            "country": "Việt Nam",
+            "content": "Giải thích rất dễ hiểu, nhẹ nhàng, có tâm!"
+          }
+        ],
+        "availability": {
+          "2025-07-01": ["09:00", "11:00", "15:00"]
+        },
+        "workshops": []
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "title": "Tại sao bạn nên chọn chúng tôi?",
+    "items": [
+      {
+        "title": "Đội ngũ Giáo viên Uy tín - Cam kết Chất lượng",
+        "desc": "Giảng viên bản xứ đầy kinh nghiệm và chứng chỉ, truyền cảm hứng, giúp bạn tiến bộ hơn sau mỗi buổi học."
+      },
+      {
+        "title": "Học Vui & Hiệu Quả",
+        "desc": "Từ hội thoại hằng ngày đến luyện thi, bài học thiết thực, tương tác cao, bám sát mục tiêu cá nhân."
+      },
+      {
+        "title": "Học Linh Hoạt, Dễ Dàng Cho Người Bận Rộn",
+        "desc": "Sinh viên hay nhân viên văn phòng đều dễ dàng học theo lịch cá nhân."
+      },
+      {
+        "title": "Học 1-1 Theo Cách Bạn Muốn, Với Giáo Viên Bạn Chọn",
+        "desc": "Tham gia buổi học thử trực tuyến để tìm giáo viên phù hợp nhất với bạn."
+      }
+    ]
+  },
+  "testimonial": {
+    "title": "Câu chuyện thành công",
+    "items": [
+      {
+        "name": "Phương Nghi",
+        "age": "20",
+        "location": "TP. HCM",
+        "content": "Trang web dễ dùng, load nhanh, giao diện xịn và học online rất tiện lợi mà không cần rời khỏi nhà. Giáo trình được cá nhân hóa nên học đúng trình độ, không áp lực hay gò bó. Mình thích nhất là lịch học linh hoạt, phù hợp cả sinh viên bận rộn như mình."
+      },
+      {
+        "name": "Nhi Nguyễn",
+        "age": "21",
+        "location": "TP. HCM",
+        "content": "Giảng viên người Anh phát âm cực chuẩn, sửa lỗi kỹ và luôn tập trung vào chất lượng chứ không chạy theo chỉ tiêu. Cô Aimie thân thiện, giảng giải rõ ràng, đặc biệt rất kiên nhẫn với học viên học chậm như mình. Sau một thời gian học, mình tự tin nói tiếng Anh hơn hẳn."
+      },
+      {
+        "name": "Mỹ Mỹ",
+        "age": "22",
+        "location": "TP. HCM",
+        "content": "Ban đầu mình khá lo lắng về khả năng nói tiếng Anh, nhưng nhờ chương trình học thực tế và giáo viên tận tâm, mình đã tiến bộ rõ rệt. Các chủ đề đa dạng, dễ áp dụng vào đời sống. Cô sửa phát âm chi tiết từng từ, tạo cảm giác thoải mái khi luyện nói. Cảm ơn trung tâm đã giúp mình tự tin giao tiếp hơn mỗi ngày."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Sẵn sàng để nâng cấp tiếng Anh?",
+    "desc": "Nhận tư vấn miễn phí từ đội ngũ giáo viên chuyên nghiệp của chúng tôi.",
+    "button": "Đăng ký tư vấn miễn phí"
+  },
+  "footer": {
+    "englishTitle": "TIẾNG ANH",
+    "english": {
+      "communication": "Tiếng Anh Giao Tiếp",
+      "ielts": "Luyện thi IELTS",
+      "business": "Tiếng Anh Doanh Nghiệp"
+    },
+    "chineseTitle": "TIẾNG TRUNG",
+    "chinese": {
+      "basic": "Tiếng Trung Cơ Bản",
+      "communication": "Tiếng Trung Giao Tiếp",
+      "business": "Tiếng Trung Doanh Nghiệp"
+    },
+    "moreTitle": "TÌM HIỂU THÊM",
+    "more": {
+      "about": "Giới thiệu về Aspirely",
+      "privacy": "Chính sách bảo mật",
+      "terms": "Điều khoản dịch vụ",
+      "contact": "Liên hệ"
+    },
+    "copyright": "Bảo lưu mọi quyền."
+  },
+  "workshops": {
+    "title": "Danh sách Workshop Miễn Phí",
+    "cta": "Đăng ký miễn phí",
+    "list": [
+      {
+        "title": "Nâng cao điểm Listening IELTS (5.5 lên 8) - Tháng 7/2025",
+        "date": "14/07/2025",
+        "time": "20:00 (giờ Việt Nam)",
+        "language": "Tiếng Anh",
+        "speaker": "Aimie Cook",
+        "price": "Miễn phí"
+      },
+      {
+        "title": "Ý tưởng cho Writing Task 2 - Tháng 7/2025",
+        "date": "21/07/2025",
+        "time": "20:00 (giờ Việt Nam)",
+        "language": "Tiếng Anh",
+        "speaker": "Aimie Cook",
+        "price": "Miễn phí"
+      },
+      {
+        "title": "Chinh phục IELTS Reading trong 7 ngày – Tháng 7/2025",
+        "date": "28/07/2025",
+        "time": "20:00 (giờ Việt Nam)",
+        "language": "Tiếng Anh",
+        "speaker": "Aimie Cook",
+        "price": "Miễn phí"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Đăng ký tư vấn miễn phí",
+    "name": "Họ và tên",
+    "phone": "Số điện thoại",
+    "email": "Email (không bắt buộc)",
+    "selectProgram": "Chương trình quan tâm",
+    "programs": {
+      "english": "Tiếng Anh giao tiếp",
+      "ielts": "Luyện thi IELTS",
+      "business": "Tiếng Anh doanh nghiệp",
+      "chinese": "Tiếng Trung"
+    },
+    "note": "Ghi chú thêm",
+    "submit": "GỬI THÔNG TIN"
+  },
+  "thankyou": {
+    "invalid": "Trang không hợp lệ, đang quay về trang chủ...",
+    "loading": {
+      "title": "Đang xử lý đăng ký...",
+      "desc": "Vui lòng đợi trong giây lát"
+    },
+    "success": {
+      "title": "Cảm ơn bạn đã đăng ký!",
+      "desc": "Bạn sẽ được chuyển về trang chủ sau vài giây..."
+    },
+    "error": {
+      "title": "Đã xảy ra lỗi!",
+      "desc": "Vui lòng quay lại và thử lại sau."
+    },
+    "back": "Quay lại trang chủ"
   }
 }

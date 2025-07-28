@@ -45,12 +45,209 @@
       "part2": "teachers",
       "part3": ""
     },
-    "cta": "Free trial class",
-    "tutor": {
-      "name": "{name}",
-      "accent": "{accent}",
-      "experience": "{experience}",
-      "language": "{language}"
-    }
+    "cta": "Try a free lesson",
+    "greeting": "Hello everyone!",
+    "specialties": "Specialties",
+    "noVideo": "No video available",
+    "upcomingWorkshopsTitle": "Upcoming sessions with {name}:",
+    "seeWorkshops": "Not sure? Check {name}'s workshops",
+    "chooseSchedule": "Choose your schedule",
+    "studentReviews": "Student Reviews",
+    "freeTrialButton": "TRY FOR FREE",
+    "list": [
+      {
+        "id": 1,
+        "name": "Aimie C: Teacher",
+        "flag": "https://purecatamphetamine.github.io/country-flag-icons/3x2/GB.svg",
+        "accent": "British accent",
+        "experience": "Certified teacher: Over 5 years of experience",
+        "language": "Native English speaker",
+        "image": "/tutors/Aimie.jpg",
+        "video": "https://www.w3schools.com/html/mov_bbb.mp4",
+        "about": "I'm Aimie, an English teacher from the UK with over 5 years of teaching experience in the UK, Vietnam, and Thailand. I look forward to meeting you and accompanying you on your journey to improve your English!",
+        "skills": ["Conversation", "IELTS (4 skills)", "Business English"],
+        "reviews": [
+          {
+            "name": "Minh T.",
+            "country": "Vietnam",
+            "content": "Ms. Aimie teaches enthusiastically and clearly. Her British accent is perfect!"
+          }
+        ],
+        "availability": {
+          "2025-07-01": ["12:00", "14:30", "16:00"],
+          "2025-07-02": ["12:00", "14:30", "16:00"],
+          "2025-07-03": ["14:30", "16:00"]
+        },
+        "workshops": [
+          {
+            "title": "Basic Speaking for Beginners",
+            "date": "2025-07-15",
+            "time": "19:00",
+            "description": "Improve your basic speaking and listening skills in this workshop."
+          },
+          {
+            "title": "IELTS Writing Strategies",
+            "date": "2025-07-20",
+            "time": "20:00",
+            "description": "Focuses on structure and ideas for both Task 1 & 2."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "My Quyen: Teacher",
+        "flag": "https://purecatamphetamine.github.io/country-flag-icons/3x2/TW.svg",
+        "accent": "Taiwanese accent",
+        "experience": "Certified teacher: Over 3 years of experience",
+        "language": "Fluent in Taiwanese and native Vietnamese",
+        "image": "/tutors/Quyen.jpg",
+        "video": "https://www.w3schools.com/html/mov_bbb.mp4",
+        "about": "I'm My Quyen, a teacher from Taiwan with over 3 years of experience teaching both Vietnamese and international students. I focus on helping learners speak English naturally and confidently.",
+        "skills": ["Daily conversation", "Pronunciation", "Grammar"],
+        "reviews": [
+          {
+            "name": "Thu N.",
+            "country": "Vietnam",
+            "content": "Very clear explanations, kind and dedicated!"
+          }
+        ],
+        "availability": {
+          "2025-07-01": ["09:00", "11:00", "15:00"]
+        },
+        "workshops": []
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "title": "Why choose us?",
+    "items": [
+      {
+        "title": "Qualified & Trusted Teachers",
+        "desc": "Experienced, certified native teachers who inspire you and help you improve every lesson."
+      },
+      {
+        "title": "Fun & Effective Learning",
+        "desc": "From daily conversation to test prep, engaging and goal-oriented lessons."
+      },
+      {
+        "title": "Flexible Schedule for Busy People",
+        "desc": "Students or working professionals can learn anytime that fits their schedule."
+      },
+      {
+        "title": "1-on-1 Learning Your Way",
+        "desc": "Join a free trial to find the best-fit teacher for your needs."
+      }
+    ]
+  },
+  "testimonial": {
+    "title": "Success Stories",
+    "items": [
+      {
+        "name": "Phuong Nghi",
+        "age": "20",
+        "location": "Ho Chi Minh City",
+        "content": "The website is easy to use, fast loading, and the UI is sleek. Online learning is super convenient without leaving home. The program is personalized to my level, no pressure or stress. I love the flexible schedule, perfect for busy students like me."
+      },
+      {
+        "name": "Nhi Nguyen",
+        "age": "21",
+        "location": "Ho Chi Minh City",
+        "content": "The British teacher speaks very clearly and corrects my mistakes carefully, always focusing on quality rather than quantity. Miss Aimie is friendly, patient, and explains everything well. I'm now much more confident speaking English."
+      },
+      {
+        "name": "My My",
+        "age": "22",
+        "location": "Ho Chi Minh City",
+        "content": "At first, I was worried about speaking English. But thanks to the practical lessons and dedicated teachers, I’ve improved a lot. Topics are diverse and applicable. My pronunciation was corrected in detail, and I now feel more comfortable speaking every day."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to level up your English?",
+    "desc": "Get a free consultation with our professional teaching team.",
+    "button": "Book a free consultation"
+  },
+  "footer": {
+    "englishTitle": "ENGLISH",
+    "english": {
+      "communication": "English Communication",
+      "ielts": "IELTS Preparation",
+      "business": "Business English"
+    },
+    "chineseTitle": "CHINESE",
+    "chinese": {
+      "basic": "Basic Chinese",
+      "communication": "Chinese Communication",
+      "business": "Business Chinese"
+    },
+    "moreTitle": "LEARN MORE",
+    "more": {
+      "about": "About Aspirely",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "contact": "Contact"
+    },
+    "copyright": "All rights reserved."
+  },
+  "workshops": {
+    "title": "Free Workshop List",
+    "cta": "Register for Free",
+    "list": [
+      {
+        "title": "Boost your IELTS Listening Score (5.5 to 8) – July 2025",
+        "date": "Jul 14, 2025",
+        "time": "8:00 PM (Vietnam Time)",
+        "language": "English",
+        "speaker": "Aimie Cook",
+        "price": "Free"
+      },
+      {
+        "title": "Ideas for IELTS Writing Task 2 – July 2025",
+        "date": "Jul 21, 2025",
+        "time": "8:00 PM (Vietnam Time)",
+        "language": "English",
+        "speaker": "Aimie Cook",
+        "price": "Free"
+      },
+      {
+        "title": "Conquer IELTS Reading in 7 Days – July 2025",
+        "date": "Jul 28, 2025",
+        "time": "8:00 PM (Vietnam Time)",
+        "language": "English",
+        "speaker": "Aimie Cook",
+        "price": "Free"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Register for a Free Consultation",
+    "name": "Full Name",
+    "phone": "Phone Number",
+    "email": "Email (optional)",
+    "selectProgram": "Interested Program",
+    "programs": {
+      "english": "English Communication",
+      "ielts": "IELTS Preparation",
+      "business": "Business English",
+      "chinese": "Chinese Language"
+    },
+    "note": "Additional notes",
+    "submit": "SUBMIT"
+  },
+  "thankyou": {
+    "invalid": "Invalid page. Redirecting to homepage...",
+    "loading": {
+      "title": "Processing your registration...",
+      "desc": "Please wait a moment"
+    },
+    "success": {
+      "title": "Thank you for registering!",
+      "desc": "You’ll be redirected to the homepage shortly..."
+    },
+    "error": {
+      "title": "Something went wrong!",
+      "desc": "Please go back and try again."
+    },
+    "back": "Return to homepage"
   }
 }

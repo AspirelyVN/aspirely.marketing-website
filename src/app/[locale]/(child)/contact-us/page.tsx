@@ -1,8 +1,11 @@
 "use client"
+
 import { useState } from "react"
 import { FiUser, FiPhone, FiMail, FiBookOpen } from "react-icons/fi"
+import { useTranslations } from "next-intl"
 
 export default function ContactUsPage() {
+  const t = useTranslations("contact")
   const [form, setForm] = useState({
     name: "",
     phone: "",
@@ -25,14 +28,14 @@ export default function ContactUsPage() {
   return (
     <div className="max-w-xl mx-auto px-4 py-16">
       <h1 className="text-3xl lg:text-4xl font-bold text-center mb-8 text-[#9F0A0B]">
-        Đăng ký tư vấn miễn phí
+        {t("title")}
       </h1>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div className="flex items-center bg-white rounded p-2 border border-gray-300">
           <FiUser className="text-[#9F0A0B] mr-2" />
           <input
             name="name"
-            placeholder="Họ và tên"
+            placeholder={t("name")}
             value={form.name}
             onChange={handleChange}
             required
@@ -44,7 +47,7 @@ export default function ContactUsPage() {
           <FiPhone className="text-[#9F0A0B] mr-2" />
           <input
             name="phone"
-            placeholder="Số điện thoại"
+            placeholder={t("phone")}
             value={form.phone}
             onChange={handleChange}
             required
@@ -56,7 +59,7 @@ export default function ContactUsPage() {
           <FiMail className="text-[#9F0A0B] mr-2" />
           <input
             name="email"
-            placeholder="Email (không bắt buộc)"
+            placeholder={t("email")}
             value={form.email}
             onChange={handleChange}
             className="w-full bg-transparent outline-none text-black placeholder:italic"
@@ -72,11 +75,11 @@ export default function ContactUsPage() {
             required
             className="w-full bg-transparent outline-none text-black placeholder:italic"
           >
-            <option value="">Chương trình quan tâm</option>
-            <option>Tiếng Anh giao tiếp</option>
-            <option>Luyện thi IELTS</option>
-            <option>Tiếng Anh doanh nghiệp</option>
-            <option>Tiếng Trung</option>
+            <option value="">{t("selectProgram")}</option>
+            <option>{t("programs.english")}</option>
+            <option>{t("programs.ielts")}</option>
+            <option>{t("programs.business")}</option>
+            <option>{t("programs.chinese")}</option>
           </select>
         </div>
 
@@ -85,7 +88,7 @@ export default function ContactUsPage() {
             name="message"
             value={form.message}
             onChange={handleChange}
-            placeholder="Ghi chú thêm"
+            placeholder={t("note")}
             rows={4}
             className="w-full bg-white border border-gray-300 rounded p-3 text-black placeholder:italic"
           />
@@ -95,7 +98,7 @@ export default function ContactUsPage() {
           type="submit"
           className="w-full bg-white text-[#9F0A0B] py-2 rounded-full font-bold hover:opacity-90 transition"
         >
-          GỬI THÔNG TIN
+          {t("submit")}
         </button>
       </form>
     </div>

@@ -1,9 +1,12 @@
 "use client";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 export default function ThankYouPage() {
   const router = useRouter();
+  const t = useTranslations("thankyou");
+
   const [status, setStatus] = useState<"loading" | "success" | "error" | "invalid">("loading");
 
   useEffect(() => {
@@ -51,7 +54,7 @@ export default function ThankYouPage() {
   if (status === "invalid") {
     return (
       <div className="w-full h-screen flex flex-col justify-center items-center text-center">
-        <p className="text-sm text-gray-500">Trang không hợp lệ, đang quay về trang chủ...</p>
+        <p className="text-sm text-gray-500">{t("invalid")}</p>
       </div>
     );
   }
@@ -60,33 +63,33 @@ export default function ThankYouPage() {
     <div className="w-full h-screen flex flex-col justify-center items-center text-center px-4">
       {status === "loading" && (
         <div>
-          <p className="text-xl font-semibold mb-2">Đang xử lý đăng ký...</p>
-          <p className="text-sm text-gray-500">Vui lòng đợi trong giây lát</p>
+          <p className="text-xl font-semibold mb-2">{t("loading.title")}</p>
+          <p className="text-sm text-gray-500">{t("loading.desc")}</p>
         </div>
       )}
 
       {status === "success" && (
         <div>
-          <h2 className="text-2xl font-bold text-green-600 mb-2">Cảm ơn bạn đã đăng ký!</h2>
-          <p className="text-sm text-gray-500">Bạn sẽ được chuyển về trang chủ sau vài giây...</p>
+          <h2 className="text-2xl font-bold text-green-600 mb-2">{t("success.title")}</h2>
+          <p className="text-sm text-gray-500">{t("success.desc")}</p>
           <button
             onClick={() => router.push("/")}
             className="mt-4 px-6 py-2 bg-black text-white rounded"
           >
-            Quay lại trang chủ ngay
+            {t("back")}
           </button>
         </div>
       )}
 
       {status === "error" && (
         <div>
-          <h2 className="text-2xl font-bold text-red-600 mb-2">Đã xảy ra lỗi!</h2>
-          <p className="text-sm text-gray-500">Vui lòng quay lại và thử lại sau.</p>
+          <h2 className="text-2xl font-bold text-red-600 mb-2">{t("error.title")}</h2>
+          <p className="text-sm text-gray-500">{t("error.desc")}</p>
           <button
             onClick={() => router.push("/")}
             className="mt-4 px-6 py-2 bg-black text-white rounded"
           >
-            Quay lại trang chủ
+            {t("back")}
           </button>
         </div>
       )}

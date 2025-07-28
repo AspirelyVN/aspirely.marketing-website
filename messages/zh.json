@@ -41,16 +41,213 @@
   },
   "tutors": {
     "title": {
-      "part1": "認識我們的",
-      "part2": "教師",
+      "part1": "认识我们的",
+      "part2": "老师",
       "part3": ""
     },
-    "cta": "免費試聽課",
-    "tutor": {
-      "name": "{name}",
-      "accent": "{accent}",
-      "experience": "{experience}",
-      "language": "{language}"
-    }
+    "cta": "免费试听课程",
+    "greeting": "大家好！",
+    "specialties": "擅长领域",
+    "noVideo": "暂无视频",
+    "upcomingWorkshopsTitle": "{name} 的即将课程：",
+    "seeWorkshops": "不确定？看看 {name} 的讲座",
+    "chooseSchedule": "选择上课时间",
+    "studentReviews": "学生评价",
+    "freeTrialButton": "免费试听",
+    "list": [
+      {
+        "id": 1,
+        "name": "Aimie C：教师",
+        "flag": "https://purecatamphetamine.github.io/country-flag-icons/3x2/GB.svg",
+        "accent": "英式发音",
+        "experience": "认证教师：超过5年教学经验",
+        "language": "英语母语者",
+        "image": "/tutors/Aimie.jpg",
+        "video": "https://www.w3schools.com/html/mov_bbb.mp4",
+        "about": "我是Aimie，一位来自英国的英语教师，在英国、越南和泰国拥有超过5年的教学经验。期待与您见面，并陪伴您提升英语水平！",
+        "skills": ["会话", "雅思四项技能", "商务英语"],
+        "reviews": [
+          {
+            "name": "Minh T.",
+            "country": "越南",
+            "content": "Aimie老师教学非常热情易懂，英式发音很标准！"
+          }
+        ],
+        "availability": {
+          "2025-07-01": ["12:00", "14:30", "16:00"],
+          "2025-07-02": ["12:00", "14:30", "16:00"],
+          "2025-07-03": ["14:30", "16:00"]
+        },
+        "workshops": [
+          {
+            "title": "初学者基础口语训练",
+            "date": "2025-07-15",
+            "time": "19:00",
+            "description": "本讲座帮助提升基础听说能力。"
+          },
+          {
+            "title": "雅思写作技巧",
+            "date": "2025-07-20",
+            "time": "20:00",
+            "description": "专注于Task 1 & 2的结构与构思。"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "美娟：教师",
+        "flag": "https://purecatamphetamine.github.io/country-flag-icons/3x2/TW.svg",
+        "accent": "台湾口音",
+        "experience": "认证教师：超过3年教学经验",
+        "language": "精通台语，越南语为母语",
+        "image": "/tutors/Quyen.jpg",
+        "video": "https://www.w3schools.com/html/mov_bbb.mp4",
+        "about": "我是美娟，来自台湾的老师，拥有超过3年的教学经验，教授越南和外国学生。我致力于帮助学习者自然、自信地说英语。",
+        "skills": ["日常对话", "发音", "语法"],
+        "reviews": [
+          {
+            "name": "Thu N.",
+            "country": "越南",
+            "content": "讲解非常清楚，亲切认真！"
+          }
+        ],
+        "availability": {
+          "2025-07-01": ["09:00", "11:00", "15:00"]
+        },
+        "workshops": []
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "title": "为什么选择我们？",
+    "items": [
+      {
+        "title": "专业可信赖的教师团队",
+        "desc": "经验丰富、持有认证的母语教师，激发学习动力，课后进步看得见。"
+      },
+      {
+        "title": "有趣且高效的学习方式",
+        "desc": "从日常对话到考试备考，课程实用、互动性强、目标明确。"
+      },
+      {
+        "title": "灵活学习，适合繁忙人士",
+        "desc": "无论是学生还是上班族，都能根据个人时间灵活安排学习。"
+      },
+      {
+        "title": "量身定制 1 对 1 教学",
+        "desc": "免费试听课，找到最适合你的老师。"
+      }
+    ]
+  },
+  "testimonial": {
+    "title": "成功故事",
+    "items": [
+      {
+        "name": "芳娥",
+        "age": "20",
+        "location": "胡志明市",
+        "content": "网站易于使用，加载速度快，界面美观。在线学习非常方便，不用出门。课程因人而异，适合自己的水平，没有压力。我最喜欢的是灵活的上课时间，非常适合像我这样的大学生。"
+      },
+      {
+        "name": "小玉",
+        "age": "21",
+        "location": "胡志明市",
+        "content": "英国老师发音非常标准，纠正错误细致，专注于教学质量。Aimie老师很友好，讲解清楚，尤其对学习慢的学生特别有耐心。学了一段时间之后，我的英语口语自信心提升了很多。"
+      },
+      {
+        "name": "美美",
+        "age": "22",
+        "location": "胡志明市",
+        "content": "刚开始我对自己的英语口语感到担心，但课程内容实用，老师又非常耐心，我的进步很明显。话题多样，容易应用于生活，发音纠正得很细致，现在练口语时感到更自在了。"
+      }
+    ]
+  },
+  "cta": {
+    "title": "准备好提升你的英语了吗？",
+    "desc": "免费获得我们专业教师团队的咨询服务。",
+    "button": "免费预约咨询"
+  },
+  "footer": {
+    "englishTitle": "英文課程",
+    "english": {
+      "communication": "英語會話",
+      "ielts": "雅思考試準備",
+      "business": "商務英語"
+    },
+    "chineseTitle": "中文課程",
+    "chinese": {
+      "basic": "基礎中文",
+      "communication": "中文會話",
+      "business": "商務中文"
+    },
+    "moreTitle": "更多資訊",
+    "more": {
+      "about": "關於 Aspirely",
+      "privacy": "隱私政策",
+      "terms": "服務條款",
+      "contact": "聯絡我們"
+    },
+    "copyright": "保留所有權利。"
+  },
+  "workshops": {
+    "title": "免費研討會列表",
+    "cta": "免費報名",
+    "list": [
+      {
+        "title": "提升 IELTS 聽力分數（從 5.5 到 8）– 2025 年 7 月",
+        "date": "2025年7月14日",
+        "time": "越南時間晚上8點",
+        "language": "英語",
+        "speaker": "Aimie Cook",
+        "price": "免費"
+      },
+      {
+        "title": "IELTS 寫作任務 2 的想法 – 2025 年 7 月",
+        "date": "2025年7月21日",
+        "time": "越南時間晚上8點",
+        "language": "英語",
+        "speaker": "Aimie Cook",
+        "price": "免費"
+      },
+      {
+        "title": "7天征服 IELTS 閱讀 – 2025 年 7 月",
+        "date": "2025年7月28日",
+        "time": "越南時間晚上8點",
+        "language": "英語",
+        "speaker": "Aimie Cook",
+        "price": "免費"
+      }
+    ]
+  },
+  "contact": {
+    "title": "免費諮詢登記",
+    "name": "姓名",
+    "phone": "電話號碼",
+    "email": "電子郵件（可選）",
+    "selectProgram": "感興趣的課程",
+    "programs": {
+      "english": "英語會話",
+      "ielts": "IELTS 考試準備",
+      "business": "商務英語",
+      "chinese": "中文課程"
+    },
+    "note": "其他備註",
+    "submit": "提交資訊"
+  },
+  "thankyou": {
+    "invalid": "無效頁面，正在跳轉到主頁...",
+    "loading": {
+      "title": "正在處理您的註冊...",
+      "desc": "請稍候片刻"
+    },
+    "success": {
+      "title": "感謝您的註冊！",
+      "desc": "您將在幾秒後被重定向至主頁..."
+    },
+    "error": {
+      "title": "發生錯誤！",
+      "desc": "請返回並稍後再試一次。"
+    },
+    "back": "返回主頁"
   }
 }

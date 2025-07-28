@@ -9,6 +9,7 @@ import {
   FiGlobe,
   FiDollarSign,
 } from "react-icons/fi";
+import { useTranslations } from "next-intl";
 
 type Workshop = {
   title: string;
@@ -20,48 +21,48 @@ type Workshop = {
   bannerUrl: string;
 };
 
-const mockWorkshops: Workshop[] = [
-  {
-    title: "Nâng cao điểm Listening IELTS (5.5 lên 8) - Tháng 7/2025",
-    date: "14/07/2025",
-    time: "20:00 (giờ Việt Nam)",
-    language: "Tiếng Anh",
-    speaker: "Aimie Cook",
-    price: "Miễn phí",
-    bannerUrl: "https://placehold.co/600x400/000000/FFFFFF.png",
-  },
-  {
-    title: "Ý tưởng cho Writing Task 2 - Tháng 7/2025",
-    date: "21/07/2025",
-    time: "20:00 (giờ Việt Nam)",
-    language: "Tiếng Anh",
-    speaker: "Aimie Cook",
-    price: "Miễn phí",
-    bannerUrl: "https://placehold.co/600x400/000000/FFFFFF.png",
-  },
-  {
-    title: "Chinh phục IELTS Reading trong 7 ngày – Tháng 7/2025",
-    date: "28/07/2025",
-    time: "20:00 (giờ Việt Nam)",
-    language: "Tiếng Anh",
-    speaker: "Aimie Cook",
-    price: "Miễn phí",
-    bannerUrl: "https://placehold.co/600x400/000000/FFFFFF.png",
-  },
-];
-
 export default function WorkshopsPage() {
+  const t = useTranslations("workshops");
+
   const [workshops, setWorkshops] = useState<Workshop[]>([]);
 
   useEffect(() => {
-    setWorkshops(mockWorkshops);
-  }, []);
+    setWorkshops([
+      {
+        title: t("list.0.title"),
+        date: t("list.0.date"),
+        time: t("list.0.time"),
+        language: t("list.0.language"),
+        speaker: t("list.0.speaker"),
+        price: t("list.0.price"),
+        bannerUrl: "https://placehold.co/600x400/000000/FFFFFF.png",
+      },
+      {
+        title: t("list.1.title"),
+        date: t("list.1.date"),
+        time: t("list.1.time"),
+        language: t("list.1.language"),
+        speaker: t("list.1.speaker"),
+        price: t("list.1.price"),
+        bannerUrl: "https://placehold.co/600x400/000000/FFFFFF.png",
+      },
+      {
+        title: t("list.2.title"),
+        date: t("list.2.date"),
+        time: t("list.2.time"),
+        language: t("list.2.language"),
+        speaker: t("list.2.speaker"),
+        price: t("list.2.price"),
+        bannerUrl: "https://placehold.co/600x400/000000/FFFFFF.png",
+      },
+    ]);
+  }, [t]);
 
   return (
     <div className="w-full py-12 px-4">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-3xl md:text-4xl font-bold text-center mb-10">
-          Danh sách Workshop Miễn Phí
+          {t("title")}
         </h1>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -101,7 +102,7 @@ export default function WorkshopsPage() {
                 </div>
 
                 <button className="bg-[#9F0A0B] text-white py-2 px-4 mt-auto rounded hover:opacity-90 transition">
-                  Đăng ký miễn phí
+                  {t("cta")}
                 </button>
               </div>
             </div>

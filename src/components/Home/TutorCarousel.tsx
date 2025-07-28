@@ -1,40 +1,42 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import { useEffect, useState } from "react"
-import { useRouter } from "next/navigation"
-import { useTranslations, useLocale } from "next-intl"
+import Image from "next/image";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
+import { useTranslations, useMessages } from "next-intl";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel"
-import FadeInWhenVisible from "@/components/animations/FadeInWhenVisible"
-import TutorCard from "@/components/TutorCard"
-import { getTutorsByLocale } from "@/data/tutors"
+} from "@/components/ui/carousel";
+import FadeInWhenVisible from "@/components/animations/FadeInWhenVisible";
+
+import TutorCard from "@/components/TutorCard";
+import type { Tutor } from "@/types/tutor";
 
 export default function TutorCarousel() {
-  const router = useRouter()
-  const t = useTranslations("tutors")
-  const locale = useLocale()
-  const tutorsData = getTutorsByLocale(locale)
-  const [isDesktop, setIsDesktop] = useState(true)
+  const router = useRouter();
+  const t = useTranslations("tutors");
+  const messages = useMessages();
+  const tutorsData = messages.tutors.list;
+
+  const [isDesktop, setIsDesktop] = useState(true);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsDesktop(window.innerWidth >= 1024)
-    }
-    handleResize()
-    window.addEventListener("resize", handleResize)
-    return () => window.removeEventListener("resize", handleResize)
-  }, [])
+      setIsDesktop(window.innerWidth >= 1024);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const loopedTutors =
     tutorsData.length < 6
       ? Array(Math.ceil(9 / tutorsData.length)).fill(tutorsData).flat()
-      : tutorsData
+      : tutorsData;
 
   return (
     <div id="tutors" className="scroll-mt-20 w-[90%] max-w-7xl mx-auto px-4 py-10">
@@ -45,7 +47,7 @@ export default function TutorCarousel() {
       {isDesktop ? (
         <Carousel opts={{ align: "center", loop: true }} className="relative w-full">
           <CarouselContent className="py-8 gap-2">
-            {loopedTutors.map((tutor, index) => (
+            {loopedTutors.map((tutor: Tutor, index: number) => (
               <CarouselItem
                 key={`${tutor.id}-${index}`}
                 className="basis-full sm:basis-1/2 md:basis-1/3"
@@ -63,7 +65,7 @@ export default function TutorCarousel() {
         </Carousel>
       ) : (
         <div className="flex gap-3 overflow-x-auto scroll-smooth no-scrollbar px-1 pt-6 pb-10">
-          {tutorsData.map((tutor) => (
+          {tutorsData.map((tutor: Tutor) => (
             <div
               key={tutor.id}
               onClick={() => router.push(`/tutors/${tutor.id}`)}
@@ -91,8 +93,8 @@ export default function TutorCarousel() {
                   <button
                     className="bg-[#9F0A0B] text-white px-4 py-1.5 text-sm rounded-full font-semibold hover:opacity-90 transition"
                     onClick={(e) => {
-                      e.stopPropagation()
-                      router.push("/register")
+                      e.stopPropagation();
+                      router.push("/register");
                     }}
                   >
                     {t("cta")}
@@ -104,5 +106,5 @@ export default function TutorCarousel() {
         </div>
       )}
     </div>
-  )
+  );
 }

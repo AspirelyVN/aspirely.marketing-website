@@ -1,19 +1,12 @@
 "use client"
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import FancyButton from "@/components/FancyButton";
 import { useRouter } from "next/navigation";
 import { RiSpeakLine } from "react-icons/ri";
 import { LuGraduationCap } from "react-icons/lu";
 
-type TutorCardProps = {
-  id: number
-  name: string
-  flag: string
-  accent: string
-  experience: string
-  language: string
-  image?: string
-}
+import type { Tutor } from "@/types/tutor";
 
 export default function TutorCard({
   id,
@@ -23,7 +16,8 @@ export default function TutorCard({
   experience,
   language,
   image = "/tutor.jpg",
-}: TutorCardProps) {
+}: Tutor) {
+  const t = useTranslations("tutors")
   const router = useRouter()
 
   return (
@@ -63,7 +57,7 @@ export default function TutorCard({
               window.location.href = "https://app.aspirely.edu.vn/register"
             }}
           >
-            Học thử miễn phí
+            {t("cta")}
           </FancyButton>
         </div>
       </div>

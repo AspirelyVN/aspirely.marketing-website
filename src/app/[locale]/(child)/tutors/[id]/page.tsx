@@ -1,26 +1,24 @@
-"use client"
+"use client";
 
-import type { Workshop, Review } from "@/types/tutor";
-
-import React from "react"
-import Image from "next/image"
-import { notFound } from "next/navigation"
-import { useLocale } from "next-intl"
-import { getTutorsByLocale } from "@/data/tutors"
-import TutorScheduleCalendar from "@/components/TutorScheduleCalendar"
+import React from "react";
+import Image from "next/image";
+import { notFound } from "next/navigation";
+import { useMessages, useTranslations } from "next-intl";
+import TutorScheduleCalendar from "@/components/TutorScheduleCalendar";
+import type { Tutor, Workshop, Review } from "@/types/tutor";
 
 export default function TutorDetail({
   params,
 }: {
-  params: Promise<{ id: string }>
+  params: Promise<{ id: string }>;
 }) {
-  // const t = useTranslations("tutors")
-  const locale = useLocale()
-  const tutorsData = getTutorsByLocale(locale)
   const { id } = React.use(params);
-  const tutor = tutorsData.find((t) => String(t.id) === id)
+  const t = useTranslations("tutors");
+  const messages = useMessages();
+  const tutorsData = messages.tutors.list;
+  const tutor = tutorsData.find((t: Tutor) => String(t.id) === id);
 
-  if (!tutor) return notFound()
+  if (!tutor) return notFound();
 
   return (
     <div className="w-full max-w-6xl mx-auto px-4 py-10 text-black">
@@ -32,7 +30,7 @@ export default function TutorDetail({
             </video>
           ) : (
             <div className="w-full h-full flex items-center justify-center bg-gray-100 text-sm text-gray-500">
-              Không có video
+              {t("noVideo")}
             </div>
           )}
         </div>
@@ -52,7 +50,7 @@ export default function TutorDetail({
 
             {tutor.about && (
               <p className="text-sm text-gray-700 whitespace-pre-line">
-                <strong>Xin chào mọi người!</strong>
+                <strong>{t("greeting")}</strong>
                 <br />
                 {tutor.about}
               </p>
@@ -60,7 +58,7 @@ export default function TutorDetail({
 
             {Array.isArray(tutor.skills) && tutor.skills.length > 0 && (
               <div>
-                <p className="font-semibold text-[#9F0A0B]">Chuyên môn:</p>
+                <p className="font-semibold text-[#9F0A0B]">{t("specialties")}:</p>
                 <div className="flex flex-wrap gap-3 mt-1">
                   {tutor.skills.map((s: string, i: number) => (
                     <span
@@ -76,7 +74,7 @@ export default function TutorDetail({
 
             {Array.isArray(tutor.workshops) && tutor.workshops.length > 0 && (
               <p className="text-sm text-[#9F0A0B] italic underline cursor-pointer">
-                Không chắc? Xem các buổi workshop của {tutor.name}
+                {t("seeWorkshops", { name: tutor.name })}
               </p>
             )}
           </div>
@@ -91,7 +89,7 @@ export default function TutorDetail({
               />
             </div>
             <button className="bg-[#9F0A0B] text-white text-sm font-semibold px-6 py-2 rounded-full">
-              HỌC THỬ MIỄN PHÍ
+              {t("freeTrialButton")}
             </button>
           </div>
         </div>
@@ -100,7 +98,7 @@ export default function TutorDetail({
       {Array.isArray(tutor.workshops) && tutor.workshops.length > 0 && (
         <div className="mt-8">
           <h2 className="text-xl font-bold mb-4">
-            Buổi học sắp tới với {tutor.name}:
+            {t("upcomingWorkshopsTitle", { name: tutor.name })}
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
             {tutor.workshops.map((w: Workshop, idx: number) => (
@@ -123,14 +121,14 @@ export default function TutorDetail({
 
       {tutor.availability && (
         <div className="mt-12">
-          <h2 className="text-xl font-bold mb-4">Chọn lịch học</h2>
+          <h2 className="text-xl font-bold mb-4">{t("chooseSchedule")}</h2>
           <TutorScheduleCalendar availability={tutor.availability} />
         </div>
       )}
 
       {Array.isArray(tutor.reviews) && tutor.reviews.length > 0 && (
         <div className="mt-12">
-          <h2 className="text-xl font-bold mb-4">Đánh giá từ học viên</h2>
+          <h2 className="text-xl font-bold mb-4">{t("studentReviews")}</h2>
           {tutor.reviews.map((r: Review, i: number) => (
             <div
               key={i}
@@ -145,5 +143,5 @@ export default function TutorDetail({
         </div>
       )}
     </div>
-  )
+  );
 }
