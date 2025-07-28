@@ -30,6 +30,8 @@ push:
 
 update-tag:
   stage: update-tag
+  tags:
+    - aspirely
   script:
     - git clone https://oauth2:$GITOPS_ACCESS_TOKEN@gitlab.aspirely.edu.vn/aspirely/gitops.git
     - cd gitops/apps/aspirely.marketing-website
