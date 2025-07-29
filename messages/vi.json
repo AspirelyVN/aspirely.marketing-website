@@ -180,10 +180,12 @@
     },
     "chineseTitle": "TIẾNG TRUNG",
     "chinese": {
+      "hskk": "Luyện nói HSKK",
+      "yctc": "Luyện nói YCT",
+      "tocfl": "Luyện nói TOCFL",
       "basic": "Tiếng Trung cơ bản",
       "communication": "Tiếng Trung giao tiếp",
-      "business": "Tiếng Trung thương mại",
-      "hskk": "Luyện nói HSKK"
+      "business": "Tiếng Trung thương mại"
     },
     "moreTitle": "TÌM HIỂU THÊM",
     "more": {
