@@ -51,7 +51,7 @@ export default function TutorCarousel() {
       </h2>
 
       {isDesktop ? (
-        <Carousel opts={{ align: "center", loop: true }} className="relative w-full">
+        <Carousel opts={{ align: "start", loop: true }} className="relative w-full">
           <CarouselContent className="py-8 gap-2">
             {loopedTutors.map((tutor: Tutor, index: number) => (
               <CarouselItem
