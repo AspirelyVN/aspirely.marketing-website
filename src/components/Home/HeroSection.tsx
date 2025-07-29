@@ -20,15 +20,15 @@ export default function HeroSection() {
         <source src="/videos/hero-bg.mp4" type="video/mp4" />
       </video>
 
-      <div className="absolute top-0 left-0 w-full h-full bg-black/30 z-[-1]" />
+      <div className="absolute top-0 left-0 w-full h-full bg-black/15 z-[-1]" />
 
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
-        <h1 className="text-4xl md:text-6xl font-extrabold mb-6 whitespace-pre-line leading-tight">
-          Speak to the world!
+        <h1 className="text-7xl font-extrabold mb-6 whitespace-pre-line leading-tight">
+          Speak to the world
         </h1>
 
         <Link href="/contact-us">
-          <FancyButton className="text-base px-8 py-2">{t("contact")}</FancyButton>
+          <FancyButton className="text-xl px-8 py-2">{t("contact")}</FancyButton>
         </Link>
       </div>
     </div>

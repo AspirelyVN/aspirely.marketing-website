@@ -9,6 +9,20 @@ import { useTranslations } from "next-intl";
 export default function Footer() {
   const t = useTranslations("footer");
 
+  const englishKeys = [
+    "pte",
+    "ielts",
+    "cambridge",
+    "toefl",
+    "toeic",
+    "communication",
+    "business",
+  ];
+
+  const chineseKeys = ["basic", "communication", "business", "hskk"];
+
+  const moreKeys = ["about", "privacy", "terms", "contact"];
+
   return (
     <footer className="font-poppins bg-white text-black py-10 px-4 w-full border-t">
       <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-8 text-sm">
@@ -47,30 +61,29 @@ export default function Footer() {
         </div>
 
         <div>
-          <p className="font-bold mb-3">{t("englishTitle")}</p>
+          <p className="font-bold mb-3 text-lg">{t("englishTitle")}</p>
           <ul className="space-y-2">
-            <li>{t("english.communication")}</li>
-            <li>{t("english.ielts")}</li>
-            <li>{t("english.business")}</li>
+            {englishKeys.map((key) => (
+              <li key={key}>{t(`english.${key}`)}</li>
+            ))}
           </ul>
         </div>
 
         <div>
-          <p className="font-bold mb-3">{t("chineseTitle")}</p>
+          <p className="font-bold mb-3 text-lg">{t("chineseTitle")}</p>
           <ul className="space-y-2">
-            <li>{t("chinese.basic")}</li>
-            <li>{t("chinese.communication")}</li>
-            <li>{t("chinese.business")}</li>
+            {chineseKeys.map((key) => (
+              <li key={key}>{t(`chinese.${key}`)}</li>
+            ))}
           </ul>
         </div>
 
         <div>
-          <p className="font-bold mb-3">{t("moreTitle")}</p>
+          <p className="font-bold mb-3 text-lg">{t("moreTitle")}</p>
           <ul className="space-y-2">
-            <li>{t("more.about")}</li>
-            <li>{t("more.privacy")}</li>
-            <li>{t("more.terms")}</li>
-            <li>{t("more.contact")}</li>
+            {moreKeys.map((key) => (
+              <li key={key}>{t(`more.${key}`)}</li>
+            ))}
           </ul>
         </div>
       </div>

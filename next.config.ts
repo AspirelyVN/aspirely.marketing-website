@@ -3,6 +3,7 @@ import createNextIntlPlugin from 'next-intl/plugin';
 
 const nextConfig: NextConfig = {
   images: {
+    domains: ["images.dmca.com"],
     remotePatterns: [
       {
         protocol: "https",

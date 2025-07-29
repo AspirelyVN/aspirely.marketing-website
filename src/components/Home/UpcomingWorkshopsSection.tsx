@@ -28,7 +28,7 @@
       language: "Tiếng Anh",
       speaker: "Aimie Cook",
       price: "Miễn phí",
-      bannerUrl: "https://placehold.co/600x400/000000/FFFFFF.png",
+      bannerUrl: "/workshop-banner.svg",
     },
     {
       title: "Ý tưởng cho Writing Task 2 - Tháng 7/2025",
@@ -37,7 +37,7 @@
       language: "Tiếng Anh",
       speaker: "Aimie Cook",
       price: "Miễn phí",
-      bannerUrl: "https://placehold.co/600x400/000000/FFFFFF.png",
+      bannerUrl: "/workshop-banner.svg",
     },
     {
       title: "Chinh phục IELTS Reading trong 7 ngày – Tháng 7/2025",
@@ -46,7 +46,7 @@
       language: "Tiếng Anh",
       speaker: "Aimie Cook",
       price: "Miễn phí",
-      bannerUrl: "https://placehold.co/600x400/000000/FFFFFF.png",
+      bannerUrl: "/workshop-banner.svg",
     },
   ];
 
@@ -71,7 +71,7 @@
                 key={index}
                 className="border rounded-lg shadow-lg overflow-hidden flex flex-col"
               >
-                <div className="relative w-full h-40">
+                <div className="relative w-full h-50">
                   <Image
                     src={ws.bannerUrl}
                     alt={ws.title}
@@ -101,7 +101,7 @@
                     </div>
                   </div>
 
-                  <button className="bg-[#EF4444] text-white py-2 px-4 mt-auto rounded hover:bg-red-600 transition">
+                  <button className="bg-[#9F0A0B] text-white py-2 px-4 mt-auto rounded hover:bg-[#9F0A0B]/80 transition">
                     Đăng ký miễn phí
                   </button>
                 </div>

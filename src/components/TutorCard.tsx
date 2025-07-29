@@ -34,9 +34,9 @@ export default function TutorCard({
             className="object-cover"
           />
         </div>
-        <div className="text-center border-t border-gray-200 px-4 py-3 text-black">
+        <div className="text-center border-t border-gray-200 px-4 py-3 text-xl text-black">
           <p className="font-semibold mb-2">{name}</p>
-          <ul className="flex flex-col justify-start text-start space-y-1 mb-3 text-sm">
+          <ul className="flex flex-col justify-start text-start space-y-1 mb-3 text-base">
             <li className="flex items-center space-x-2">
               <Image alt="Flag" src={flag} width={16} height={12} />
               <p>{accent}</p>

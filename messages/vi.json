@@ -60,7 +60,7 @@
         "name": "Aimie C: Giáo viên",
         "flag": "https://purecatamphetamine.github.io/country-flag-icons/3x2/GB.svg",
         "accent": "Giọng Anh - Anh",
-        "experience": "Giáo viên chứng nhận: Hơn 5 năm kinh nghiệm",
+        "experience": "Hơn 5 năm kinh nghiệm",
         "language": "Nói tiếng Anh (bản ngữ)",
         "image": "/tutors/Aimie.jpg",
         "video": "https://www.w3schools.com/html/mov_bbb.mp4",
@@ -98,8 +98,8 @@
         "name": "My Quyên: Giáo viên",
         "flag": "https://purecatamphetamine.github.io/country-flag-icons/3x2/TW.svg",
         "accent": "Giọng Đài Loan",
-        "experience": "Giáo viên chứng nhận: Hơn 3 năm kinh nghiệm",
-        "language": "Nói tiếng Đài (thành thạo), tiếng Việt (bản ngữ)",
+        "experience": "Hơn 3 năm kinh nghiệm",
+        "language": "Nói tiếng Trung (thành thạo), tiếng Việt (bản ngữ)",
         "image": "/tutors/Quyen.jpg",
         "video": "https://www.w3schools.com/html/mov_bbb.mp4",
         "about": "Tôi là My Quyên, giáo viên đến từ Đài Loan, với kinh nghiệm 3+ năm giảng dạy người Việt và người nước ngoài. Tôi tập trung giúp học viên nói tiếng Anh một cách tự nhiên và tự tin.",
@@ -163,22 +163,27 @@
     ]
   },
   "cta": {
-    "title": "Sẵn sàng để nâng cấp tiếng Anh?",
-    "desc": "Nhận tư vấn miễn phí từ đội ngũ giáo viên chuyên nghiệp của chúng tôi.",
+    "title": "Khởi đầu hành trình chinh phục ngoại ngữ ngay hôm nay!",
+    "desc": "Nhận tư vấn miễn phí từ đội ngũ hỗ trợ học viên chuyên nghiệp của chúng tôi.",
     "button": "Đăng ký tư vấn miễn phí"
   },
   "footer": {
     "englishTitle": "TIẾNG ANH",
     "english": {
-      "communication": "Tiếng Anh Giao Tiếp",
-      "ielts": "Luyện thi IELTS",
-      "business": "Tiếng Anh Doanh Nghiệp"
+      "pte": "Luyện nói PTE",
+      "ielts": "Luyện nói IELTS",
+      "cambridge": "Luyện nói Cambridge",
+      "toefl": "Luyện nói TOEFL",
+      "toeic": "Luyện nói TOEIC",
+      "communication": "Tiếng Anh giao tiếp",
+      "business": "Tiếng Anh thương mại"
     },
     "chineseTitle": "TIẾNG TRUNG",
     "chinese": {
-      "basic": "Tiếng Trung Cơ Bản",
-      "communication": "Tiếng Trung Giao Tiếp",
-      "business": "Tiếng Trung Doanh Nghiệp"
+      "basic": "Tiếng Trung cơ bản",
+      "communication": "Tiếng Trung giao tiếp",
+      "business": "Tiếng Trung thương mại",
+      "hskk": "Luyện nói HSKK"
     },
     "moreTitle": "TÌM HIỂU THÊM",
     "more": {
