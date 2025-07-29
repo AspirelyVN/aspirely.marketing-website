@@ -1,14 +1,9 @@
 {
   "header": {
     "teachers": "Teachers",
-    "workshop": "Free Workshops",
+    "workshop": "Workshops",
     "recruit": "Recruitment",
-    "login": "LOGIN",
-    "languages": {
-      "vi": "Vietnamese",
-      "en": "English",
-      "zh": "Chinese"
-    }
+    "login": "LOGIN"
   },
   "home": {
     "slogan1": "Learn your way",
@@ -163,31 +158,45 @@
     ]
   },
   "cta": {
-    "title": "Ready to level up your English?",
-    "desc": "Get a free consultation with our professional teaching team.",
-    "button": "Book a free consultation"
+    "title": "Start your language learning journey today!",
+    "desc": "Get free consultation from our team of professional learning advisors.",
+    "button": "Register for a free consultation"
   },
   "footer": {
-    "englishTitle": "ENGLISH",
-    "english": {
-      "communication": "English Communication",
-      "ielts": "IELTS Preparation",
-      "business": "Business English"
-    },
-    "chineseTitle": "CHINESE",
-    "chinese": {
-      "basic": "Basic Chinese",
-      "communication": "Chinese Communication",
-      "business": "Business Chinese"
-    },
-    "moreTitle": "LEARN MORE",
-    "more": {
-      "about": "About Aspirely",
-      "privacy": "Privacy Policy",
-      "terms": "Terms of Service",
-      "contact": "Contact"
-    },
-    "copyright": "All rights reserved."
+    "sections": [
+      {
+        "title": "ENGLISH",
+        "items": [
+          { "label": "PTE Speaking Practice", "key": "pte" },
+          { "label": "IELTS Speaking Practice", "key": "ielts" },
+          { "label": "Cambridge Speaking Practice", "key": "cambridge" },
+          { "label": "TOEFL Speaking Practice", "key": "toefl" },
+          { "label": "TOEIC Speaking Practice", "key": "toeic" },
+          { "label": "English for Communication", "key": "communication" },
+          { "label": "Business English", "key": "business" }
+        ]
+      },
+      {
+        "title": "CHINESE",
+        "items": [
+          { "label": "HSKK Speaking Practice", "key": "hskk" },
+          { "label": "YCT Speaking Practice", "key": "yct" },
+          { "label": "TOCFL Speaking Practice", "key": "tocfl" },
+          { "label": "Basic Chinese", "key": "basic" },
+          { "label": "Chinese for Communication", "key": "communication" },
+          { "label": "Business Chinese", "key": "business" }
+        ]
+      },
+      {
+        "title": "LEARN MORE",
+        "items": [
+          { "label": "About Aspirely", "key": "about" },
+          { "label": "Privacy Policy", "key": "privacy" },
+          { "label": "Terms of Service", "key": "terms" },
+          { "label": "Contact", "key": "contact" }
+        ]
+      }
+    ]
   },
   "workshops": {
     "title": "Free Workshop List",
@@ -198,24 +207,21 @@
         "date": "Jul 14, 2025",
         "time": "8:00 PM (Vietnam Time)",
         "language": "English",
-        "speaker": "Aimie Cook",
-        "price": "Free"
+        "speaker": "Aimie Cook"
       },
       {
         "title": "Ideas for IELTS Writing Task 2 – July 2025",
         "date": "Jul 21, 2025",
         "time": "8:00 PM (Vietnam Time)",
         "language": "English",
-        "speaker": "Aimie Cook",
-        "price": "Free"
+        "speaker": "Aimie Cook"
       },
       {
         "title": "Conquer IELTS Reading in 7 Days – July 2025",
         "date": "Jul 28, 2025",
         "time": "8:00 PM (Vietnam Time)",
         "language": "English",
-        "speaker": "Aimie Cook",
-        "price": "Free"
+        "speaker": "Aimie Cook"
       }
     ]
   },

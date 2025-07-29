@@ -1,14 +1,9 @@
 {
   "header": {
     "teachers": "教師",
-    "workshop": "免費講座",
+    "workshop": "工作坊",
     "recruit": "招聘資訊",
-    "login": "登入",
-    "languages": {
-      "vi": "越南語",
-      "en": "英文",
-      "zh": "中文"
-    }
+    "login": "登入"
   },
   "home": {
     "slogan1": "按照你的方式學習",
@@ -163,31 +158,45 @@
     ]
   },
   "cta": {
-    "title": "准备好提升你的英语了吗？",
-    "desc": "免费获得我们专业教师团队的咨询服务。",
-    "button": "免费预约咨询"
+    "title": "立即开启您的语言学习之旅！",
+    "desc": "获得我们专业学习顾问团队的免费咨询服务。",
+    "button": "注册免费咨询"
   },
   "footer": {
-    "englishTitle": "英文課程",
-    "english": {
-      "communication": "英語會話",
-      "ielts": "雅思考試準備",
-      "business": "商務英語"
-    },
-    "chineseTitle": "中文課程",
-    "chinese": {
-      "basic": "基礎中文",
-      "communication": "中文會話",
-      "business": "商務中文"
-    },
-    "moreTitle": "更多資訊",
-    "more": {
-      "about": "關於 Aspirely",
-      "privacy": "隱私政策",
-      "terms": "服務條款",
-      "contact": "聯絡我們"
-    },
-    "copyright": "保留所有權利。"
+    "sections": [
+      {
+        "title": "英语",
+        "items": [
+          { "label": "PTE 口语练习", "key": "pte" },
+          { "label": "IELTS 口语练习", "key": "ielts" },
+          { "label": "剑桥口语练习", "key": "cambridge" },
+          { "label": "TOEFL 口语练习", "key": "toefl" },
+          { "label": "TOEIC 口语练习", "key": "toeic" },
+          { "label": "英语口语交流", "key": "communication" },
+          { "label": "商务英语", "key": "business" }
+        ]
+      },
+      {
+        "title": "中文",
+        "items": [
+          { "label": "HSKK 口语练习", "key": "hskk" },
+          { "label": "YCT 口语练习", "key": "yct" },
+          { "label": "TOCFL 口语练习", "key": "tocfl" },
+          { "label": "基础中文", "key": "basic" },
+          { "label": "中文口语交流", "key": "communication" },
+          { "label": "商务中文", "key": "business" }
+        ]
+      },
+      {
+        "title": "了解更多",
+        "items": [
+          { "label": "关于 Aspirely", "key": "about" },
+          { "label": "隐私政策", "key": "privacy" },
+          { "label": "服务条款", "key": "terms" },
+          { "label": "联系我们", "key": "contact" }
+        ]
+      }
+    ]
   },
   "workshops": {
     "title": "免費研討會列表",
@@ -198,24 +207,21 @@
         "date": "2025年7月14日",
         "time": "越南時間晚上8點",
         "language": "英語",
-        "speaker": "Aimie Cook",
-        "price": "免費"
+        "speaker": "Aimie Cook"
       },
       {
         "title": "IELTS 寫作任務 2 的想法 – 2025 年 7 月",
         "date": "2025年7月21日",
         "time": "越南時間晚上8點",
         "language": "英語",
-        "speaker": "Aimie Cook",
-        "price": "免費"
+        "speaker": "Aimie Cook"
       },
       {
         "title": "7天征服 IELTS 閱讀 – 2025 年 7 月",
         "date": "2025年7月28日",
         "time": "越南時間晚上8點",
         "language": "英語",
-        "speaker": "Aimie Cook",
-        "price": "免費"
+        "speaker": "Aimie Cook"
       }
     ]
   },

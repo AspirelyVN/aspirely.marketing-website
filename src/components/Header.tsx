@@ -18,9 +18,9 @@ export default function Header() {
   const isHome = /^\/(vi|en|zh)?\/?$/.test(pathname);
 
   const locales = [
-    { label: t("languages.vi"), code: "vi" },
-    { label: t("languages.en"), code: "en" },
-    { label: t("languages.zh"), code: "zh" },
+    { label: "Tiếng Việt", code: "vi" },
+    { label: "English", code: "en" },
+    { label: "中文", code: "zh" },
   ];
 
   const currentLocale =
@@ -43,7 +43,7 @@ export default function Header() {
 
   return (
     <header
-      className={`w-full fixed top-0 left-0 z-50 px-5 py-2 flex justify-between font-semibold transition-all duration-300 ${
+      className={`w-screen fixed top-0 left-0 z-50 px-5 py-2 flex justify-between font-semibold transition-all duration-300 ${
         isHome
           ? scrolled
             ? "bg-black/80 backdrop-blur-md text-white shadow-lg"

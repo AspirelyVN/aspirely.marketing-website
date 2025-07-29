@@ -51,17 +51,11 @@ footer {
   font-family: var(--font-inter);
 }
 
-.font-raleway {
-  font-family: var(--font-raleway);
-}
-
-.font-inter {
-  font-family: var(--font-inter);
+.font-roboto {
+  font-family: var(--font-roboto) !important;
 }
 
 :root {
-  --font-raleway: 'Raleway', sans-serif;
-  --font-inter: 'Inter', sans-serif;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.141 0.005 285.823);

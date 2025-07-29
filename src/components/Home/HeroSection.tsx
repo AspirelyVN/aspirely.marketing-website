@@ -17,6 +17,7 @@ export default function HeroSection() {
         preload="auto"
         className="absolute top-0 left-0 w-full h-full object-cover z-[-2]"
       >
+        <source src="/videos/hero-bg.webm" type="video/webm" />
         <source src="/videos/hero-bg.mp4" type="video/mp4" />
       </video>
 

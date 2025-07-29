@@ -8,20 +8,10 @@ import { useTranslations } from "next-intl";
 
 export default function Footer() {
   const t = useTranslations("footer");
-
-  const englishKeys = [
-    "pte",
-    "ielts",
-    "cambridge",
-    "toefl",
-    "toeic",
-    "communication",
-    "business",
-  ];
-
-  const chineseKeys = ["hskk", "tocfl", "yct", "basic", "communication", "business"];
-
-  const moreKeys = ["about", "privacy", "terms", "contact"];
+  const sections = t.raw("sections") as {
+    title: string;
+    items: { label: string; key: string }[];
+  }[];
 
   return (
     <footer className="font-poppins bg-white text-black py-10 px-4 w-full border-t">
@@ -34,11 +24,11 @@ export default function Footer() {
             height={80}
             className="mb-4"
           />
-          <div className="w-full px-3 py-2 flex items-center text-lg">
+          <div className="w-full px-3 py-2 flex items-center font-roboto">
             <FaPhone className="w-4 h-4 mr-2" />
             028 62763622
           </div>
-          <div className="w-full px-3 py-2 flex items-center text-lg">
+          <div className="w-full px-3 py-2 flex items-center font-roboto">
             <IoMdMail className="w-4 h-4 mr-2" />
             aspirely.online@gmail.com
           </div>
@@ -60,36 +50,20 @@ export default function Footer() {
           />
         </div>
 
-        <div>
-          <p className="font-bold mb-3 text-lg">{t("englishTitle")}</p>
-          <ul className="space-y-2">
-            {englishKeys.map((key) => (
-              <li key={key}>{t(`english.${key}`)}</li>
-            ))}
-          </ul>
-        </div>
-
-        <div>
-          <p className="font-bold mb-3 text-lg">{t("chineseTitle")}</p>
-          <ul className="space-y-2">
-            {chineseKeys.map((key) => (
-              <li key={key}>{t(`chinese.${key}`)}</li>
-            ))}
-          </ul>
-        </div>
-
-        <div>
-          <p className="font-bold mb-3 text-lg">{t("moreTitle")}</p>
-          <ul className="space-y-2">
-            {moreKeys.map((key) => (
-              <li key={key}>{t(`more.${key}`)}</li>
-            ))}
-          </ul>
-        </div>
+        {sections.map((section, index) => (
+          <div key={index}>
+            <p className="font-bold mb-3 text-lg">{section.title}</p>
+            <ul className="space-y-2">
+              {section.items.map((item, idx) => (
+                <li key={idx}>{item.label}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
 
       <div className="text-xs text-center text-gray-500 mt-10">
-        © {new Date().getFullYear()} Aspirely. {t("copyright")}
+        © {new Date().getFullYear()} Aspirely. All rights reserved.
       </div>
     </footer>
   );

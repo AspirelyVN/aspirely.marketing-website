@@ -1,14 +1,9 @@
 {
   "header": {
     "teachers": "Giáo viên",
-    "workshop": "Workshop miễn phí",
+    "workshop": "Workshops",
     "recruit": "Tuyển dụng",
-    "login": "ĐĂNG NHẬP",
-    "languages": {
-      "vi": "Tiếng Việt",
-      "en": "Tiếng Anh",
-      "zh": "Tiếng Trung"
-    }
+    "login": "ĐĂNG NHẬP"
   },
   "home": {
     "slogan1": "Học theo cách của bạn",
@@ -168,33 +163,40 @@
     "button": "Đăng ký tư vấn miễn phí"
   },
   "footer": {
-    "englishTitle": "TIẾNG ANH",
-    "english": {
-      "pte": "Luyện nói PTE",
-      "ielts": "Luyện nói IELTS",
-      "cambridge": "Luyện nói Cambridge",
-      "toefl": "Luyện nói TOEFL",
-      "toeic": "Luyện nói TOEIC",
-      "communication": "Tiếng Anh giao tiếp",
-      "business": "Tiếng Anh thương mại"
-    },
-    "chineseTitle": "TIẾNG TRUNG",
-    "chinese": {
-      "hskk": "Luyện nói HSKK",
-      "yct": "Luyện nói YCT",
-      "tocfl": "Luyện nói TOCFL",
-      "basic": "Tiếng Trung cơ bản",
-      "communication": "Tiếng Trung giao tiếp",
-      "business": "Tiếng Trung thương mại"
-    },
-    "moreTitle": "TÌM HIỂU THÊM",
-    "more": {
-      "about": "Giới thiệu về Aspirely",
-      "privacy": "Chính sách bảo mật",
-      "terms": "Điều khoản dịch vụ",
-      "contact": "Liên hệ"
-    },
-    "copyright": "Bảo lưu mọi quyền."
+    "sections": [
+      {
+        "title": "TIẾNG ANH",
+        "items": [
+          { "label": "Luyện nói PTE", "key": "pte" },
+          { "label": "Luyện nói IELTS", "key": "ielts" },
+          { "label": "Luyện nói Cambridge", "key": "cambridge" },
+          { "label": "Luyện nói TOEFL", "key": "toefl" },
+          { "label": "Luyện nói TOEIC", "key": "toeic" },
+          { "label": "Tiếng Anh giao tiếp", "key": "communication" },
+          { "label": "Tiếng Anh thương mại", "key": "business" }
+        ]
+      },
+      {
+        "title": "TIẾNG TRUNG",
+        "items": [
+          { "label": "Luyện nói HSKK", "key": "hskk" },
+          { "label": "Luyện nói TOCFL", "key": "tocfl" },
+          { "label": "Luyện nói YCT", "key": "yct" },
+          { "label": "Tiếng Trung cơ bản", "key": "basic" },
+          { "label": "Tiếng Trung giao tiếp", "key": "communication" },
+          { "label": "Tiếng Trung thương mại", "key": "business" }
+        ]
+      },
+      {
+        "title": "TÌM HIỂU THÊM",
+        "items": [
+          { "label": "Giới thiệu về Aspirely", "key": "about" },
+          { "label": "Chính sách bảo mật", "key": "privacy" },
+          { "label": "Điều khoản dịch vụ", "key": "terms" },
+          { "label": "Liên hệ", "key": "contact" }
+        ]
+      }
+    ]
   },
   "workshops": {
     "title": "Danh sách Workshop Miễn Phí",
@@ -205,24 +207,21 @@
         "date": "14/07/2025",
         "time": "20:00 (giờ Việt Nam)",
         "language": "Tiếng Anh",
-        "speaker": "Aimie Cook",
-        "price": "Miễn phí"
+        "speaker": "Aimie Cook"
       },
       {
         "title": "Ý tưởng cho Writing Task 2 - Tháng 7/2025",
         "date": "21/07/2025",
         "time": "20:00 (giờ Việt Nam)",
         "language": "Tiếng Anh",
-        "speaker": "Aimie Cook",
-        "price": "Miễn phí"
+        "speaker": "Aimie Cook"
       },
       {
         "title": "Chinh phục IELTS Reading trong 7 ngày – Tháng 7/2025",
         "date": "28/07/2025",
         "time": "20:00 (giờ Việt Nam)",
         "language": "Tiếng Anh",
-        "speaker": "Aimie Cook",
-        "price": "Miễn phí"
+        "speaker": "Aimie Cook"
       }
     ]
   },
