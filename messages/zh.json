@@ -53,7 +53,7 @@
       {
         "id": 1,
         "name": "Aimie C：教师",
-        "flag": "https://purecatamphetamine.github.io/country-flag-icons/3x2/GB.svg",
+        "countryCode": "GB",
         "accent": "英式发音",
         "experience": "超过5年教学经验",
         "language": "英语母语者",
@@ -91,7 +91,7 @@
       {
         "id": 2,
         "name": "美娟：教师",
-        "flag": "https://purecatamphetamine.github.io/country-flag-icons/3x2/TW.svg",
+        "countryCode": "TW",
         "accent": "台湾口音",
         "experience": "超过3年教学经验",
         "language": "精通台语，越南语为母语",

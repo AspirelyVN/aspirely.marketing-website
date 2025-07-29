@@ -53,7 +53,7 @@
       {
         "id": 1,
         "name": "Aimie C: Teacher",
-        "flag": "https://purecatamphetamine.github.io/country-flag-icons/3x2/GB.svg",
+        "countryCode": "GB",
         "accent": "British accent",
         "experience": "Over 5 years of experience",
         "language": "Native English speaker",
@@ -91,7 +91,7 @@
       {
         "id": 2,
         "name": "My Quyen: Teacher",
-        "flag": "https://purecatamphetamine.github.io/country-flag-icons/3x2/TW.svg",
+        "countryCode": "TW",
         "accent": "Taiwanese accent",
         "experience": "Over 3 years of experience",
         "language": "Fluent in Taiwanese and native Vietnamese",
