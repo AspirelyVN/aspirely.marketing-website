@@ -1,5 +1,3 @@
-"use client";
-
 import HeroSection from "@/components/Home/HeroSection";
 import WhyChooseSection from "@/components/Home/WhyChooseSection";
 import TestimonialSection from "@/components/Home/TestimonialSection";
@@ -38,4 +36,8 @@ export default function Home() {
       </FadeInWhenVisible>
     </div>
   );
+}
+
+export async function generateStaticParams() {
+  return [{ locale: 'vi' }, { locale: 'en' }, { locale: 'zh' }];
 }

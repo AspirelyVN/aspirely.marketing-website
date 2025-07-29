@@ -25,12 +25,14 @@ export default function TutorCard({
       onClick={() => router.push(`/tutors/${id}`)}
       className="transition-transform duration-300 hover:scale-105 cursor-pointer"
     >
-      <div className="bg-white border border-gray-300 rounded-xl overflow-hidden w-[320px] shadow-md hover:shadow-lg">
-        <div className="relative w-full h-[320px]">
+      <div className="bg-white border border-gray-300 rounded-xl overflow-hidden w-[300px] shadow-md hover:shadow-lg">
+        <div className="relative w-[300px] aspect-[3/4]">
           <Image
             src={image}
             alt={`Tutor ${id}`}
             fill
+            sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+            priority
             className="object-cover"
           />
         </div>

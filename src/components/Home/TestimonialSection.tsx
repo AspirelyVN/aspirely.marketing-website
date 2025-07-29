@@ -4,7 +4,7 @@ import Image from "next/image";
 import FadeInWhenVisible from "@/components/animations/FadeInWhenVisible";
 import { useTranslations } from "next-intl";
 
-const IMAGE_MAP = ["/students/PhuongNghi.jpg", "/students/NhiNguyen.jpg", "/students/MyMy.jpg"];
+const IMAGE_MAP = ["/students/PhuongNghi.webp", "/students/NhiNguyen.webp", "/students/MyMy.webp"];
 
 export default function TestimonialSection() {
   const t = useTranslations("testimonial");
