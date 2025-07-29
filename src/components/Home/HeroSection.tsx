@@ -15,6 +15,7 @@ export default function HeroSection() {
         muted
         playsInline
         preload="auto"
+        poster="/videos/hero-poster.webp"
         className="absolute top-0 left-0 w-full h-full object-cover z-[-2]"
       >
         <source src="/videos/hero-bg.webm" type="video/webm" />

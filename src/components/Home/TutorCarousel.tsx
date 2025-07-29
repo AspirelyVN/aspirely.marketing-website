@@ -13,6 +13,9 @@ import {
 } from "@/components/ui/carousel";
 import FadeInWhenVisible from "@/components/animations/FadeInWhenVisible";
 import { FlagComponent, GB, TW } from "country-flag-icons/react/3x2";
+import FancyButton from "@/components/FancyButton";
+import { RiSpeakLine } from "react-icons/ri";
+import { LuGraduationCap } from "react-icons/lu";
 
 import TutorCard from "@/components/TutorCard";
 import type { Tutor } from "@/types/tutor";
@@ -79,10 +82,10 @@ export default function TutorCarousel() {
               <div
                 key={tutor.id}
                 onClick={() => router.push(`/tutors/${tutor.id}`)}
-                className="flex-shrink-0 w-[280px] transition-transform duration-300 hover:scale-105 cursor-pointer"
+                className="flex-shrink-0 w-[270px] transition-transform duration-300 hover:scale-105 cursor-pointer"
               >
                 <div className="bg-white border border-gray-300 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition">
-                  <div className="relative w-[300px] aspect-[3/4]">
+                  <div className="relative w-[270px] aspect-[3/4]">
                     <Image
                       src={tutor.image}
                       alt={`Tutor ${tutor.id}`}
@@ -93,27 +96,31 @@ export default function TutorCarousel() {
                       className="object-cover"
                     />
                   </div>
-                  <div className="text-center border-t border-gray-200 px-4 py-3 text-sm text-black">
+                  <div className="text-center border-t border-gray-200 px-4 py-3 text-xl text-black">
                     <p className="font-semibold mb-2">{tutor.name}</p>
-                    <ul className="space-y-1 mb-3">
-                      <li className="flex items-center gap-2">
-                        {Flag && (
-                          <Flag title={countryCode} className="w-6 h-4" />
-                        )}
-                        <span>{tutor.accent}</span>
+                    <ul className="flex flex-col justify-start text-start space-y-1 mb-3 text-base">
+                      <li className="flex items-center space-x-2">
+                        {Flag && <Flag className="w-[18px] h-[12px]" />}
+                        <p>{tutor.accent}</p>
                       </li>
-                      <li>{tutor.experience}</li>
-                      <li>{tutor.language}</li>
+                      <li className="flex items-center space-x-2">
+                        <LuGraduationCap size={18} />
+                        <p>{tutor.experience}</p>
+                      </li>
+                      <li className="flex items-start space-x-2">
+                        <RiSpeakLine size={18} className="mt-0.5 flex-shrink-0" />
+                        <p className="line-clamp-2 min-h-[48px] leading-snug">{tutor.language}</p>
+                      </li>
                     </ul>
-                    <button
+                    <FancyButton
                       className="bg-[#9F0A0B] text-white px-4 py-1.5 text-sm rounded-full font-semibold hover:opacity-90 transition"
-                      onClick={(e) => {
+                      onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
                         e.stopPropagation();
-                        router.push("/register");
+                        window.location.href = "https://app.aspirely.edu.vn/register";
                       }}
                     >
                       {t("cta")}
-                    </button>
+                    </FancyButton>
                   </div>
                 </div>
               </div>

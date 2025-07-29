@@ -33,8 +33,8 @@ export default function TutorCard({
       onClick={() => router.push(`/tutors/${id}`)}
       className="transition-transform duration-300 hover:scale-105 cursor-pointer"
     >
-      <div className="bg-white border border-gray-300 rounded-xl overflow-hidden w-[300px] shadow-md hover:shadow-lg">
-        <div className="relative w-[300px] aspect-[3/4]">
+      <div className="bg-white border border-gray-300 rounded-xl overflow-hidden w-[270px] shadow-md hover:shadow-lg">
+        <div className="relative w-[270px] aspect-[3/4]">
           <Image
             src={image}
             alt={`Tutor ${id}`}
