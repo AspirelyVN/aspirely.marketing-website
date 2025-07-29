@@ -19,7 +19,7 @@ export default function Footer() {
     "business",
   ];
 
-  const chineseKeys = ["basic", "communication", "business", "hskk"];
+  const chineseKeys = ["hskk", "tocfl", "yct", "basic", "communication", "business"];
 
   const moreKeys = ["about", "privacy", "terms", "contact"];
 
