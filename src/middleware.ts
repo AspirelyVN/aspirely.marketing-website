@@ -1,23 +1,11 @@
 import createMiddleware from 'next-intl/middleware';
-import { NextRequest } from 'next/server';
-import { routing } from './i18n/routing';
-
-const intlMiddleware = createMiddleware(routing);
-
-export function middleware(req: NextRequest) {
-  const res = intlMiddleware(req);
-
-  if (res instanceof Promise) {
-    return res.then((r) => {
-      r.headers.set('Cache-Control', 'public, max-age=3600, stale-while-revalidate=86400');
-      return r;
-    });
-  }
-
-  res.headers.set('Cache-Control', 'public, max-age=3600, stale-while-revalidate=86400');
-  return res;
-}
-
+import {routing} from './i18n/routing';
+ 
+export default createMiddleware(routing);
+ 
 export const config = {
-  matcher: '/((?!api|trpc|_next|_vercel|.*\\..*).*)',
+  // Match all pathnames except for
+  // - … if they start with `/api`, `/trpc`, `/_next` or `/_vercel`
+  // - … the ones containing a dot (e.g. `favicon.ico`)
+  matcher: '/((?!api|trpc|_next|_vercel|.*\\..*).*)'
 };
