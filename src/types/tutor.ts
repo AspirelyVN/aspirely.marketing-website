@@ -15,7 +15,7 @@ export type Tutor = {
   id: number | string;
   name: string;
   image: string;
-  flag: string;
+  countryCode: string;
   accent: string;
   experience: string;
   language: string;

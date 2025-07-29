@@ -53,7 +53,7 @@
       {
         "id": 1,
         "name": "Aimie C: Giáo viên",
-        "flag": "https://purecatamphetamine.github.io/country-flag-icons/3x2/GB.svg",
+        "countryCode": "GB",
         "accent": "Giọng Anh - Anh",
         "experience": "Hơn 5 năm kinh nghiệm",
         "language": "Nói tiếng Anh (bản ngữ)",
@@ -91,7 +91,7 @@
       {
         "id": 2,
         "name": "My Quyên: Giáo viên",
-        "flag": "https://purecatamphetamine.github.io/country-flag-icons/3x2/TW.svg",
+        "countryCode": "TW",
         "accent": "Giọng Đài Loan",
         "experience": "Hơn 3 năm kinh nghiệm",
         "language": "Nói tiếng Trung (thành thạo), tiếng Việt (bản ngữ)",

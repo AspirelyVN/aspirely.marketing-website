@@ -1,25 +1,35 @@
-  "use client"
+"use client"
 
-  import { useMessages, useTranslations } from "next-intl"
-  import { useRouter } from "next/navigation"
-  import Image from "next/image"
+import { useMessages, useTranslations } from "next-intl";
+import { useRouter } from "next/navigation";
+import Image from "next/image";
+import { FlagComponent, GB, TW } from "country-flag-icons/react/3x2";
 
-  import type { Tutor } from "@/types/tutor"
+import type { Tutor } from "@/types/tutor";
 
-  export default function TutorsPage() {
-    const t = useTranslations("tutors")
-    const messages = useMessages()
-    const router = useRouter()
-    const tutors = messages.tutors.list
+const flagMap: Record<string, FlagComponent> = {
+  GB,
+  TW,
+};
 
-    return (
-      <div className="max-w-7xl mx-auto px-4 py-10">
-        <h1 className="text-3xl md:text-5xl font-bold text-center mb-10">
-          {t("title.part1")} <span className="text-[#9F0A0B]">{t("title.part2")}</span> {t("title.part3")}
-        </h1>
+export default function TutorsPage() {
+  const t = useTranslations("tutors")
+  const messages = useMessages()
+  const router = useRouter()
+  const tutors = messages.tutors.list
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {tutors.map((tutor: Tutor) => (
+  return (
+    <div className="max-w-7xl mx-auto px-4 py-10">
+      <h1 className="text-3xl md:text-5xl font-bold text-center mb-10">
+        {t("title.part1")} <span className="text-[#9F0A0B]">{t("title.part2")}</span> {t("title.part3")}
+      </h1>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        {tutors.map((tutor: Tutor) => {
+          const countryCode = tutor.countryCode?.toUpperCase()
+          const Flag = flagMap[countryCode || ""];
+
+          return (
             <div
               key={tutor.id}
               onClick={() => router.push(`/tutors/${tutor.id}`)}
@@ -38,7 +48,7 @@
                   <p className="font-semibold mb-2">{tutor.name}</p>
                   <ul className="space-y-1 mb-3">
                     <li className="flex justify-center items-center gap-2">
-                      <Image src={tutor.flag} alt="Flag" width={16} height={12} />
+                      {Flag && <Flag className="w-[18px] h-[12px]" />}
                       <span>{tutor.accent}</span>
                     </li>
                     <li>{tutor.experience}</li>
@@ -56,8 +66,9 @@
                 </div>
               </div>
             </div>
-          ))}
-        </div>
+          )
+        })}
       </div>
-    )
-  }
+    </div>
+  )
+}

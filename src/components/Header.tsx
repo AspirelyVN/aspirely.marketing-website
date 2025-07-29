@@ -53,7 +53,7 @@ export default function Header() {
     >
       <div className="flex justify-between items-center">
         <Link href="/">
-          <Image src="/Logo-white.svg" alt="logo" width={120} height={80} priority />
+          <Image src="/Logo-white.svg" alt="logo" width={120} height={36} priority />
         </Link>
 
         <button className="lg:hidden text-2xl" onClick={() => setMenuOpen(!menuOpen)}>

@@ -5,20 +5,23 @@ import FancyButton from "@/components/FancyButton";
 import { useRouter } from "next/navigation";
 import { RiSpeakLine } from "react-icons/ri";
 import { LuGraduationCap } from "react-icons/lu";
+import * as Flags from "country-flag-icons/react/3x2";
 
 import type { Tutor } from "@/types/tutor";
 
 export default function TutorCard({
   id,
   name,
-  flag,
+  countryCode,
   accent,
   experience,
   language,
   image = "/tutor.jpg",
 }: Tutor) {
-  const t = useTranslations("tutors")
-  const router = useRouter()
+  const t = useTranslations("tutors");
+  const router = useRouter();
+
+  const Flag = Flags[countryCode as keyof typeof Flags];
 
   return (
     <div
@@ -31,8 +34,9 @@ export default function TutorCard({
             src={image}
             alt={`Tutor ${id}`}
             fill
-            sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
             priority
+            sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+            quality={80}
             className="object-cover"
           />
         </div>
@@ -40,7 +44,7 @@ export default function TutorCard({
           <p className="font-semibold mb-2">{name}</p>
           <ul className="flex flex-col justify-start text-start space-y-1 mb-3 text-base">
             <li className="flex items-center space-x-2">
-              <Image alt="Flag" src={flag} width={16} height={12} />
+              {Flag && <Flag className="w-[18px] h-[12px]" />}
               <p>{accent}</p>
             </li>
             <li className="flex items-center space-x-2">
@@ -48,15 +52,15 @@ export default function TutorCard({
               <p>{experience}</p>
             </li>
             <li className="flex items-start space-x-2">
-                <RiSpeakLine size={18} className="mt-0.5 flex-shrink-0" />
-                <p className="line-clamp-2 min-h-[48px] leading-snug">{language}</p>
+              <RiSpeakLine size={18} className="mt-0.5 flex-shrink-0" />
+              <p className="line-clamp-2 min-h-[48px] leading-snug">{language}</p>
             </li>
           </ul>
           <FancyButton
             className="bg-[#9F0A0B] text-white px-4 py-1.5 text-sm rounded-full font-semibold hover:opacity-90 transition"
             onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
-              e.stopPropagation()
-              window.location.href = "https://app.aspirely.edu.vn/register"
+              e.stopPropagation();
+              window.location.href = "https://app.aspirely.edu.vn/register";
             }}
           >
             {t("cta")}
@@ -64,5 +68,5 @@ export default function TutorCard({
         </div>
       </div>
     </div>
-  )
+  );
 }
