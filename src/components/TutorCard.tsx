@@ -5,9 +5,14 @@ import FancyButton from "@/components/FancyButton";
 import { useRouter } from "next/navigation";
 import { RiSpeakLine } from "react-icons/ri";
 import { LuGraduationCap } from "react-icons/lu";
-import * as Flags from "country-flag-icons/react/3x2";
+import { FlagComponent, GB, TW } from "country-flag-icons/react/3x2";
 
 import type { Tutor } from "@/types/tutor";
+
+const flagMap: Record<string, FlagComponent> = {
+  GB,
+  TW,
+};
 
 export default function TutorCard({
   id,
@@ -21,7 +26,7 @@ export default function TutorCard({
   const t = useTranslations("tutors");
   const router = useRouter();
 
-  const Flag = Flags[countryCode as keyof typeof Flags];
+  const Flag = flagMap[countryCode?.toUpperCase() || ""];
 
   return (
     <div
@@ -34,7 +39,7 @@ export default function TutorCard({
             src={image}
             alt={`Tutor ${id}`}
             fill
-            priority
+            // priority
             sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
             quality={80}
             className="object-cover"
