@@ -82,10 +82,10 @@ export default function TutorCarousel() {
               <div
                 key={tutor.id}
                 onClick={() => router.push(`/tutors/${tutor.id}`)}
-                className="flex-shrink-0 w-[270px] transition-transform duration-300 hover:scale-105 cursor-pointer"
+                className="flex-shrink-0 w-[250px] sm:w-[270px] transition-transform duration-300 hover:scale-105 cursor-pointer"
               >
                 <div className="bg-white border border-gray-300 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition">
-                  <div className="relative w-[270px] aspect-[3/4]">
+                  <div className="relative w-[250px] sm:w-[270px] aspect-square">
                     <Image
                       src={tutor.image}
                       alt={`Tutor ${tutor.id}`}
