@@ -6,11 +6,10 @@ export default function TestSection() {
   return (
     <div className="relative w-full h-[650px] overflow-hidden">
         <Image
-          src="/Test-bg.svg"
+          src="/Test-bg.webp"
           alt="Description"
           fill
           className="object-cover"
-          priority
         />
 
         <div className="absolute top-[5%] left-[10%] -rotate-0 lg:w-[500px] lg:h-[150px] xl:w-[600px] xl:h-[200px] z-20">
@@ -85,9 +84,9 @@ export default function TestSection() {
 
         <DoubleDotPattern />
 
-        <div className="absolute bottom-0 -right-[5%] lg:w-[500px] lg:h-[500px] xl:w-[550px] xl:h-[550px] z-20">
+        <div className="absolute bottom-0 -right-[5%] lg:w-[450px] lg:h-[450px] xl:w-[500px] xl:h-[500px] z-20">
             <Image
-                src="/person.svg"
+                src="/person.webp"
                 alt="Student"
                 fill
                 sizes="(max-width: 1280px) 100vw, 50vw"

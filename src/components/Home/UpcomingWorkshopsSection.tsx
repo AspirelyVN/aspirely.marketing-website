@@ -32,7 +32,7 @@ export default function UpcomingWorkshopsSection() {
       time: item.time,
       language: item.language,
       speaker: item.speaker,
-      bannerUrl: "/workshop-banner.svg",
+      bannerUrl: "/workshop-banner.webp",
     }));
 
     setWorkshops(parsedList);
@@ -51,7 +51,7 @@ export default function UpcomingWorkshopsSection() {
               key={index}
               className="border rounded-lg shadow-lg overflow-hidden flex flex-col"
             >
-              <div className="relative w-full h-50">
+              <div className="relative w-[300px] h-50">
                 <Image
                   src={ws.bannerUrl}
                   alt={ws.title}
