@@ -139,18 +139,21 @@
     "items": [
       {
         "name": "Phương Nghi",
+        "image": "/students/PhuongNghi.webp",
         "age": "20",
         "location": "TP. HCM",
         "content": "Trang web dễ dùng, load nhanh, giao diện xịn và học online rất tiện lợi mà không cần rời khỏi nhà. Giáo trình được cá nhân hóa nên học đúng trình độ, không áp lực hay gò bó. Mình thích nhất là lịch học linh hoạt, phù hợp cả sinh viên bận rộn như mình."
       },
       {
         "name": "Nhi Nguyễn",
+        "image": "/students/NhiNguyen.webp",
         "age": "21",
         "location": "TP. HCM",
         "content": "Giảng viên người Anh phát âm cực chuẩn, sửa lỗi kỹ và luôn tập trung vào chất lượng chứ không chạy theo chỉ tiêu. Cô Aimie thân thiện, giảng giải rõ ràng, đặc biệt rất kiên nhẫn với học viên học chậm như mình. Sau một thời gian học, mình tự tin nói tiếng Anh hơn hẳn."
       },
       {
         "name": "Mỹ Mỹ",
+        "image": "/students/MyMy.webp",
         "age": "22",
         "location": "TP. HCM",
         "content": "Ban đầu mình khá lo lắng về khả năng nói tiếng Anh, nhưng nhờ chương trình học thực tế và giáo viên tận tâm, mình đã tiến bộ rõ rệt. Các chủ đề đa dạng, dễ áp dụng vào đời sống. Cô sửa phát âm chi tiết từng từ, tạo cảm giác thoải mái khi luyện nói. Cảm ơn trung tâm đã giúp mình tự tin giao tiếp hơn mỗi ngày."

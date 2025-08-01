@@ -8,7 +8,6 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 const nextConfig: NextConfig = {
   images: {
     formats: ["image/webp"],
-    domains: ["images.dmca.com"],
     remotePatterns: [
       {
         protocol: "https",
@@ -16,6 +15,12 @@ const nextConfig: NextConfig = {
         port: "",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "images.dmca.com",
+        port: "",
+        pathname: "/**",
+      }
     ],
   },
 };

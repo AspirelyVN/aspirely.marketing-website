@@ -34,6 +34,8 @@ const roboto = Roboto({
   display: 'swap',
 })
 
+export const dynamic = 'force-static'; // This layout is static and does not change per request
+
 export default async function LocaleLayout({
   children,
   params
@@ -48,6 +50,9 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className={`${raleway.variable} ${inter.variable} ${roboto.variable}`}>
+      <head>
+        <link rel="preload" as="image" href="/videos/hero-poster.webp" fetchPriority="high"></link>
+      </head>
       <body>
         <NextIntlClientProvider>
           <Header />
