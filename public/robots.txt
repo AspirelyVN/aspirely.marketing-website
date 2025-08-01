@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /api/
+Disallow: /internal/
+Allow: /videos/
+Allow: /_next/static/
+Allow: /_next/image/
+Allow: /api/public/
