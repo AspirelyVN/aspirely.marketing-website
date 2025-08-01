@@ -51,13 +51,13 @@ export default function UpcomingWorkshopsSection() {
               key={index}
               className="border rounded-lg shadow-lg overflow-hidden flex flex-col"
             >
-              <div className="relative w-[300px] h-50">
+              <div className="relative w-[300px] h-[200px]">
                 <Image
                   src={ws.bannerUrl}
                   alt={ws.title}
-                  fill
+                  width={300}
+                  height={200}
                   className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </div>
 

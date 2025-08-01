@@ -38,9 +38,9 @@ export default function TestimonialSection() {
                     <Image
                       src={item.image}
                       alt={item.name}
-                      fill
-                      sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
-                      className="object-cover"
+                      width={150}
+                      height={200}
+                      className="rounded-xl object-cover"
                     />
                   </div>
                   <div className="text-center whitespace-pre-line">

@@ -9,6 +9,7 @@ export default function TestSection() {
           src="/Test-bg.webp"
           alt="Description"
           fill
+          sizes="(max-width: 1280px) 100vw, 50vw"
           className="object-cover"
         />
 
