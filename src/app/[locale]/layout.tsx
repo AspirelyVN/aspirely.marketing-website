@@ -34,8 +34,6 @@ const roboto = Roboto({
   display: 'swap',
 })
 
-export const dynamic = 'force-static'; // This layout is static and does not change per request
-
 export default async function LocaleLayout({
   children,
   params

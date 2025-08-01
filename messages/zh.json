@@ -1,7 +1,7 @@
 {
   "header": {
     "teachers": "教師",
-    "workshop": "工作坊",
+    "workshops": "工作坊",
     "recruit": "招聘資訊",
     "login": "登入"
   },
@@ -139,18 +139,21 @@
     "items": [
       {
         "name": "芳娥",
+        "image": "/students/PhuongNghi.webp",
         "age": "20",
         "location": "胡志明市",
         "content": "网站易于使用，加载速度快，界面美观。在线学习非常方便，不用出门。课程因人而异，适合自己的水平，没有压力。我最喜欢的是灵活的上课时间，非常适合像我这样的大学生。"
       },
       {
         "name": "小玉",
+        "image": "/students/NhiNguyen.webp",
         "age": "21",
         "location": "胡志明市",
         "content": "英国老师发音非常标准，纠正错误细致，专注于教学质量。Aimie老师很友好，讲解清楚，尤其对学习慢的学生特别有耐心。学了一段时间之后，我的英语口语自信心提升了很多。"
       },
       {
         "name": "美美",
+        "image": "/students/MyMy.webp",
         "age": "22",
         "location": "胡志明市",
         "content": "刚开始我对自己的英语口语感到担心，但课程内容实用，老师又非常耐心，我的进步很明显。话题多样，容易应用于生活，发音纠正得很细致，现在练口语时感到更自在了。"

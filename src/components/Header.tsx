@@ -70,7 +70,7 @@ export default function Header() {
           {t("teachers")}
         </Link>
         <Link href="/workshops" className="p-2">
-          {t("workshop")}
+          {t("workshops")}
         </Link>
         <Link href="/recruitment" className="p-2">
           {t("recruit")}

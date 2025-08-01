@@ -1,7 +1,7 @@
 {
   "header": {
     "teachers": "Teachers",
-    "workshop": "Workshops",
+    "workshops": "Workshops",
     "recruit": "Recruitment",
     "login": "LOGIN"
   },
@@ -139,18 +139,21 @@
     "items": [
       {
         "name": "Phuong Nghi",
+        "image": "/students/PhuongNghi.webp",
         "age": "20",
         "location": "Ho Chi Minh City",
         "content": "The website is easy to use, fast loading, and the UI is sleek. Online learning is super convenient without leaving home. The program is personalized to my level, no pressure or stress. I love the flexible schedule, perfect for busy students like me."
       },
       {
         "name": "Nhi Nguyen",
+        "image": "/students/NhiNguyen.webp",
         "age": "21",
         "location": "Ho Chi Minh City",
         "content": "The British teacher speaks very clearly and corrects my mistakes carefully, always focusing on quality rather than quantity. Miss Aimie is friendly, patient, and explains everything well. I'm now much more confident speaking English."
       },
       {
         "name": "My My",
+        "image": "/students/MyMy.webp",
         "age": "22",
         "location": "Ho Chi Minh City",
         "content": "At first, I was worried about speaking English. But thanks to the practical lessons and dedicated teachers, I’ve improved a lot. Topics are diverse and applicable. My pronunciation was corrected in detail, and I now feel more comfortable speaking every day."
