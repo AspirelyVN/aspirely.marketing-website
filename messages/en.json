@@ -172,7 +172,6 @@
         "items": [
           { "label": "PTE Speaking Practice", "key": "pte" },
           { "label": "IELTS Speaking Practice", "key": "ielts" },
-          { "label": "Cambridge Speaking Practice", "key": "cambridge" },
           { "label": "TOEFL Speaking Practice", "key": "toefl" },
           { "label": "TOEIC Speaking Practice", "key": "toeic" },
           { "label": "English for Communication", "key": "communication" },
@@ -183,7 +182,6 @@
         "title": "CHINESE",
         "items": [
           { "label": "HSKK Speaking Practice", "key": "hskk" },
-          { "label": "YCT Speaking Practice", "key": "yct" },
           { "label": "TOCFL Speaking Practice", "key": "tocfl" },
           { "label": "Basic Chinese", "key": "basic" },
           { "label": "Chinese for Communication", "key": "communication" },
@@ -229,19 +227,38 @@
     ]
   },
   "contact": {
-    "title": "Register for a Free Consultation",
-    "name": "Full Name",
-    "phone": "Phone Number",
+    "title": "Register for a free consultation",
+    "name": "Full name",
+    "phone": "Phone number",
     "email": "Email (optional)",
-    "selectProgram": "Interested Program",
-    "programs": {
-      "english": "English Communication",
-      "ielts": "IELTS Preparation",
-      "business": "Business English",
-      "chinese": "Chinese Language"
-    },
+    "selectProgram": "Interested program",
     "note": "Additional notes",
-    "submit": "SUBMIT"
+    "submit": "SUBMIT INFORMATION",
+    "programGroups": [
+      {
+        "key": "english",
+        "label": "ENGLISH",
+        "programs": [
+          { "key": "pte", "label": "PTE Speaking Practice" },
+          { "key": "ielts", "label": "IELTS Speaking Practice" },
+          { "key": "toefl", "label": "TOEFL Speaking Practice" },
+          { "key": "toeic", "label": "TOEIC Speaking Practice" },
+          { "key": "english_communication", "label": "English Communication" },
+          { "key": "english_business", "label": "Business English" }
+        ]
+      },
+      {
+        "key": "chinese",
+        "label": "CHINESE",
+        "programs": [
+          { "key": "hskk", "label": "HSKK Speaking Practice" },
+          { "key": "tocfl", "label": "TOCFL Speaking Practice" },
+          { "key": "chinese_basic", "label": "Basic Chinese" },
+          { "key": "chinese_communication", "label": "Chinese Communication" },
+          { "key": "chinese_business", "label": "Business Chinese" }
+        ]
+      }
+    ]
   },
   "thankyou": {
     "invalid": "Invalid page. Redirecting to homepage...",
@@ -258,5 +275,15 @@
       "desc": "Please go back and try again."
     },
     "back": "Return to homepage"
+  },
+  "recruitment": {
+    "title": "Apply to be an English Teacher",
+    "name": "Full Name",
+    "phone": "Phone Number",
+    "email": "Email",
+    "cv": "Link to CV (Google Drive, etc.)",
+    "message": "Introduction or Message",
+    "submit": "SUBMIT",
+    "success": "Thank you! We will get back to you soon."
   }
 }

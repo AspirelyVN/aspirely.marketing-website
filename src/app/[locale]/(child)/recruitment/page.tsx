@@ -1,63 +1,112 @@
 "use client"
-import { useState } from "react"
+
+import { useState } from "react";
+import { FiUser, FiPhone, FiMail, FiFileText } from "react-icons/fi";
+import { useTranslations } from "next-intl";
+
+import FancyButton from "@/components/FancyButton";
 
 export default function RecruitmentPage() {
-  const [form, setForm] = useState({ name: "", phone: "", email: "", message: "" })
+  const t = useTranslations("recruitment")
+
+  const [form, setForm] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    cv: "",
+    message: "",
+  })
+
   const [submitted, setSubmitted] = useState(false)
 
-  const handleChange = (field: string, value: string) => {
-    setForm(prev => ({ ...prev, [field]: value }))
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setForm({ ...form, [e.target.name]: e.target.value })
   }
 
-  const handleSubmit = () => {
-    if (!form.name || !form.phone || !form.email) return
-    // submit logic here
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    if (!form.name || !form.phone || !form.email || !form.cv) return
     setSubmitted(true)
   }
 
   return (
-    <div className="max-w-xl mx-auto px-4 py-10">
-      <h1 className="text-3xl font-bold mb-6">Ứng tuyển giảng viên</h1>
+    <div className="max-w-xl mx-auto px-4 py-16">
+      <h1 className="text-3xl lg:text-4xl font-bold text-center mb-8 text-[#9F0A0B]">
+        {t("title")}
+      </h1>
 
       {submitted ? (
-        <p className="text-green-600 text-center">Cảm ơn bạn! Chúng tôi sẽ liên hệ lại sớm.</p>
+        <p className="text-green-600 text-center text-lg">{t("success")}</p>
       ) : (
-        <div className="space-y-4">
-          <input
-            type="text"
-            placeholder="Họ và tên"
-            className="w-full p-3 border rounded"
-            value={form.name}
-            onChange={(e) => handleChange("name", e.target.value)}
-          />
-          <input
-            type="tel"
-            placeholder="Số điện thoại"
-            className="w-full p-3 border rounded"
-            value={form.phone}
-            onChange={(e) => handleChange("phone", e.target.value)}
-          />
-          <input
-            type="email"
-            placeholder="Email"
-            className="w-full p-3 border rounded"
-            value={form.email}
-            onChange={(e) => handleChange("email", e.target.value)}
-          />
-          <textarea
-            placeholder="Giới thiệu hoặc nhắn nhủ"
-            className="w-full p-3 border rounded"
-            rows={4}
-            value={form.message}
-            onChange={(e) => handleChange("message", e.target.value)}
-          />
-          <button
-            className="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700"
-            onClick={handleSubmit}
+        <form onSubmit={handleSubmit} className="space-y-4">
+          <div className="flex items-center bg-white rounded p-2 border border-gray-300">
+            <FiUser className="text-[#9F0A0B] mr-2" />
+            <input
+              name="name"
+              placeholder={t("name")}
+              value={form.name}
+              onChange={handleChange}
+              required
+              className="w-full bg-transparent outline-none text-black placeholder:italic"
+            />
+          </div>
+
+          <div className="flex items-center bg-white rounded p-2 border border-gray-300">
+            <FiPhone className="text-[#9F0A0B] mr-2" />
+            <input
+              name="phone"
+              placeholder={t("phone")}
+              value={form.phone}
+              onChange={handleChange}
+              required
+              className="w-full bg-transparent outline-none text-black placeholder:italic"
+            />
+          </div>
+
+          <div className="flex items-center bg-white rounded p-2 border border-gray-300">
+            <FiMail className="text-[#9F0A0B] mr-2" />
+            <input
+              name="email"
+              placeholder={t("email")}
+              value={form.email}
+              onChange={handleChange}
+              required
+              className="w-full bg-transparent outline-none text-black placeholder:italic"
+            />
+          </div>
+
+          <div className="flex items-center bg-white rounded p-2 border border-gray-300">
+            <FiFileText className="text-[#9F0A0B] mr-2" />
+            <input
+              name="cv"
+              placeholder={t("cv")}
+              value={form.cv}
+              onChange={handleChange}
+              required
+              className="w-full bg-transparent outline-none text-black placeholder:italic"
+            />
+          </div>
+
+          <div>
+            <textarea
+              name="message"
+              value={form.message}
+              onChange={handleChange}
+              placeholder={t("message")}
+              rows={4}
+              className="w-full bg-white border border-gray-300 rounded p-3 text-black placeholder:italic"
+            />
+          </div>
+
+          <FancyButton
+            type="submit"
+            className="w-full bg-white text-[#9F0A0B] py-2 rounded-full font-bold hover:opacity-90 transition"
           >
-            Gửi thông tin
-          </button>
-        </div>
+            {t("submit")}
+          </FancyButton>
+        </form>
       )}
     </div>
   )

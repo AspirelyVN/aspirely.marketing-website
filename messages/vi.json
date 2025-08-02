@@ -172,7 +172,6 @@
         "items": [
           { "label": "Luyện nói PTE", "key": "pte" },
           { "label": "Luyện nói IELTS", "key": "ielts" },
-          { "label": "Luyện nói Cambridge", "key": "cambridge" },
           { "label": "Luyện nói TOEFL", "key": "toefl" },
           { "label": "Luyện nói TOEIC", "key": "toeic" },
           { "label": "Tiếng Anh giao tiếp", "key": "communication" },
@@ -184,7 +183,6 @@
         "items": [
           { "label": "Luyện nói HSKK", "key": "hskk" },
           { "label": "Luyện nói TOCFL", "key": "tocfl" },
-          { "label": "Luyện nói YCT", "key": "yct" },
           { "label": "Tiếng Trung cơ bản", "key": "basic" },
           { "label": "Tiếng Trung giao tiếp", "key": "communication" },
           { "label": "Tiếng Trung thương mại", "key": "business" }
@@ -234,14 +232,33 @@
     "phone": "Số điện thoại",
     "email": "Email (không bắt buộc)",
     "selectProgram": "Chương trình quan tâm",
-    "programs": {
-      "english": "Tiếng Anh giao tiếp",
-      "ielts": "Luyện thi IELTS",
-      "business": "Tiếng Anh doanh nghiệp",
-      "chinese": "Tiếng Trung"
-    },
     "note": "Ghi chú thêm",
-    "submit": "GỬI THÔNG TIN"
+    "submit": "GỬI THÔNG TIN",
+    "programGroups": [
+      {
+        "key": "english",
+        "label": "TIẾNG ANH",
+        "programs": [
+          { "key": "pte", "label": "Luyện nói PTE" },
+          { "key": "ielts", "label": "Luyện nói IELTS" },
+          { "key": "toefl", "label": "Luyện nói TOEFL" },
+          { "key": "toeic", "label": "Luyện nói TOEIC" },
+          { "key": "english_communication", "label": "Tiếng Anh giao tiếp" },
+          { "key": "english_business", "label": "Tiếng Anh thương mại" }
+        ]
+      },
+      {
+        "key": "chinese",
+        "label": "TIẾNG TRUNG",
+        "programs": [
+          { "key": "hskk", "label": "Luyện nói HSKK" },
+          { "key": "tocfl", "label": "Luyện nói TOCFL" },
+          { "key": "chinese_basic", "label": "Tiếng Trung cơ bản" },
+          { "key": "chinese_communication", "label": "Tiếng Trung giao tiếp" },
+          { "key": "chinese_business", "label": "Tiếng Trung thương mại" }
+        ]
+      }
+    ]
   },
   "thankyou": {
     "invalid": "Trang không hợp lệ, đang quay về trang chủ...",
@@ -258,5 +275,15 @@
       "desc": "Vui lòng quay lại và thử lại sau."
     },
     "back": "Quay lại trang chủ"
+  },
+  "recruitment": {
+    "title": "Ứng tuyển giảng viên",
+    "name": "Họ và tên",
+    "phone": "Số điện thoại",
+    "email": "Email",
+    "cv": "Đường dẫn tới CV (Google Drive, v.v.)",
+    "message": "Giới thiệu hoặc nhắn nhủ",
+    "submit": "GỬI THÔNG TIN",
+    "success": "Cảm ơn bạn! Chúng tôi sẽ liên hệ lại sớm."
   }
 }

@@ -172,7 +172,6 @@
         "items": [
           { "label": "PTE 口语练习", "key": "pte" },
           { "label": "IELTS 口语练习", "key": "ielts" },
-          { "label": "剑桥口语练习", "key": "cambridge" },
           { "label": "TOEFL 口语练习", "key": "toefl" },
           { "label": "TOEIC 口语练习", "key": "toeic" },
           { "label": "英语口语交流", "key": "communication" },
@@ -183,7 +182,6 @@
         "title": "中文",
         "items": [
           { "label": "HSKK 口语练习", "key": "hskk" },
-          { "label": "YCT 口语练习", "key": "yct" },
           { "label": "TOCFL 口语练习", "key": "tocfl" },
           { "label": "基础中文", "key": "basic" },
           { "label": "中文口语交流", "key": "communication" },
@@ -229,19 +227,38 @@
     ]
   },
   "contact": {
-    "title": "免費諮詢登記",
+    "title": "免费咨询登记",
     "name": "姓名",
-    "phone": "電話號碼",
-    "email": "電子郵件（可選）",
-    "selectProgram": "感興趣的課程",
-    "programs": {
-      "english": "英語會話",
-      "ielts": "IELTS 考試準備",
-      "business": "商務英語",
-      "chinese": "中文課程"
-    },
-    "note": "其他備註",
-    "submit": "提交資訊"
+    "phone": "电话号码",
+    "email": "电子邮箱（可选）",
+    "selectProgram": "感兴趣的课程",
+    "note": "其他备注",
+    "submit": "提交信息",
+    "programGroups": [
+      {
+        "key": "english",
+        "label": "英语",
+        "programs": [
+          { "key": "pte", "label": "PTE 口语训练" },
+          { "key": "ielts", "label": "IELTS 口语训练" },
+          { "key": "toefl", "label": "TOEFL 口语训练" },
+          { "key": "toeic", "label": "TOEIC 口语训练" },
+          { "key": "english_communication", "label": "英语交流" },
+          { "key": "english_business", "label": "商务英语" }
+        ]
+      },
+      {
+        "key": "chinese",
+        "label": "中文",
+        "programs": [
+          { "key": "hskk", "label": "HSKK 口语训练" },
+          { "key": "tocfl", "label": "TOCFL 口语训练" },
+          { "key": "chinese_basic", "label": "基础中文" },
+          { "key": "chinese_communication", "label": "中文交流" },
+          { "key": "chinese_business", "label": "商务中文" }
+        ]
+      }
+    ]
   },
   "thankyou": {
     "invalid": "無效頁面，正在跳轉到主頁...",
@@ -258,5 +275,15 @@
       "desc": "請返回並稍後再試一次。"
     },
     "back": "返回主頁"
+  },
+  "recruitment": {
+    "title": "应聘英语教师",
+    "name": "姓名",
+    "phone": "电话号码",
+    "email": "电子邮箱",
+    "cv": "简历链接（如 Google Drive 等）",
+    "message": "自我介绍或留言",
+    "submit": "提交",
+    "success": "感谢您的申请！我们会尽快与您联系。"
   }
 }
