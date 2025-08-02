@@ -37,7 +37,3 @@ export default function Home() {
     </div>
   );
 }
-
-export async function generateStaticParams() {
-  return [{ locale: 'vi' }, { locale: 'en' }, { locale: 'zh' }];
-}
