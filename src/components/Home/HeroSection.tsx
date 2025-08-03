@@ -9,7 +9,7 @@ export default function HeroSection() {
   const t = useTranslations("hero");
 
   return (
-    <div className="relative w-full h-[600px] overflow-hidden">
+    <div className="relative w-full h-[400px] lg:h-[600px] overflow-hidden">
       <video
         autoPlay
         loop
@@ -26,12 +26,12 @@ export default function HeroSection() {
       <div className="absolute top-0 left-0 w-full h-full bg-black/15 z-[-1]" />
 
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
-        <h1 className="text-7xl font-extrabold mb-6 whitespace-pre-line leading-tight">
+        <h1 className="text-3xl md:text-5xl lg:text-7xl font-extrabold mb-6 whitespace-pre-line leading-tight">
           Speak to the world
         </h1>
 
         <Link href="/contact-us">
-          <FancyButton className="text-xl px-8 py-2">{t("contact")}</FancyButton>
+          <FancyButton className="text-base md:text-lg lg:text-xl md:px-6 md:py-1 lg:px-8 lg:py-2">{t("contact")}</FancyButton>
         </Link>
       </div>
     </div>

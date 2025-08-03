@@ -4,7 +4,7 @@ import DoubleDotPattern from "@/components/DoubleDotPattern";
 
 export default function TestSection() {
   return (
-    <div className="relative w-full h-[650px] overflow-hidden">
+    <div className="relative w-full h-[500px] lg:h-[650px] overflow-hidden">
         <Image
           src="/Test-bg.webp"
           alt="Description"
@@ -13,7 +13,7 @@ export default function TestSection() {
           className="object-cover"
         />
 
-        <div className="absolute top-[5%] left-[10%] -rotate-0 lg:w-[500px] lg:h-[150px] xl:w-[600px] xl:h-[200px] z-20">
+        <div className="absolute top-[5%] left-[10%] -rotate-0 w-[200px] h-[50px] lg:w-[500px] lg:h-[150px] xl:w-[600px] xl:h-[200px] z-20">
           <Image
             src="/brush.svg"
             alt="Brush Background"
@@ -27,12 +27,12 @@ export default function TestSection() {
           </div>
         </div>
 
-        <div className="absolute top-[30%] left-[15%] z-20 text-white">
-          <h1 className="lg:text-5xl xl:text-6xl font-bold leading-tight mb-6">
+        <div className="w-full absolute top-[15%] lg:top-[30%] left-1/2 md:left-[15%] -translate-x-1/2 md:translate-x-0 z-20 text-white flex flex-col items-center text-center md:items-start lg:text-left">
+          <h1 className="text-2xl lg:text-4xl xl:text-6xl text-start font-bold leading-tight mb-6">
             Kiểm Tra Trình Độ <br /> Ngoại Ngữ Của Bạn
           </h1>
 
-          <form className="space-y-4 max-w-xl w-1/2 lg:w-[80%] xl:w-full">
+          <form className="space-y-4 max-w-xl w-2/3 md:w-1/2 lg:w-[80%] xl:w-full">
             <div>
               <input
                 id="email"
@@ -50,7 +50,7 @@ export default function TestSection() {
               />
             </div>
 
-            <div className="space-y-2 text-sm mt-4">
+            <div className="text-start space-y-2 text-sm mt-4">
               <label className="flex items-start gap-2">
                 <input type="checkbox" className="mt-1" />
                 Tôi đồng ý tham gia danh sách nhận thông tin khóa học tiếng Anh trực tuyến.
@@ -72,7 +72,7 @@ export default function TestSection() {
           </form>
         </div>
 
-        <div className="absolute top-8 -left-25 rotate-135 lg:w-40 lg:h-40 xl:w-52 xl:h-52 overflow-hidden z-10">
+        <div className="absolute top-8 -left-20 lg:-left-25 rotate-135 w-30 h-30 lg:w-40 lg:h-40 xl:w-52 xl:h-52 overflow-hidden z-10">
           <svg width="100%" height="100%" viewBox="0 0 100 100">
             <defs>
               <pattern id="stripes" patternUnits="userSpaceOnUse" width="8" height="8">
@@ -85,16 +85,16 @@ export default function TestSection() {
 
         <DoubleDotPattern />
 
-        <div className="absolute bottom-0 -right-[5%] lg:w-[450px] lg:h-[450px] xl:w-[500px] xl:h-[500px] z-20">
-            <Image
-                src="/person.webp"
-                alt="Student"
-                fill
-                sizes="(max-width: 1280px) 100vw, 50vw"
-            />
+        <div className="absolute bottom-0 -right-[5%] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] xl:w-[500px] xl:h-[500px] z-20">
+          <Image
+              src="/person.webp"
+              alt="Student"
+              fill
+              sizes="(max-width: 1280px) 100vw, 50vw"
+          />
         </div>
 
-        <div className="absolute top-1/2 -right-25 rotate-45 lg:w-40 lg:h-40 xl:w-52 xl:h-52 overflow-hidden -translate-y-1/2 z-10">
+        <div className="absolute top-1/2 -right-20 lg:-right-25 rotate-45 w-30 h-30 lg:w-40 lg:h-40 xl:w-52 xl:h-52 overflow-hidden -translate-y-1/2 z-10">
           <svg width="100%" height="100%" viewBox="0 0 100 100">
             <defs>
               <pattern id="stripesRight" patternUnits="userSpaceOnUse" width="8" height="8">

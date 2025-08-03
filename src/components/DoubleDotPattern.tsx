@@ -19,7 +19,7 @@ export default function DoubleDotPattern() {
   };
 
   return (
-    <div className="absolute -left-12 bottom-0 w-[250px] h-[250px] z-10 pointer-events-none">
+    <div className="absolute -left-12 bottom-0 w-[250px] h-[250px] z-10 pointer-events-none not-md:hidden">
       <svg
         width="100%"
         height="100%"

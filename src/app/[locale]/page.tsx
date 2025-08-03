@@ -9,7 +9,7 @@ import TestSection from "@/components/Home/TestSection";
 
 export default function Home() {
   return (
-    <div className="w-full flex flex-col items-center scroll-smooth">
+    <div className="w-full h-full flex flex-col items-center scroll-smooth">
       <HeroSection />
       <FadeInWhenVisible delay={0.3}>
         <TutorCarousel />

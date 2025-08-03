@@ -38,6 +38,8 @@ export default function Header() {
     };
 
     window.addEventListener("scroll", handleScroll);
+    handleScroll();
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -51,7 +53,7 @@ export default function Header() {
           : "bg-black text-white shadow-md"
       }`}
     >
-      <div className="flex justify-between items-center">
+      <div className="w-full lg:w-auto flex justify-between items-center">
         <Link href="/">
           <Image src="/Logo-white.svg" alt="logo" width={120} height={36} priority />
         </Link>
@@ -64,7 +66,7 @@ export default function Header() {
       <nav
         className={`${
           menuOpen ? "flex" : "hidden"
-        } lg:flex absolute lg:static top-full left-0 w-full lg:w-auto bg-white lg:bg-transparent flex-col lg:flex-row items-start lg:items-center space-y-2 lg:space-y-0 lg:space-x-5 px-10 py-3 z-50`}
+        } lg:flex absolute lg:static top-full left-0 w-full bg-black/80 lg:bg-transparent flex-col lg:flex-row justify-end items-start lg:items-center space-y-2 lg:space-y-0 lg:space-x-5 px-10 py-3 z-50`}
       >
         <Link href="/tutors" className="p-2">
           {t("teachers")}
@@ -84,7 +86,7 @@ export default function Header() {
             {currentLocale.label} <MdArrowDropDown size={20} />
           </button>
           {langOpen && (
-            <ul className="absolute top-full left-0 w-40 bg-black/80 shadow-lg rounded-sm z-50">
+            <ul className="absolute top-full left-0 w-40 bg-black/100 shadow-lg rounded-sm z-50">
               {locales.map((lang) => (
                 <li
                   key={lang.code}
