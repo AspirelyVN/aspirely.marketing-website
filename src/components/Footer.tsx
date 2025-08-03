@@ -4,11 +4,18 @@ import Image from "next/image";
 import Script from "next/script";
 import { FaPhone } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
-import { useTranslations } from "next-intl";
+import { useMessages } from "next-intl";
 
 export default function Footer() {
-  const t = useTranslations("footer");
-  const sections = t.raw("sections") as {
+  const messages = useMessages();
+
+  const courseData = (messages?.courseGroups || []) as {
+    key: string;
+    label: string;
+    courses: { key: string; label: string }[];
+  }[];
+
+  const infoSections = (messages?.footer?.sections || []) as {
     title: string;
     items: { label: string; key: string }[];
   }[];
@@ -50,7 +57,18 @@ export default function Footer() {
           />
         </div>
 
-        {sections.map((section, index) => (
+        {courseData.map((course, index) => (
+          <div key={index}>
+            <p className="font-bold mb-3 text-lg">{course.label}</p>
+            <ul className="space-y-2">
+              {course.courses.map((program, idx) => (
+                <li key={idx}>{program.label}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+
+        {infoSections.map((section, index) => (
           <div key={index}>
             <p className="font-bold mb-3 text-lg">{section.title}</p>
             <ul className="space-y-2">

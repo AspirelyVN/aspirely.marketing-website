@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useState } from "react";
 import { FiUser, FiPhone, FiMail, FiBookOpen } from "react-icons/fi";
@@ -6,15 +6,15 @@ import { useTranslations, useMessages } from "next-intl";
 
 import FancyButton from "@/components/FancyButton";
 
-type Program = {
+type Course = {
   key: string;
   label: string;
 };
 
-type ProgramGroup = {
+type CourseGroup = {
   key: string;
   label: string;
-  programs: Program[];
+  courses: Course[];
 };
 
 export default function ContactUsPage() {
@@ -25,7 +25,7 @@ export default function ContactUsPage() {
     name: "",
     phone: "",
     email: "",
-    program: "",
+    course: "",
     message: "",
   });
 
@@ -40,8 +40,7 @@ export default function ContactUsPage() {
     console.log("Form submitted:", form);
   };
 
-  // Lấy programGroups từ messages
-  const programGroups = messages.contact.programGroups;
+  const courseGroups = (messages?.courseGroups || []) as CourseGroup[];
 
   return (
     <div className="max-w-xl mx-auto px-4 py-16">
@@ -87,18 +86,18 @@ export default function ContactUsPage() {
         <div className="flex items-center bg-white rounded p-2 border border-gray-300">
           <FiBookOpen className="text-[#9F0A0B] mr-2" />
           <select
-            name="program"
-            value={form.program}
+            name="course"
+            value={form.course}
             onChange={handleChange}
             required
             className="w-full bg-transparent outline-none text-black"
           >
-            <option value="">{t("selectProgram")}</option>
-            {programGroups.map((group: ProgramGroup) => (
+            <option value="">{t("selectCourse")}</option>
+            {courseGroups.map((group) => (
               <optgroup key={group.key} label={group.label}>
-                {group.programs.map((program: Program) => (
-                  <option key={program.key} value={program.key}>
-                    {program.label}
+                {group.courses.map((course) => (
+                  <option key={course.key} value={course.key}>
+                    {course.label}
                   </option>
                 ))}
               </optgroup>

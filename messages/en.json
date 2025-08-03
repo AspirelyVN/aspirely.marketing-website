@@ -1,71 +1,62 @@
 {
   "header": {
+    "courses": "Courses",
     "teachers": "Teachers",
     "workshops": "Workshops",
     "recruit": "Recruitment",
     "login": "LOGIN"
   },
   "home": {
-    "slogan1": "Learn your way",
-    "slogan2": "Practice like real life",
+    "slogan1": "Learn Your Way",
+    "slogan2": "Practice Like Real Life",
     "successStories": "Success Stories",
     "upcomingWorkshops": "Upcoming Workshops"
   },
   "hero": {
-    "title": "FREE TRIAL CLASS",
+    "title": "REGISTER FOR A \n FREE TRIAL",
     "placeholder": {
-      "name": "Full name",
-      "phone": "Phone number",
+      "name": "Full Name",
+      "phone": "Phone Number",
       "email": "Email",
-      "course": "Select course"
+      "course": "Choose a Course"
     },
     "button": "REGISTER NOW",
-    "cta": "SPEAK\nTO THE\nWORLD!",
-    "contact": "GET STARTED",
-    "courses": {
-      "group1": "English",
-      "group2": "Chinese",
-      "en1": "English Communication",
-      "en2": "IELTS Preparation",
-      "en3": "Business English",
-      "zh1": "Basic Chinese",
-      "zh2": "Chinese Communication",
-      "zh3": "Business Chinese"
-    },
-    "error": "Please complete all fields."
+    "cta": "SPEAK \n TO THE \n WORLD!",
+    "contact": "START NOW",
+    "error": "Please fill in all required information."
   },
   "tutors": {
     "title": {
-      "part1": "Meet our",
-      "part2": "teachers",
-      "part3": ""
+      "part1": "Meet",
+      "part2": "our",
+      "part3": "teachers"
     },
-    "cta": "Try a free lesson",
+    "cta": "Free Trial",
     "greeting": "Hello everyone!",
     "specialties": "Specialties",
     "noVideo": "No video available",
     "upcomingWorkshopsTitle": "Upcoming sessions with {name}:",
-    "seeWorkshops": "Not sure? Check {name}'s workshops",
-    "chooseSchedule": "Choose your schedule",
-    "studentReviews": "Student Reviews",
-    "freeTrialButton": "TRY FOR FREE",
+    "seeWorkshops": "Not sure? See {name}'s workshops",
+    "chooseSchedule": "Choose schedule",
+    "studentReviews": "Student reviews",
+    "freeTrialButton": "FREE TRIAL",
     "list": [
       {
         "id": 1,
         "name": "Aimie C: Teacher",
         "countryCode": "GB",
-        "accent": "British accent",
+        "accent": "British English Accent",
         "experience": "Over 5 years of experience",
         "language": "Native English speaker",
         "image": "/tutors/Aimie.webp",
         "video": "https://www.w3schools.com/html/mov_bbb.mp4",
-        "about": "I'm Aimie, an English teacher from the UK with over 5 years of teaching experience in the UK, Vietnam, and Thailand. I look forward to meeting you and accompanying you on your journey to improve your English!",
-        "skills": ["Conversation", "IELTS (4 skills)", "Business English"],
+        "about": "I am Aimie, an English teacher from the UK with over 5 years of teaching experience in the UK, Vietnam, and Thailand. I look forward to meeting you and accompanying you on your journey to improve your English skills!",
+        "skills": ["Communication", "IELTS 4 skills", "Business English"],
         "reviews": [
           {
             "name": "Minh T.",
             "country": "Vietnam",
-            "content": "Ms. Aimie teaches enthusiastically and clearly. Her British accent is perfect!"
+            "content": "Ms. Aimie teaches very enthusiastically and clearly. Authentic British accent!"
           }
         ],
         "availability": {
@@ -75,40 +66,55 @@
         },
         "workshops": [
           {
-            "title": "Basic Speaking for Beginners",
+            "title": "Basic Communication for Beginners",
             "date": "2025-07-15",
             "time": "19:00",
-            "description": "Improve your basic speaking and listening skills in this workshop."
+            "description": "Workshop to improve basic listening and speaking reflexes."
           },
           {
             "title": "IELTS Writing Strategies",
             "date": "2025-07-20",
             "time": "20:00",
-            "description": "Focuses on structure and ideas for both Task 1 & 2."
+            "description": "Focus on structure and ideas for Task 1 & 2."
           }
         ]
       },
       {
         "id": 2,
-        "name": "My Quyen: Teacher",
+        "name": "My Quyên: Teacher",
         "countryCode": "TW",
-        "accent": "Taiwanese accent",
+        "accent": "Taiwanese Accent",
         "experience": "Over 3 years of experience",
-        "language": "Fluent in Taiwanese and native Vietnamese",
+        "language": "Fluent in Chinese, native Vietnamese speaker",
         "image": "/tutors/Quyen.webp",
         "video": "https://www.w3schools.com/html/mov_bbb.mp4",
-        "about": "I'm My Quyen, a teacher from Taiwan with over 3 years of experience teaching both Vietnamese and international students. I focus on helping learners speak English naturally and confidently.",
-        "skills": ["Daily conversation", "Pronunciation", "Grammar"],
+        "about": "I am My Quyên, a teacher from Taiwan with over 3 years of experience teaching Vietnamese and foreign students. I focus on helping students speak English naturally and confidently.",
+        "skills": ["Daily communication", "Pronunciation", "Grammar"],
         "reviews": [
           {
             "name": "Thu N.",
             "country": "Vietnam",
-            "content": "Very clear explanations, kind and dedicated!"
+            "content": "Very clear explanations, gentle, and dedicated!"
           }
         ],
         "availability": {
           "2025-07-01": ["09:00", "11:00", "15:00"]
         },
+        "workshops": []
+      },
+      {
+        "id": 3,
+        "name": "Leo N: Teacher",
+        "countryCode": "GB",
+        "accent": "British English Accent",
+        "experience": "5 years of experience",
+        "language": "Native English and French speaker",
+        "image": "/tutors/Leo.webp",
+        "video": "https://www.w3schools.com/html/mov_bbb.mp4",
+        "about": "I am Leo, an English teacher with a standard British accent. I have 5 years of teaching experience and am fluent in both English and French as native languages.",
+        "skills": ["Accurate pronunciation", "Advanced communication", "Academic English"],
+        "reviews": [],
+        "availability": {},
         "workshops": []
       }
     ]
@@ -117,20 +123,20 @@
     "title": "Why choose us?",
     "items": [
       {
-        "title": "Qualified & Trusted Teachers",
-        "desc": "Experienced, certified native teachers who inspire you and help you improve every lesson."
+        "title": "Reputable Teachers - Quality Commitment",
+        "desc": "Experienced native instructors with certifications, inspiring you to improve after every lesson."
       },
       {
         "title": "Fun & Effective Learning",
-        "desc": "From daily conversation to test prep, engaging and goal-oriented lessons."
+        "desc": "From daily conversations to exam preparation, practical lessons with high interaction tailored to personal goals."
       },
       {
-        "title": "Flexible Schedule for Busy People",
-        "desc": "Students or working professionals can learn anytime that fits their schedule."
+        "title": "Flexible Learning for Busy People",
+        "desc": "Students and office workers can easily learn according to their personal schedules."
       },
       {
-        "title": "1-on-1 Learning Your Way",
-        "desc": "Join a free trial to find the best-fit teacher for your needs."
+        "title": "1-1 Learning Your Way, With Your Chosen Teacher",
+        "desc": "Join online trial lessons to find the teacher that suits you best."
       }
     ]
   },
@@ -138,56 +144,60 @@
     "title": "Success Stories",
     "items": [
       {
-        "name": "Phuong Nghi",
+        "name": "Phương Nghi",
         "image": "/students/PhuongNghi.webp",
         "age": "20",
         "location": "Ho Chi Minh City",
-        "content": "The website is easy to use, fast loading, and the UI is sleek. Online learning is super convenient without leaving home. The program is personalized to my level, no pressure or stress. I love the flexible schedule, perfect for busy students like me."
+        "content": "The website is easy to use, loads quickly, has a great interface, and online learning is very convenient without leaving home. The curriculum is personalized to the right level, no pressure or constraints. What I like most is the flexible schedule, suitable even for busy students like me."
       },
       {
-        "name": "Nhi Nguyen",
+        "name": "Nhi Nguyễn",
         "image": "/students/NhiNguyen.webp",
         "age": "21",
         "location": "Ho Chi Minh City",
-        "content": "The British teacher speaks very clearly and corrects my mistakes carefully, always focusing on quality rather than quantity. Miss Aimie is friendly, patient, and explains everything well. I'm now much more confident speaking English."
+        "content": "The British teacher pronounces very accurately, corrects mistakes carefully, and always focuses on quality rather than targets. Ms. Aimie is friendly, explains clearly, and is especially patient with slow learners like me. After a while, I am confident speaking English much better."
       },
       {
-        "name": "My My",
+        "name": "Mỹ Mỹ",
         "image": "/students/MyMy.webp",
         "age": "22",
         "location": "Ho Chi Minh City",
-        "content": "At first, I was worried about speaking English. But thanks to the practical lessons and dedicated teachers, I’ve improved a lot. Topics are diverse and applicable. My pronunciation was corrected in detail, and I now feel more comfortable speaking every day."
+        "content": "At first, I was quite worried about my English speaking ability, but thanks to the practical program and dedicated teachers, I have improved significantly. The topics are diverse and easy to apply in daily life. The teacher corrects pronunciation in detail for each word, creating a comfortable feeling when practicing speaking. Thanks to the center for helping me gain confidence in communication every day."
       }
     ]
   },
   "cta": {
     "title": "Start your language learning journey today!",
-    "desc": "Get free consultation from our team of professional learning advisors.",
-    "button": "Register for a free consultation"
+    "desc": "Get free consultation from our professional student support team.",
+    "button": "Register for free consultation"
   },
+  "courseGroups": [
+    {
+      "key": "english",
+      "label": "ENGLISH",
+      "courses": [
+        { "key": "pte", "label": "PTE Speaking Practice" },
+        { "key": "ielts", "label": "IELTS Speaking Practice" },
+        { "key": "toefl", "label": "TOEFL Speaking Practice" },
+        { "key": "toeic", "label": "TOEIC Speaking Practice" },
+        { "key": "english_communication", "label": "English Communication" },
+        { "key": "english_business", "label": "Business English" }
+      ]
+    },
+    {
+      "key": "chinese",
+      "label": "CHINESE",
+      "courses": [
+        { "key": "hskk", "label": "HSKK Speaking Practice" },
+        { "key": "tocfl", "label": "TOCFL Speaking Practice" },
+        { "key": "chinese_basic", "label": "Basic Chinese" },
+        { "key": "chinese_communication", "label": "Chinese Communication" },
+        { "key": "chinese_business", "label": "Business Chinese" }
+      ]
+    }
+  ],
   "footer": {
     "sections": [
-      {
-        "title": "ENGLISH",
-        "items": [
-          { "label": "PTE Speaking Practice", "key": "pte" },
-          { "label": "IELTS Speaking Practice", "key": "ielts" },
-          { "label": "TOEFL Speaking Practice", "key": "toefl" },
-          { "label": "TOEIC Speaking Practice", "key": "toeic" },
-          { "label": "English for Communication", "key": "communication" },
-          { "label": "Business English", "key": "business" }
-        ]
-      },
-      {
-        "title": "CHINESE",
-        "items": [
-          { "label": "HSKK Speaking Practice", "key": "hskk" },
-          { "label": "TOCFL Speaking Practice", "key": "tocfl" },
-          { "label": "Basic Chinese", "key": "basic" },
-          { "label": "Chinese for Communication", "key": "communication" },
-          { "label": "Business Chinese", "key": "business" }
-        ]
-      },
       {
         "title": "LEARN MORE",
         "items": [
@@ -200,90 +210,68 @@
     ]
   },
   "workshops": {
-    "title": "Workshop List",
+    "title": {
+      "part1": "List of",
+      "part2": "Workshops"
+    },
     "cta": "Register",
     "list": [
       {
-        "title": "Boost your IELTS Listening Score (5.5 to 8) – July 2025",
-        "date": "Jul 14, 2025",
-        "time": "8:00 PM (Vietnam Time)",
+        "title": "Improve IELTS Listening Score (5.5 to 8) - July 2025",
+        "date": "14/07/2025",
+        "time": "20:00 (Vietnam Time)",
         "language": "English",
         "speaker": "Aimie Cook"
       },
       {
-        "title": "Ideas for IELTS Writing Task 2 – July 2025",
-        "date": "Jul 21, 2025",
-        "time": "8:00 PM (Vietnam Time)",
+        "title": "Ideas for Writing Task 2 - July 2025",
+        "date": "21/07/2025",
+        "time": "20:00 (Vietnam Time)",
         "language": "English",
         "speaker": "Aimie Cook"
       },
       {
-        "title": "Conquer IELTS Reading in 7 Days – July 2025",
-        "date": "Jul 28, 2025",
-        "time": "8:00 PM (Vietnam Time)",
+        "title": "Master IELTS Reading in 7 Days - July 2025",
+        "date": "28/07/2025",
+        "time": "20:00 (Vietnam Time)",
         "language": "English",
         "speaker": "Aimie Cook"
       }
     ]
   },
   "contact": {
-    "title": "Register for a free consultation",
-    "name": "Full name",
-    "phone": "Phone number",
+    "title": "Register for free consultation",
+    "name": "Full Name",
+    "phone": "Phone Number",
     "email": "Email (optional)",
-    "selectProgram": "Interested program",
+    "selectCourse": "Interested Course",
     "note": "Additional notes",
-    "submit": "SUBMIT INFORMATION",
-    "programGroups": [
-      {
-        "key": "english",
-        "label": "ENGLISH",
-        "programs": [
-          { "key": "pte", "label": "PTE Speaking Practice" },
-          { "key": "ielts", "label": "IELTS Speaking Practice" },
-          { "key": "toefl", "label": "TOEFL Speaking Practice" },
-          { "key": "toeic", "label": "TOEIC Speaking Practice" },
-          { "key": "english_communication", "label": "English Communication" },
-          { "key": "english_business", "label": "Business English" }
-        ]
-      },
-      {
-        "key": "chinese",
-        "label": "CHINESE",
-        "programs": [
-          { "key": "hskk", "label": "HSKK Speaking Practice" },
-          { "key": "tocfl", "label": "TOCFL Speaking Practice" },
-          { "key": "chinese_basic", "label": "Basic Chinese" },
-          { "key": "chinese_communication", "label": "Chinese Communication" },
-          { "key": "chinese_business", "label": "Business Chinese" }
-        ]
-      }
-    ]
+    "submit": "SUBMIT"
   },
   "thankyou": {
-    "invalid": "Invalid page. Redirecting to homepage...",
+    "invalid": "Invalid page, redirecting to homepage...",
     "loading": {
-      "title": "Processing your registration...",
+      "title": "Processing registration...",
       "desc": "Please wait a moment"
     },
     "success": {
       "title": "Thank you for registering!",
-      "desc": "You’ll be redirected to the homepage shortly..."
+      "desc": "You will be redirected to the homepage shortly..."
     },
     "error": {
-      "title": "Something went wrong!",
-      "desc": "Please go back and try again."
+      "title": "An error occurred!",
+      "desc": "Please go back and try again later."
     },
-    "back": "Return to homepage"
+    "back": "Back to homepage"
   },
   "recruitment": {
-    "title": "Apply to be an English Teacher",
+    "title": "Teacher Recruitment",
     "name": "Full Name",
     "phone": "Phone Number",
     "email": "Email",
     "cv": "Link to CV (Google Drive, etc.)",
-    "message": "Introduction or Message",
+    "message": "Introduction or message",
     "submit": "SUBMIT",
-    "success": "Thank you! We will get back to you soon."
+    "success": "Thank you! We will contact you soon."
   }
 }

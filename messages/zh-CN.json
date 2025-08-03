@@ -1,0 +1,277 @@
+{
+  "header": {
+    "courses": "课程",
+    "teachers": "教师",
+    "workshops": "研讨会",
+    "recruit": "招聘",
+    "login": "登录"
+  },
+  "home": {
+    "slogan1": "以你的方式学习",
+    "slogan2": "像现实生活中一样练习",
+    "successStories": "成功故事",
+    "upcomingWorkshops": "即将举行的研讨会"
+  },
+  "hero": {
+    "title": "免费\n试听报名",
+    "placeholder": {
+      "name": "姓名",
+      "phone": "电话号码",
+      "email": "电子邮箱",
+      "course": "选择课程"
+    },
+    "button": "立即报名",
+    "cta": "对\n话\n世界！",
+    "contact": "立即开始",
+    "error": "请填写完整信息。"
+  },
+  "tutors": {
+    "title": {
+      "part1": "认识",
+      "part2": "我们的",
+      "part3": "教师"
+    },
+    "cta": "免费试听",
+    "greeting": "大家好！",
+    "specialties": "专业领域",
+    "noVideo": "无视频",
+    "upcomingWorkshopsTitle": "{name}的即将课程：",
+    "seeWorkshops": "不确定？查看{name}的研讨会",
+    "chooseSchedule": "选择课程时间",
+    "studentReviews": "学员评价",
+    "freeTrialButton": "免费试听",
+    "list": [
+      {
+        "id": 1,
+        "name": "Aimie C: 教师",
+        "countryCode": "GB",
+        "accent": "英式英语口音",
+        "experience": "超过5年经验",
+        "language": "英语（母语）",
+        "image": "/tutors/Aimie.webp",
+        "video": "https://www.w3schools.com/html/mov_bbb.mp4",
+        "about": "我是Aimie，来自英国的英语教师，拥有超过5年在英国、越南和泰国的教学经验。期待与你见面，并陪伴你提升英语水平！",
+        "skills": ["口语交流", "雅思四项技能", "商务英语"],
+        "reviews": [
+          {
+            "name": "Minh T.",
+            "country": "越南",
+            "content": "Aimie老师教学热情且易懂，纯正英式发音！"
+          }
+        ],
+        "availability": {
+          "2025-07-01": ["12:00", "14:30", "16:00"],
+          "2025-07-02": ["12:00", "14:30", "16:00"],
+          "2025-07-03": ["14:30", "16:00"]
+        },
+        "workshops": [
+          {
+            "title": "初学者基础口语交流",
+            "date": "2025-07-15",
+            "time": "19:00",
+            "description": "提升基础听说反应能力的研讨会。"
+          },
+          {
+            "title": "雅思写作策略",
+            "date": "2025-07-20",
+            "time": "20:00",
+            "description": "专注于Task 1和Task 2的结构与思路。"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "My Quyên: 教师",
+        "countryCode": "TW",
+        "accent": "台湾口音",
+        "experience": "超过3年经验",
+        "language": "流利中文，越南语（母语）",
+        "image": "/tutors/Quyen.webp",
+        "video": "https://www.w3schools.com/html/mov_bbb.mp4",
+        "about": "我是My Quyên，来自台湾的教师，拥有3年以上教授越南及外国学生的经验。专注帮助学员自然、自信地说英语。",
+        "skills": ["日常交流", "发音", "语法"],
+        "reviews": [
+          {
+            "name": "Thu N.",
+            "country": "越南",
+            "content": "讲解清晰易懂，温和且用心！"
+          }
+        ],
+        "availability": {
+          "2025-07-01": ["09:00", "11:00", "15:00"]
+        },
+        "workshops": []
+      },
+      {
+        "id": 3,
+        "name": "Leo N: 教师",
+        "countryCode": "GB",
+        "accent": "英式英语口音",
+        "experience": "5年经验",
+        "language": "英语（母语），法语（母语）",
+        "image": "/tutors/Leo.webp",
+        "video": "https://www.w3schools.com/html/mov_bbb.mp4",
+        "about": "我是Leo，英式英语教师，拥有5年教学经验，能使用英语和法语作为母语。",
+        "skills": ["标准发音", "高级交流", "学术英语"],
+        "reviews": [],
+        "availability": {},
+        "workshops": []
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "title": "为什么选择我们？",
+    "items": [
+      {
+        "title": "资深教师团队 - 质量保证",
+        "desc": "经验丰富的母语教师，持有证书，激励你每节课都有进步。"
+      },
+      {
+        "title": "有趣且高效的学习",
+        "desc": "从日常会话到考试准备，实用课程，高互动，贴合个人目标。"
+      },
+      {
+        "title": "灵活学习，适合忙碌人士",
+        "desc": "学生和上班族都能轻松安排个人课程时间。"
+      },
+      {
+        "title": "一对一教学，随你选择教师与方式",
+        "desc": "参加在线试听课，找到最适合你的教师。"
+      }
+    ]
+  },
+  "testimonial": {
+    "title": "成功故事",
+    "items": [
+      {
+        "name": "Phương Nghi",
+        "image": "/students/PhuongNghi.webp",
+        "age": "20",
+        "location": "胡志明市",
+        "content": "网站易用，加载快，界面高级，在线学习非常方便，无需离开家。课程个性化，符合水平，无压力无束缚。我最喜欢灵活的课程时间，适合像我这样的忙碌学生。"
+      },
+      {
+        "name": "Nhi Nguyễn",
+        "image": "/students/NhiNguyen.webp",
+        "age": "21",
+        "location": "胡志明市",
+        "content": "英国老师发音非常标准，纠错细致，专注质量不追指标。Aimie老师亲切，讲解清晰，特别耐心对待学慢的学生。学习一段时间后，我自信多了。"
+      },
+      {
+        "name": "Mỹ Mỹ",
+        "image": "/students/MyMy.webp",
+        "age": "22",
+        "location": "胡志明市",
+        "content": "起初我很担心英语口语能力，但得益于实用课程和用心教师，我进步明显。主题丰富，易于应用于生活。老师逐词纠正发音，练习时感到轻松。感谢中心让我每天更自信地交流。"
+      }
+    ]
+  },
+  "cta": {
+    "title": "今天就开始你的语言征服之旅！",
+    "desc": "免费获取我们专业学员支持团队的咨询。",
+    "button": "免费咨询报名"
+  },
+  "courseGroups": [
+    {
+      "key": "english",
+      "label": "英语",
+      "courses": [
+        { "key": "pte", "label": "PTE口语训练" },
+        { "key": "ielts", "label": "雅思口语训练" },
+        { "key": "toefl", "label": "托福口语训练" },
+        { "key": "toeic", "label": "托业口语训练" },
+        { "key": "english_communication", "label": "英语交流" },
+        { "key": "english_business", "label": "商务英语" }
+      ]
+    },
+    {
+      "key": "chinese",
+      "label": "中文",
+      "courses": [
+        { "key": "hskk", "label": "HSKK口语训练" },
+        { "key": "tocfl", "label": "TOCFL口语训练" },
+        { "key": "chinese_basic", "label": "基础中文" },
+        { "key": "chinese_communication", "label": "中文交流" },
+        { "key": "chinese_business", "label": "商务中文" }
+      ]
+    }
+  ],
+  "footer": {
+    "sections": [
+      {
+        "title": "了解更多",
+        "items": [
+          { "label": "关于Aspirely", "key": "about" },
+          { "label": "隐私政策", "key": "privacy" },
+          { "label": "服务条款", "key": "terms" },
+          { "label": "联系我们", "key": "contact" }
+        ]
+      }
+    ]
+  },
+  "workshops": {
+    "title": {
+      "part1": "研讨会",
+      "part2": "列表"
+    },
+    "cta": "报名",
+    "list": [
+      {
+        "title": "雅思听力提升（5.5到8）- 2025年7月",
+        "date": "2025/07/14",
+        "time": "20:00（越南时间）",
+        "language": "英语",
+        "speaker": "Aimie Cook"
+      },
+      {
+        "title": "写作Task 2思路 - 2025年7月",
+        "date": "2025/07/21",
+        "time": "20:00（越南时间）",
+        "language": "英语",
+        "speaker": "Aimie Cook"
+      },
+      {
+        "title": "7天征服雅思阅读 - 2025年7月",
+        "date": "2025/07/28",
+        "time": "20:00（越南时间）",
+        "language": "英语",
+        "speaker": "Aimie Cook"
+      }
+    ]
+  },
+  "contact": {
+    "title": "免费咨询报名",
+    "name": "姓名",
+    "phone": "电话号码",
+    "email": "电子邮箱（可选）",
+    "selectCourse": "感兴趣课程",
+    "note": "附加备注",
+    "submit": "提交信息"
+  },
+  "thankyou": {
+    "invalid": "无效页面，正在返回首页...",
+    "loading": {
+      "title": "正在处理报名...",
+      "desc": "请稍候"
+    },
+    "success": {
+      "title": "感谢您的报名！",
+      "desc": "几秒后将返回首页..."
+    },
+    "error": {
+      "title": "发生错误！",
+      "desc": "请返回重试。"
+    },
+    "back": "返回首页"
+  },
+  "recruitment": {
+    "title": "教师招聘",
+    "name": "姓名",
+    "phone": "电话号码",
+    "email": "电子邮箱",
+    "cv": "简历链接（Google Drive等）",
+    "message": "自我介绍或留言",
+    "submit": "提交信息",
+    "success": "感谢您！我们将尽快联系您。"
+  }
+}

@@ -1,0 +1,277 @@
+{
+  "header": {
+    "courses": "課程",
+    "teachers": "教師",
+    "workshops": "工作坊",
+    "recruit": "招聘",
+    "login": "登入"
+  },
+  "home": {
+    "slogan1": "按照你的方式學習",
+    "slogan2": "像現實生活一樣實踐",
+    "successStories": "成功故事",
+    "upcomingWorkshops": "即將舉行的工作坊"
+  },
+  "hero": {
+    "title": "免費試聽報名\n",
+    "placeholder": {
+      "name": "姓名",
+      "phone": "電話號碼",
+      "email": "電子郵件",
+      "course": "選擇課程"
+    },
+    "button": "立即報名",
+    "cta": "向\n世界\n說話！",
+    "contact": "立即開始",
+    "error": "請填寫完整資訊。"
+  },
+  "tutors": {
+    "title": {
+      "part1": "認識",
+      "part2": "教師",
+      "part3": "我們的"
+    },
+    "cta": "免費試聽",
+    "greeting": "大家好！",
+    "specialties": "專長",
+    "noVideo": "無影片",
+    "upcomingWorkshopsTitle": "即將與{name}的課程：",
+    "seeWorkshops": "不確定？查看{name}的工作坊",
+    "chooseSchedule": "選擇課表",
+    "studentReviews": "學生評價",
+    "freeTrialButton": "免費試聽",
+    "list": [
+      {
+        "id": 1,
+        "name": "Aimie C: 教師",
+        "countryCode": "GB",
+        "accent": "英國口音",
+        "experience": "超過5年經驗",
+        "language": "英語（母語）",
+        "image": "/tutors/Aimie.webp",
+        "video": "https://www.w3schools.com/html/mov_bbb.mp4",
+        "about": "我是Aimie，來自英國的英語教師，擁有超過5年的英國、越南和泰國教學經驗。期待與你見面，陪伴你提升英語水平！",
+        "skills": ["溝通", "IELTS四項技能", "商務英語"],
+        "reviews": [
+          {
+            "name": "Minh T.",
+            "country": "越南",
+            "content": "Aimie老師教學熱情且易懂，英式發音標準！"
+          }
+        ],
+        "availability": {
+          "2025-07-01": ["12:00", "14:30", "16:00"],
+          "2025-07-02": ["12:00", "14:30", "16:00"],
+          "2025-07-03": ["14:30", "16:00"]
+        },
+        "workshops": [
+          {
+            "title": "初學者基礎會話",
+            "date": "2025-07-15",
+            "time": "19:00",
+            "description": "幫助提升基礎聽說反應的工作坊。"
+          },
+          {
+            "title": "IELTS寫作策略",
+            "date": "2025-07-20",
+            "time": "20:00",
+            "description": "專注於Task 1和Task 2的結構與想法。"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "My Quyên: 教師",
+        "countryCode": "TW",
+        "accent": "台灣口音",
+        "experience": "超過3年經驗",
+        "language": "流利中文，越南語（母語）",
+        "image": "/tutors/Quyen.webp",
+        "video": "https://www.w3schools.com/html/mov_bbb.mp4",
+        "about": "我是My Quyên，來自台灣的教師，擁有3年以上教學越南人和外國人的經驗。專注幫助學生自然且自信地說英語。",
+        "skills": ["日常會話", "發音", "語法"],
+        "reviews": [
+          {
+            "name": "Thu N.",
+            "country": "越南",
+            "content": "解釋清楚、溫柔且用心！"
+          }
+        ],
+        "availability": {
+          "2025-07-01": ["09:00", "11:00", "15:00"]
+        },
+        "workshops": []
+      },
+      {
+        "id": 3,
+        "name": "Leo N: 教師",
+        "countryCode": "GB",
+        "accent": "英國口音",
+        "experience": "5年經驗",
+        "language": "英語（母語）、法語（母語）",
+        "image": "/tutors/Leo.webp",
+        "video": "https://www.w3schools.com/html/mov_bbb.mp4",
+        "about": "我是Leo，英語教師，擁有標準英國口音，5年教學經驗，能同時使用英語和法語如母語。",
+        "skills": ["標準發音", "高階溝通", "學術英語"],
+        "reviews": [],
+        "availability": {},
+        "workshops": []
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "title": "為什麼選擇我們？",
+    "items": [
+      {
+        "title": "專業教師團隊 - 品質保證",
+        "desc": "經驗豐富的母語教師，持有證書，激勵你每堂課都有進步。"
+      },
+      {
+        "title": "有趣且有效的學習",
+        "desc": "從日常對話到考試準備，實用且互動性強的課程，貼合個人目標。"
+      },
+      {
+        "title": "靈活學習，適合忙碌人士",
+        "desc": "學生或上班族皆可輕鬆安排個人課程。"
+      },
+      {
+        "title": "一對一學習，依你所願，選擇教師",
+        "desc": "參加線上試聽，找到最適合你的教師。"
+      }
+    ]
+  },
+  "testimonial": {
+    "title": "成功故事",
+    "items": [
+      {
+        "name": "Phương Nghi",
+        "image": "/students/PhuongNghi.webp",
+        "age": "20",
+        "location": "胡志明市",
+        "content": "網站易用，載入快速，介面優秀，線上學習方便，不用出門。教材個人化，符合程度，無壓力。最喜歡彈性課表，適合忙碌學生。"
+      },
+      {
+        "name": "Nhi Nguyễn",
+        "image": "/students/NhiNguyen.webp",
+        "age": "21",
+        "location": "胡志明市",
+        "content": "英國教師發音標準，糾錯仔細，注重品質非數量。Aimie老師親切，講解清楚，耐心對待學習較慢學生。學習後自信提升。"
+      },
+      {
+        "name": "Mỹ Mỹ",
+        "image": "/students/MyMy.webp",
+        "age": "22",
+        "location": "胡志明市",
+        "content": "起初擔心英語口說能力，感謝實用課程與用心教師，進步明顯。主題多樣，易應用生活。老師細心糾正發音，練習時感覺輕鬆。謝謝中心，讓我每天更有自信。"
+      }
+    ]
+  },
+  "cta": {
+    "title": "今天就開始你的語言征服之旅！",
+    "desc": "免費諮詢我們專業的學生支援團隊。",
+    "button": "免費報名諮詢"
+  },
+  "courseGroups": [
+    {
+      "key": "english",
+      "label": "英語",
+      "courses": [
+        { "key": "pte", "label": "PTE口說訓練" },
+        { "key": "ielts", "label": "IELTS口說訓練" },
+        { "key": "toefl", "label": "TOEFL口說訓練" },
+        { "key": "toeic", "label": "TOEIC口說訓練" },
+        { "key": "english_communication", "label": "英語會話" },
+        { "key": "english_business", "label": "商務英語" }
+      ]
+    },
+    {
+      "key": "chinese",
+      "label": "中文",
+      "courses": [
+        { "key": "hskk", "label": "HSKK口說訓練" },
+        { "key": "tocfl", "label": "TOCFL口說訓練" },
+        { "key": "chinese_basic", "label": "基礎中文" },
+        { "key": "chinese_communication", "label": "中文會話" },
+        { "key": "chinese_business", "label": "商務中文" }
+      ]
+    }
+  ],
+  "footer": {
+    "sections": [
+      {
+        "title": "了解更多",
+        "items": [
+          { "label": "關於Aspirely", "key": "about" },
+          { "label": "隱私政策", "key": "privacy" },
+          { "label": "服務條款", "key": "terms" },
+          { "label": "聯絡我們", "key": "contact" }
+        ]
+      }
+    ]
+  },
+  "workshops": {
+    "title": {
+      "part1": "工作坊",
+      "part2": "列表"
+    },
+    "cta": "報名",
+    "list": [
+      {
+        "title": "提升IELTS聽力分數（5.5提升至8）- 2025年7月",
+        "date": "2025/07/14",
+        "time": "20:00（越南時間）",
+        "language": "英語",
+        "speaker": "Aimie Cook"
+      },
+      {
+        "title": "Writing Task 2構思 - 2025年7月",
+        "date": "2025/07/21",
+        "time": "20:00（越南時間）",
+        "language": "英語",
+        "speaker": "Aimie Cook"
+      },
+      {
+        "title": "7天攻克IELTS閱讀 - 2025年7月",
+        "date": "2025/07/28",
+        "time": "20:00（越南時間）",
+        "language": "英語",
+        "speaker": "Aimie Cook"
+      }
+    ]
+  },
+  "contact": {
+    "title": "免費諮詢報名",
+    "name": "姓名",
+    "phone": "電話號碼",
+    "email": "電子郵件（非必填）",
+    "selectCourse": "感興趣課程",
+    "note": "附註",
+    "submit": "送出資訊"
+  },
+  "thankyou": {
+    "invalid": "無效頁面，正在返回首頁...",
+    "loading": {
+      "title": "正在處理報名...",
+      "desc": "請稍候"
+    },
+    "success": {
+      "title": "感謝您的報名！",
+      "desc": "幾秒後將返回首頁..."
+    },
+    "error": {
+      "title": "發生錯誤！",
+      "desc": "請返回並稍後再試。"
+    },
+    "back": "返回首頁"
+  },
+  "recruitment": {
+    "title": "教師招募",
+    "name": "姓名",
+    "phone": "電話號碼",
+    "email": "電子郵件",
+    "cv": "履歷連結（Google Drive等）",
+    "message": "自我介紹或留言",
+    "submit": "送出資訊",
+    "success": "感謝您！我們將儘快聯繫您。"
+  }
+}

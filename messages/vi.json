@@ -1,5 +1,6 @@
 {
   "header": {
+    "courses": "Khóa học",
     "teachers": "Giáo viên",
     "workshops": "Workshops",
     "recruit": "Tuyển dụng",
@@ -22,16 +23,6 @@
     "button": "ĐĂNG KÝ NGAY",
     "cta": "SPEAK \n TO THE \n WORLD!",
     "contact": "BẮT ĐẦU NGAY",
-    "courses": {
-      "group1": "Tiếng Anh",
-      "group2": "Tiếng Trung",
-      "en1": "Tiếng Anh Giao Tiếp",
-      "en2": "Luyện thi IELTS",
-      "en3": "Tiếng Anh Doanh Nghiệp",
-      "zh1": "Tiếng Trung Cơ Bản",
-      "zh2": "Tiếng Trung Giao Tiếp",
-      "zh3": "Tiếng Trung Doanh Nghiệp"
-    },
     "error": "Vui lòng điền đầy đủ thông tin."
   },
   "tutors": {
@@ -110,6 +101,21 @@
           "2025-07-01": ["09:00", "11:00", "15:00"]
         },
         "workshops": []
+      },
+      {
+        "id": 3,
+        "name": "Leo N: Giáo viên",
+        "countryCode": "GB",
+        "accent": "Giọng Anh - Anh",
+        "experience": "5 năm kinh nghiệm",
+        "language": "Nói tiếng Anh (bản ngữ), nói tiếng Pháp (bản ngữ)",
+        "image": "/tutors/Leo.webp",
+        "video": "https://www.w3schools.com/html/mov_bbb.mp4",
+        "about": "Tôi là Leo, giáo viên tiếng Anh với giọng chuẩn Anh - Anh. Tôi có 5 năm kinh nghiệm giảng dạy và có khả năng sử dụng cả tiếng Anh và tiếng Pháp như ngôn ngữ bản ngữ.",
+        "skills": ["Phát âm chuẩn", "Giao tiếp nâng cao", "Tiếng Anh học thuật"],
+        "reviews": [],
+        "availability": {},
+        "workshops": []
       }
     ]
   },
@@ -165,29 +171,33 @@
     "desc": "Nhận tư vấn miễn phí từ đội ngũ hỗ trợ học viên chuyên nghiệp của chúng tôi.",
     "button": "Đăng ký tư vấn miễn phí"
   },
+  "courseGroups": [
+    {
+      "key": "english",
+      "label": "TIẾNG ANH",
+      "courses": [
+        { "key": "pte", "label": "Luyện nói PTE" },
+        { "key": "ielts", "label": "Luyện nói IELTS" },
+        { "key": "toefl", "label": "Luyện nói TOEFL" },
+        { "key": "toeic", "label": "Luyện nói TOEIC" },
+        { "key": "english_communication", "label": "Tiếng Anh giao tiếp" },
+        { "key": "english_business", "label": "Tiếng Anh thương mại" }
+      ]
+    },
+    {
+      "key": "chinese",
+      "label": "TIẾNG TRUNG",
+      "courses": [
+        { "key": "hskk", "label": "Luyện nói HSKK" },
+        { "key": "tocfl", "label": "Luyện nói TOCFL" },
+        { "key": "chinese_basic", "label": "Tiếng Trung cơ bản" },
+        { "key": "chinese_communication", "label": "Tiếng Trung giao tiếp" },
+        { "key": "chinese_business", "label": "Tiếng Trung thương mại" }
+      ]
+    }
+  ],
   "footer": {
     "sections": [
-      {
-        "title": "TIẾNG ANH",
-        "items": [
-          { "label": "Luyện nói PTE", "key": "pte" },
-          { "label": "Luyện nói IELTS", "key": "ielts" },
-          { "label": "Luyện nói TOEFL", "key": "toefl" },
-          { "label": "Luyện nói TOEIC", "key": "toeic" },
-          { "label": "Tiếng Anh giao tiếp", "key": "communication" },
-          { "label": "Tiếng Anh thương mại", "key": "business" }
-        ]
-      },
-      {
-        "title": "TIẾNG TRUNG",
-        "items": [
-          { "label": "Luyện nói HSKK", "key": "hskk" },
-          { "label": "Luyện nói TOCFL", "key": "tocfl" },
-          { "label": "Tiếng Trung cơ bản", "key": "basic" },
-          { "label": "Tiếng Trung giao tiếp", "key": "communication" },
-          { "label": "Tiếng Trung thương mại", "key": "business" }
-        ]
-      },
       {
         "title": "TÌM HIỂU THÊM",
         "items": [
@@ -200,7 +210,10 @@
     ]
   },
   "workshops": {
-    "title": "Danh sách Workshop",
+    "title": {
+      "part1": "Danh sách",
+      "part2": "Workshops"
+    },
     "cta": "Đăng ký",
     "list": [
       {
@@ -218,7 +231,7 @@
         "speaker": "Aimie Cook"
       },
       {
-        "title": "Chinh phục IELTS Reading trong 7 ngày – Tháng 7/2025",
+        "title": "Chinh phục IELTS Reading trong 7 ngày - Tháng 7/2025",
         "date": "28/07/2025",
         "time": "20:00 (giờ Việt Nam)",
         "language": "Tiếng Anh",
@@ -231,34 +244,9 @@
     "name": "Họ và tên",
     "phone": "Số điện thoại",
     "email": "Email (không bắt buộc)",
-    "selectProgram": "Chương trình quan tâm",
+    "selectCourse": "Khoá học quan tâm",
     "note": "Ghi chú thêm",
-    "submit": "GỬI THÔNG TIN",
-    "programGroups": [
-      {
-        "key": "english",
-        "label": "TIẾNG ANH",
-        "programs": [
-          { "key": "pte", "label": "Luyện nói PTE" },
-          { "key": "ielts", "label": "Luyện nói IELTS" },
-          { "key": "toefl", "label": "Luyện nói TOEFL" },
-          { "key": "toeic", "label": "Luyện nói TOEIC" },
-          { "key": "english_communication", "label": "Tiếng Anh giao tiếp" },
-          { "key": "english_business", "label": "Tiếng Anh thương mại" }
-        ]
-      },
-      {
-        "key": "chinese",
-        "label": "TIẾNG TRUNG",
-        "programs": [
-          { "key": "hskk", "label": "Luyện nói HSKK" },
-          { "key": "tocfl", "label": "Luyện nói TOCFL" },
-          { "key": "chinese_basic", "label": "Tiếng Trung cơ bản" },
-          { "key": "chinese_communication", "label": "Tiếng Trung giao tiếp" },
-          { "key": "chinese_business", "label": "Tiếng Trung thương mại" }
-        ]
-      }
-    ]
+    "submit": "GỬI THÔNG TIN"
   },
   "thankyou": {
     "invalid": "Trang không hợp lệ, đang quay về trang chủ...",

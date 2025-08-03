@@ -41,8 +41,8 @@ export default function UpcomingWorkshopsSection() {
   return (
     <section className="w-full lg:flex bg-white py-12 px-4 border-t">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
-          {t("workshops.title")}
+        <h2 className="text-3xl md:text-5xl font-bold text-center mb-8">
+          {t("workshops.title.part1")} <span className="text-[#9F0A0B]">{t("workshops.title.part2")}</span>
         </h2>
 
         <div className="overflow-x-auto -mx-4 px-4">
@@ -52,7 +52,7 @@ export default function UpcomingWorkshopsSection() {
                 key={index}
                 className="w-[300px] shrink-0 border rounded-lg shadow-lg overflow-hidden flex flex-col snap-start"
               >
-                <div className="relative w-full h-full aspect-3/2">
+                <div className="relative w-[300px] h-[200px] aspect-[3/2]">
                   <Image
                     src={ws.bannerUrl}
                     alt={ws.title}

@@ -51,9 +51,9 @@ export default function TutorCard({
               {Flag && <Flag className="w-[18px] h-[12px]" />}
               <p>{accent}</p>
             </li>
-            <li className="flex items-center space-x-2">
-              <LuGraduationCap size={18} />
-              <p>{experience}</p>
+            <li className="flex items-start space-x-2">
+              <LuGraduationCap size={18} className="mt-0.5 flex-shrink-0" />
+              <p className="line-clamp-2 min-h-[48px] leading-snug">{experience}</p>
             </li>
             <li className="flex items-start space-x-2">
               <RiSpeakLine size={18} className="mt-0.5 flex-shrink-0" />
