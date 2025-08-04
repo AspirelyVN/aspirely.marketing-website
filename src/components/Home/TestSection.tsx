@@ -1,8 +1,27 @@
 "use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import DoubleDotPattern from "@/components/DoubleDotPattern";
 
 export default function TestSection() {
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [agree1, setAgree1] = useState(false);
+  const [agree2, setAgree2] = useState(false);
+  const [error, setError] = useState("");
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email || !phone || !agree1 || !agree2) {
+      setError("Vui lòng điền đầy đủ thông tin và đồng ý với các điều khoản.");
+      return;
+    }
+    setError("");
+    await fetch("/api/set-test-cookie");
+    window.location.href = "/test";
+  };
+
   return (
     <div className="relative w-full h-[500px] lg:h-[650px] overflow-hidden">
         <Image
@@ -32,11 +51,13 @@ export default function TestSection() {
             Kiểm Tra Trình Độ <br /> Ngoại Ngữ Của Bạn
           </h1>
 
-          <form className="space-y-4 max-w-xl w-2/3 md:w-1/2 lg:w-[80%] xl:w-full">
+          <form onSubmit={handleSubmit} className="space-y-4 max-w-xl w-2/3 md:w-1/2 xl:w-[80%]">
             <div>
               <input
                 id="email"
                 type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className="w-full bg-transparent border-b border-white focus:outline-none py-1"
                 placeholder="Email"
               />
@@ -45,6 +66,8 @@ export default function TestSection() {
               <input
                 id="phone"
                 type="tel"
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
                 className="w-full bg-transparent border-b border-white focus:outline-none py-1"
                 placeholder="Phone number"
               />
@@ -52,14 +75,16 @@ export default function TestSection() {
 
             <div className="text-start space-y-2 text-sm mt-4">
               <label className="flex items-start gap-2">
-                <input type="checkbox" className="mt-1" />
+                <input type="checkbox" className="mt-1" checked={agree1} onChange={(e) => setAgree1(e.target.checked)} />
                 Tôi đồng ý tham gia danh sách nhận thông tin khóa học tiếng Anh trực tuyến.
               </label>
               <label className="flex items-start gap-2">
-                <input type="checkbox" className="mt-1" />
+                <input type="checkbox" className="mt-1" checked={agree2} onChange={(e) => setAgree2(e.target.checked)} />
                 Tôi đồng ý để ASPIRELY liên hệ với tôi qua điện thoại, email hoặc tin nhắn SMS nhằm hỗ trợ giải đáp thắc mắc của tôi
               </label>
             </div>
+
+            {error && <p className="text-red-500 text-sm">{error}</p>}
 
             <div className="flex justify-center mt-4">
               <button
@@ -85,7 +110,12 @@ export default function TestSection() {
 
         <DoubleDotPattern />
 
-        <div className="absolute bottom-0 -right-[5%] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] xl:w-[500px] xl:h-[500px] z-20">
+        <div className="absolute bottom-0 -right-[5%] lg:-right-[0%]
+          md:w-[400px] md:h-[400px]
+          lg:w-[480px] lg:h-[480px]
+          xl:w-[500px] xl:h-[500px]
+          z-20"
+        >
           <Image
               src="/person.webp"
               alt="Student"
