@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { FiUser, FiPhone, FiMail, FiBookOpen } from "react-icons/fi";
 import { useTranslations, useMessages } from "next-intl";
-
 import FancyButton from "@/components/FancyButton";
 
 type Course = {
@@ -35,9 +34,34 @@ export default function ContactUsPage() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", form);
+
+    const { name, phone, email, course, message } = form;
+
+    if (!name || !phone || !email || !course) {
+      alert(t("requiredFields"));
+      return;
+    }
+
+    try {
+      const res = await fetch(`/api/submit-form`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+
+      const data = await res.json();
+
+      if (res.ok) {
+        alert(t("success"));
+        setForm({ name: "", phone: "", email: "", course: "", message: "" });
+      } else {
+        alert(t("error"));
+      }
+    } catch (error) {
+      alert(t("error"));
+    }
   };
 
   const courseGroups = (messages?.courseGroups || []) as CourseGroup[];
@@ -79,6 +103,7 @@ export default function ContactUsPage() {
             placeholder={t("email")}
             value={form.email}
             onChange={handleChange}
+            required
             className="w-full bg-transparent outline-none text-black placeholder:italic"
           />
         </div>
@@ -112,6 +137,7 @@ export default function ContactUsPage() {
             onChange={handleChange}
             placeholder={t("note")}
             rows={4}
+            // required
             className="w-full bg-white border border-gray-300 rounded p-3 text-black placeholder:italic"
           />
         </div>

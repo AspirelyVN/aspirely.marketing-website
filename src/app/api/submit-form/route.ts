@@ -1,6 +1,21 @@
 import { NextRequest, NextResponse } from "next/server";
 import { google } from "googleapis";
-import { Resend } from "resend";
+import nodemailer from "nodemailer";
+
+const transporter = nodemailer.createTransport({
+  host: "postal.aspirely.edu.vn",
+  port: 25,
+  secure: false,
+  debug: true,
+  logger: true,
+  tls: {
+    rejectUnauthorized: false, // ⚠️ Không nên dùng ở production
+  },
+  auth: {
+    user: "noreply@aspirely.edu.vn",
+    pass: process.env.POSTAL_PASSWORD,
+  },
+});
 
 function formatDateTime(date: Date) {
   const pad = (n: number) => n.toString().padStart(2, "0");
@@ -15,7 +30,6 @@ export async function POST(req: NextRequest) {
   }
 
   const SHEET_ID = process.env.GOOGLE_SHEET_ID!;
-  const resend = new Resend(process.env.RESEND_API_KEY!);
 
   try {
     const auth = new google.auth.GoogleAuth({
@@ -40,9 +54,9 @@ export async function POST(req: NextRequest) {
       },
     });
 
-    await resend.emails.send({
-      from: "noreply@aspirely.edu.vn",
-      to: [email],
+    await transporter.sendMail({
+      from: '"Aspirely" <noreply@aspirely.edu.vn>',
+      to: email,
       subject: "Đăng ký học thử thành công",
       html: `<p>Chào ${name},</p><p>Bạn đã đăng ký khoá học <strong>${course}</strong>. Chúng tôi sẽ liên hệ sớm.</p>`,
     });
