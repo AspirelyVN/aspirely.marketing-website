@@ -4,12 +4,10 @@ import nodemailer from "nodemailer";
 
 const transporter = nodemailer.createTransport({
   host: "postal.aspirely.edu.vn",
-  port: 25,
+  port: 587,
   secure: false,
-  debug: true,
-  logger: true,
   tls: {
-    rejectUnauthorized: false, // ⚠️ Không nên dùng ở production
+    rejectUnauthorized: true,
   },
   auth: {
     user: "noreply@aspirely.edu.vn",

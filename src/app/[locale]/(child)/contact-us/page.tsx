@@ -37,7 +37,7 @@ export default function ContactUsPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    const { name, phone, email, course, message } = form;
+    const { name, phone, email, course } = form;
 
     if (!name || !phone || !email || !course) {
       alert(t("requiredFields"));
@@ -51,7 +51,7 @@ export default function ContactUsPage() {
         body: JSON.stringify(form),
       });
 
-      const data = await res.json();
+      // const data = await res.json();
 
       if (res.ok) {
         alert(t("success"));
@@ -60,7 +60,7 @@ export default function ContactUsPage() {
         alert(t("error"));
       }
     } catch (error) {
-      alert(t("error"));
+      alert(error);
     }
   };
 
