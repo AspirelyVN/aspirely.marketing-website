@@ -53,7 +53,7 @@ export default function TutorCard({
             </li>
             <li className="flex items-start space-x-2">
               <LuGraduationCap size={18} className="mt-0.5 flex-shrink-0" />
-              <p className="line-clamp-2 min-h-[48px] leading-snug">{experience}</p>
+              <p className="">{experience}</p>
             </li>
             <li className="flex items-start space-x-2">
               <RiSpeakLine size={18} className="mt-0.5 flex-shrink-0" />

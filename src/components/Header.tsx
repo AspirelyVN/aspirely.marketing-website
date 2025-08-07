@@ -74,6 +74,14 @@ export default function Header() {
           menuOpen ? "flex" : "hidden"
         } lg:flex absolute lg:static top-full left-0 w-full bg-black/80 lg:bg-transparent flex-col lg:flex-row justify-end items-start lg:items-center space-y-2 lg:space-y-0 lg:space-x-5 px-10 py-3 z-50`}
       >
+        <Link href="/tutors" className="p-2" onClick={() => setMenuOpen(false)}>
+          {t("teachers")}
+        </Link>
+
+        <Link href="/workshops" className="p-2" onClick={() => setMenuOpen(false)}>
+          {t("workshops")}
+        </Link>
+
         <div className="relative w-full lg:w-auto">
           <button
             onClick={() => setCourseOpen(!courseOpen)}
@@ -107,14 +115,6 @@ export default function Header() {
             </div>
           )}
         </div>
-
-        <Link href="/tutors" className="p-2" onClick={() => setMenuOpen(false)}>
-          {t("teachers")}
-        </Link>
-
-        <Link href="/workshops" className="p-2" onClick={() => setMenuOpen(false)}>
-          {t("workshops")}
-        </Link>
         
         <Link href="/recruitment" className="p-2" onClick={() => setMenuOpen(false)}>
           {t("recruit")}
