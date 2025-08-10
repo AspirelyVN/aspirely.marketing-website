@@ -210,10 +210,7 @@
     ]
   },
   "workshops": {
-    "title": {
-      "part1": "Danh sách",
-      "part2": "Workshops"
-    },
+    "title": "Workshops",
     "cta": "Đăng ký",
     "list": [
       {

@@ -1,9 +1,9 @@
 import HeroSection from "@/components/Home/HeroSection";
-import WhyChooseSection from "@/components/Home/WhyChooseSection";
+import HowItWorksSection from "@/components/Home/HowItWorksSection";
 import TestimonialSection from "@/components/Home/TestimonialSection";
 import TutorCarousel from "@/components/Home/TutorCarousel";
 import CallToAction from "@/components/Home/CallToAction";
-import UpcomingWorkshopsSection from "@/components/Home/UpcomingWorkshopsSection";
+import WorkshopsSection from "@/components/Home/WorkshopsSection";
 import FadeInWhenVisible from "@/components/animations/FadeInWhenVisible";
 import TestSection from "@/components/Home/TestSection";
 
@@ -20,11 +20,11 @@ export default function Home() {
       </FadeInWhenVisible>
 
       <FadeInWhenVisible delay={0.5}>
-        <UpcomingWorkshopsSection />
+        <WorkshopsSection />
       </FadeInWhenVisible>
 
       <FadeInWhenVisible delay={0.6}>
-        <WhyChooseSection />
+        <HowItWorksSection />
       </FadeInWhenVisible>
 
       <FadeInWhenVisible delay={0.7}>

@@ -210,10 +210,7 @@
     ]
   },
   "workshops": {
-    "title": {
-      "part1": "List of",
-      "part2": "Workshops"
-    },
+    "title": "Workshops",
     "cta": "Register",
     "list": [
       {

@@ -42,7 +42,7 @@ export default function UpcomingWorkshopsSection() {
     <section className="w-full lg:flex bg-white py-12 px-4 border-t">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-5xl font-bold text-center mb-8">
-          {t("workshops.title.part1")} <span className="text-[#9F0A0B]">{t("workshops.title.part2")}</span>
+          <span className="text-[#9F0A0B]">{t("workshops.title")}</span>
         </h2>
 
         <div className="overflow-x-auto -mx-4 px-4">
