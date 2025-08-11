@@ -40,8 +40,8 @@ jobs:
       - name: Update GitOps repo
         run: |
           git clone https://oauth2:${{ secrets.GITOPS_ACCESS_TOKEN }}@github.com/AspirelyVN/gitops.git
-          cd gitops/apps/aspirely.app.backend
-          sed -i "s|image: .*aspirely.app.backend:.*|image: $FULL_IMAGE|" deployment.yaml
+          cd gitops/apps/aspirely.marketing-website
+          sed -i "s|image: .*aspirely.marketing-website:.*|image: $FULL_IMAGE|" deployment.yaml
           git config user.email "ci@github.com"
           git config user.name "GitHub Actions"
           if ! git diff --quiet deployment.yaml; then
