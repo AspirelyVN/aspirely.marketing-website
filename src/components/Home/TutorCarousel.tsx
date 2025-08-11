@@ -11,7 +11,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import FadeInWhenVisible from "@/components/animations/FadeInWhenVisible";
 import { FlagComponent, GB, TW } from "country-flag-icons/react/3x2";
 import FancyButton from "@/components/FancyButton";
 import { RiSpeakLine } from "react-icons/ri";

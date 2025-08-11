@@ -25,19 +25,23 @@ export default function Home() {
         <WorkshopsSection />
       </FadeInWhenVisible>
 
-      <EnglishProgramsCarousel />
-
-      <ChineseProgramsCarousel />
-
       <FadeInWhenVisible delay={0.6}>
-        <HowItWorksSection />
+        <EnglishProgramsCarousel />
       </FadeInWhenVisible>
 
       <FadeInWhenVisible delay={0.7}>
-        <TestimonialSection />
+        <ChineseProgramsCarousel />
       </FadeInWhenVisible>
 
       <FadeInWhenVisible delay={0.8}>
+        <HowItWorksSection />
+      </FadeInWhenVisible>
+
+      <FadeInWhenVisible delay={0.9}>
+        <TestimonialSection />
+      </FadeInWhenVisible>
+
+      <FadeInWhenVisible delay={1.0}>
         <CallToAction />
       </FadeInWhenVisible>
     </div>
