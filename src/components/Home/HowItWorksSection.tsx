@@ -51,7 +51,7 @@ const Arrow = ({
       className={className}
     >
       <path
-        d={"M0 20 C20 0, 60 0, 80 20"}
+        d={"M0 30 C30 0, 80 0, 100 30"}
         stroke="#3B2B1B"
         strokeWidth="2"
         fill="none"
@@ -89,7 +89,7 @@ export default function HowItWorks() {
       </h2>
 
       <div className="relative max-w-6xl mx-auto">
-        <div className="flex justify-between px-45 mb-[-60px] z-10 relative">
+        <div className="flex justify-between px-[18%] mb-[-60px] z-10 relative">
           <div className="flex flex-col items-center w-1/2">
             <PinShape number={steps[1].number} outerColor={steps[1].outerColor} />
             <p className="text-center mt-2 w-32">{steps[1].text}</p>
@@ -114,16 +114,16 @@ export default function HowItWorks() {
         </div>
 
         <Arrow
-          className="absolute left-[200px] top-[50px] rotate-[-45deg]"
+          className="absolute left-[18%] top-[50px] rotate-[-45deg]"
         />
         <Arrow
-          className="absolute left-[380px] top-[60px] rotate-[45deg]"
+          className="absolute left-[38%] top-[50px] rotate-[45deg]"
         />
         <Arrow
-          className="absolute left-[500px] top-[50px] rotate-[-45deg]"
+          className="absolute left-[50%] top-[50px] rotate-[-45deg]"
         />
         <Arrow
-          className="absolute left-[700px] top-[60px] rotate-[45deg]"
+          className="absolute left-[72%] top-[50px] rotate-[45deg]"
         />
       </div>
     </section>

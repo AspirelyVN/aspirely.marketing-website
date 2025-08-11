@@ -6,6 +6,8 @@ import CallToAction from "@/components/Home/CallToAction";
 import WorkshopsSection from "@/components/Home/WorkshopsSection";
 import FadeInWhenVisible from "@/components/animations/FadeInWhenVisible";
 import TestSection from "@/components/Home/TestSection";
+import EnglishProgramsCarousel from "@/components/Home/EnglishProgramsCarousel";
+import ChineseProgramsCarousel from "@/components/Home/ChineseProgramsCarousel";
 
 export default function Home() {
   return (
@@ -22,6 +24,10 @@ export default function Home() {
       <FadeInWhenVisible delay={0.5}>
         <WorkshopsSection />
       </FadeInWhenVisible>
+
+      <EnglishProgramsCarousel />
+
+      <ChineseProgramsCarousel />
 
       <FadeInWhenVisible delay={0.6}>
         <HowItWorksSection />

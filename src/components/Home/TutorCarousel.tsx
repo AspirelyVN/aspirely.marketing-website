@@ -61,11 +61,9 @@ export default function TutorCarousel() {
                 key={`${tutor.id}-${index}`}
                 className="basis-full sm:basis-1/2 md:basis-1/3"
               >
-                <FadeInWhenVisible delay={index * 0.15}>
-                  <div className="flex justify-center">
-                    <TutorCard {...tutor} />
-                  </div>
-                </FadeInWhenVisible>
+                <div className="flex justify-center">
+                  <TutorCard {...tutor} />
+                </div>
               </CarouselItem>
             ))}
           </CarouselContent>
