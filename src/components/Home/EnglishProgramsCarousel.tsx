@@ -28,7 +28,7 @@ export default function EnglishProgramsCarousel() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const backgroundImage = "/EnglishCourseBanner.png";
+  const backgroundImage = "/images/EnglishCourseBanner.webp";
   const totalItems = items.length;
 
   return (
@@ -59,17 +59,11 @@ export default function EnglishProgramsCarousel() {
                       backgroundRepeat: "repeat",
                     }}
                   >
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                    <div className="absolute left-4 top-4">
-                      <div className="text-white text-5xl font-extrabold leading-none">
-                        {item.id}
-                      </div>
-                      <div className="h-[3px] w-20 bg-white/90 mt-2" />
-                    </div>
-                    <div className="absolute bottom-4 left-4 right-4">
-                      <h3 className="text-white text-2xl font-bold drop-shadow">
-                        {item.title}
-                      </h3>
+                    <div className="absolute inset-0 bg-[#00356d]/50" />
+                    <div className="absolute inset-0 z-10 flex flex-col items-start justify-center text-start px-6">
+                      <div className="text-white text-6xl font-extrabold leading-none">{item.id}</div>
+                      <div className="h-[3px] w-24 bg-white/90 my-4" />
+                      <h3 className="text-white text-2xl font-bold drop-shadow">{item.title}</h3>
                     </div>
                   </div>
                 </div>
@@ -84,7 +78,7 @@ export default function EnglishProgramsCarousel() {
           {items.map((item, index) => (
             <div
               key={item.id}
-              className="flex-shrink-0 w-[260px] sm:w-[270px] rounded-2xl overflow-hidden shadow-md border border-gray-300"
+              className="flex-shrink-0 w-[260px] sm:w-[270px] rounded-2xl overflow-hidden shadow-md border border-gray-300 relative"
               style={{
                 height: "650px",
                 backgroundImage: `url(${backgroundImage})`,
@@ -93,19 +87,12 @@ export default function EnglishProgramsCarousel() {
                 backgroundRepeat: "no-repeat",
               }}
             >
-              <div className="relative w-full h-full">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                <div className="absolute left-4 top-4">
-                  <div className="text-white text-5xl font-extrabold leading-none">
-                    {item.id}
-                  </div>
-                  <div className="h-[3px] w-20 bg-white/90 mt-2" />
-                </div>
-                <div className="absolute bottom-4 left-4 right-4">
-                  <h3 className="text-white text-2xl font-bold drop-shadow">
-                    {item.title}
-                  </h3>
-                </div>
+              <div className="absolute inset-0 bg-black/50" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+              <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center px-6">
+                <div className="text-white text-6xl font-extrabold leading-none">{item.id}</div>
+                <div className="h-[3px] w-24 bg-white/90 my-4" />
+                <h3 className="text-white text-2xl font-bold drop-shadow">{item.title}</h3>
               </div>
             </div>
           ))}
