@@ -57,7 +57,7 @@ export default function CoursesSection() {
             backgroundPosition: 'center',
         }}
     >
-        <div className="w-full">
+        <div className="w-full max-w-7xl mx-auto">
             <h2 className="text-3xl md:text-5xl font-bold text-center py-2 text-[#9F0A0B]">Tự Tin Luyện Nói Cùng Aspirely</h2>
             <p className="text-center text-neutral-700 md:text-2xl font-semibold">
                 Nâng tầm tiếng nói, mở rộng tương lai
@@ -65,7 +65,7 @@ export default function CoursesSection() {
 
             {isDesktop ? (
                 <Carousel slidesToShow={3} infinite autoplay autoplaySpeed={3000} speed={1000} centerMode centerPadding="0px">
-                    {data.map((item, i) => (
+                    {data.map((item) => (
                         <div key={`${item.title}`} className="p-4">
                           <Card item={item} />
                         </div>

@@ -9,7 +9,7 @@ export default function HeroSection() {
   const t = useTranslations("hero");
 
   return (
-    <div className="relative w-full h-[400px] lg:h-[600px] overflow-hidden">
+    <div className="relative w-full h-[400px] lg:h-[600px] xl:h-[800px] overflow-hidden">
       <video
         autoPlay
         loop
@@ -23,7 +23,7 @@ export default function HeroSection() {
         <source src="/videos/hero-bg.mp4" type="video/mp4" />
       </video>
 
-      <div className="absolute top-0 left-0 w-full h-full bg-black/15 z-[-1]" />
+      <div className="absolute top-0 left-0 w-full h-full bg-black/8 z-[-1]" />
 
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
         <h1 className="text-3xl md:text-5xl lg:text-7xl font-extrabold mb-6 whitespace-pre-line leading-tight">

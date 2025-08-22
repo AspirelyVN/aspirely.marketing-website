@@ -1,25 +1,18 @@
 "use client"
 import Image from "next/image";
-import { useTranslations } from "next-intl";
-import { useRouter } from "next/navigation";
-import { FlagComponent, GB, TW } from "country-flag-icons/react/3x2";
+// import { useTranslations } from "next-intl";
+// import { useRouter } from "next/navigation";
 
 import type { Tutor } from "@/types/tutor";
-
-const flagMap: Record<string, FlagComponent> = {
-  GB,
-  TW,
-};
 
 export default function TutorCard({
   id,
   name,
-  countryCode,
   experience,
   image = "/tutor.jpg",
 }: Tutor) {
-  const t = useTranslations("tutors");
-  const router = useRouter();
+  // const t = useTranslations("tutors");
+  // const router = useRouter();
 
   return (
     <div

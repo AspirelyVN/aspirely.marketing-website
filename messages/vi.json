@@ -26,10 +26,7 @@
     "error": "Vui lòng điền đầy đủ thông tin."
   },
   "tutors": {
-    "title": {
-      "part1": "Đội Ngũ",
-      "part2": "Giáo Viên"
-    },
+    "title": "Đội Ngũ Giáo Viên",
     "cta": "Học thử miễn phí",
     "greeting": "Xin chào mọi người!",
     "specialties": "Chuyên môn",

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function HighlightsSection() {
     return (
-        <div className="w-screen min-h-125 grid grid-cols-3">
+        <section className="w-screen min-h-125 grid grid-cols-3">
             <div 
                 className="relative w-full h-full p-5 aspect-[4/5]"
                 style={{
@@ -78,6 +78,6 @@ export default function HighlightsSection() {
                     <button className="w-3/4 border border-white py-2 px-4 rounded-lg">Giáo viên của chúng tôi</button>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

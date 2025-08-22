@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function CefrSection() {
     return (
-        <section className="w-screen p-10 space-y-10">
+        <section className="w-screen max-w-7xl p-10 space-y-10">
             <div className="grid grid-cols-2 md:grid-cols-4 grid-rows-2 gap-8">
                 <div className="relative aspect-square rounded-4xl">
                     <Image
@@ -72,6 +72,14 @@ export default function CefrSection() {
             <div className="w-full space-y-2">
                 <h1 className="text-5xl text-center text-[#0D356B] font-semibold">CEFR là gì?</h1>
                 <h2 className="text-3xl text-center">Từ Sơ Cấp đến Thành Thạo - Hành Trình Ngôn Ngữ CEFR</h2>
+                <div className="relative w-full aspect-[16/9]">
+                    <Image
+                        src="/assets/images/CefrSection/CefrLevel.png"
+                        alt="Picture 8"
+                        fill
+                        className="object-contain"
+                    />
+                </div>
             </div>
         </section>
     )

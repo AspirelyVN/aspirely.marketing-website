@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react";
-import { FiUser, FiPhone, FiMail, FiFileText } from "react-icons/fi";
+import { User, Phone, Mail, File } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 import FancyButton from "@/components/FancyButton";
@@ -42,7 +42,7 @@ export default function RecruitmentPage() {
       ) : (
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="flex items-center bg-white rounded p-2 border border-gray-300">
-            <FiUser className="text-[#9F0A0B] mr-2" />
+            <User className="text-[#9F0A0B] mr-2" />
             <input
               name="name"
               placeholder={t("name")}
@@ -54,7 +54,7 @@ export default function RecruitmentPage() {
           </div>
 
           <div className="flex items-center bg-white rounded p-2 border border-gray-300">
-            <FiPhone className="text-[#9F0A0B] mr-2" />
+            <Phone className="text-[#9F0A0B] mr-2" />
             <input
               name="phone"
               placeholder={t("phone")}
@@ -66,7 +66,7 @@ export default function RecruitmentPage() {
           </div>
 
           <div className="flex items-center bg-white rounded p-2 border border-gray-300">
-            <FiMail className="text-[#9F0A0B] mr-2" />
+            <Mail className="text-[#9F0A0B] mr-2" />
             <input
               name="email"
               placeholder={t("email")}
@@ -78,7 +78,7 @@ export default function RecruitmentPage() {
           </div>
 
           <div className="flex items-center bg-white rounded p-2 border border-gray-300">
-            <FiFileText className="text-[#9F0A0B] mr-2" />
+            <File className="text-[#9F0A0B] mr-2" />
             <input
               name="cv"
               placeholder={t("cv")}

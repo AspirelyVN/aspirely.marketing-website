@@ -29,8 +29,8 @@ export default function TeacherSection() {
 
   return (
     <section id="tutors" className="w-full max-w-6xl mx-auto px-4 py-10">
-      <h2 className="text-3xl md:text-5xl font-bold text-center mb-6">
-        {t("title.part1")} <span className="text-[#9F0A0B]">{t("title.part2")}</span>
+      <h2 className="text-3xl md:text-5xl font-bold text-center text-[#9F0A0B] mb-6">
+        {t("title")}
       </h2>
 
       {isDesktop ? (
@@ -48,9 +48,6 @@ export default function TeacherSection() {
       ) : (
         <div className="flex gap-3 overflow-x-auto scroll-smooth no-scrollbar px-1 pt-6 pb-10">
           {tutorsData.map((tutor: Tutor) => {
-            const countryCode = tutor.countryCode?.toUpperCase();
-            // const Flag = flagMap[countryCode || ""];
-
             return (
               <div
                 key={tutor.id}
@@ -71,18 +68,6 @@ export default function TeacherSection() {
                   <div className="text-center border-t border-gray-200 px-4 py-3 text-xl text-black">
                     <p className="font-semibold mb-2">{tutor.name}</p>
                     <ul className="flex flex-col justify-start text-start space-y-1 mb-3 text-base">
-                      {/* <li className="flex items-center space-x-2">
-                        {Flag && <Flag className="w-[18px] h-[12px]" />}
-                        <p>{tutor.accent}</p>
-                      </li>
-                      <li className="flex items-center space-x-2">
-                        <LuGraduationCap size={18} />
-                        <p>{tutor.experience}</p>
-                      </li>
-                      <li className="flex items-start space-x-2">
-                        <RiSpeakLine size={18} className="mt-0.5 flex-shrink-0" />
-                        <p className="line-clamp-2 min-h-[48px] leading-snug">{tutor.language}</p>
-                      </li> */}
                     </ul>
                     <FancyButton
                       className="bg-[#9F0A0B] text-white px-4 py-1.5 text-sm rounded-full font-semibold hover:opacity-90 transition"

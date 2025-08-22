@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function DidYouKnowSection() {
   return (
-    <section className="w-screen max-w-[90%] py-10 space-y-10">
+    <section className="w-screen max-w-7xl py-10 space-y-10">
         <div className="w-full h-15 flex justify-center items-center space-x-4">
             <p className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-[#0D356B]">Bạn có biết</p>
             <div className="relative h-full aspect-square">

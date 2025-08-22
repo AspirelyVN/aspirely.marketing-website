@@ -22,7 +22,7 @@ export default function TestSection() {
   };
 
   return (
-    <div className="relative w-full md:h-[550px] lg:h-[600px] xl:h-[650px] overflow-hidden">
+    <div className="relative w-full md:h-[600px] lg:h-[700px] xl:h-[800px] overflow-hidden">
         <Image
           src="/TestBackground.svg"
           alt="Description"

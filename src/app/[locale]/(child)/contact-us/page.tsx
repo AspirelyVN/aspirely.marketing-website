@@ -1,70 +1,68 @@
 "use client";
 
-import { useState } from "react";
-// import { FiUser, FiPhone, FiMail, FiBookOpen } from "react-icons/fi";
-import { useTranslations, useMessages } from "next-intl";
-import FancyButton from "@/components/FancyButton";
+// import { useState } from "react";
+// import { useTranslations, useMessages } from "next-intl";
 
-type Course = {
-  key: string;
-  label: string;
-};
+// type Course = {
+//   key: string;
+//   label: string;
+// };
 
-type CourseGroup = {
-  key: string;
-  label: string;
-  courses: Course[];
-};
+// type CourseGroup = {
+//   key: string;
+//   label: string;
+//   courses: Course[];
+// };
 
 export default function ContactUsPage() {
-  const t = useTranslations("contact");
-  const messages = useMessages();
+  // const t = useTranslations("contact");
+  // const messages = useMessages();
 
-  const [form, setForm] = useState({
-    name: "",
-    phone: "",
-    email: "",
-    course: "",
-    message: "",
-  });
+  // const [form, setForm] = useState({
+  //   name: "",
+  //   phone: "",
+  //   email: "",
+  //   course: "",
+  //   message: "",
+  // });
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
-  ) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
+  // const handleChange = (
+  //   e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  // ) => {
+  //   setForm({ ...form, [e.target.name]: e.target.value });
+  // };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+  // const handleSubmit = async (e: React.FormEvent) => {
+  //   e.preventDefault();
 
-    const { name, phone, email, course } = form;
+  //   const { name, phone, email, course } = form;
 
-    if (!name || !phone || !email || !course) {
-      alert(t("requiredFields"));
-      return;
-    }
+  //   if (!name || !phone || !email || !course) {
+  //     alert(t("requiredFields"));
+  //     return;
+  //   }
 
-    try {
-      const res = await fetch(`/api/submit-form`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
-      });
+  //   try {
+  //     const res = await fetch(`/api/submit-form`, {
+  //       method: "POST",
+  //       headers: { "Content-Type": "application/json" },
+  //       body: JSON.stringify(form),
+  //     });
 
-      // const data = await res.json();
+  //     // const data = await res.json();
 
-      if (res.ok) {
-        alert(t("success"));
-        setForm({ name: "", phone: "", email: "", course: "", message: "" });
-      } else {
-        alert(t("error"));
-      }
-    } catch (error) {
-      alert(error);
-    }
-  };
+  //     if (res.ok) {
+  //       alert(t("success"));
+  //       setForm({ name: "", phone: "", email: "", course: "", message: "" });
+  //     } else {
+  //       alert(t("error"));
+  //     }
+  //   } catch (error) {
+  //     alert(error);
+  //   }
+  // };
 
-  const courseGroups = (messages?.courseGroups || []) as CourseGroup[];
+  // const courseGroups = (messages?.courseGroups || []) as CourseGroup[];
 
   return (
     <div className="max-w-xl mx-auto px-4 py-16">
