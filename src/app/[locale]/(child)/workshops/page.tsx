@@ -2,13 +2,13 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import {
-  FiCalendar,
-  FiClock,
-  FiUser,
-  FiGlobe,
-  FiDollarSign,
-} from "react-icons/fi";
+// import {
+//   FiCalendar,
+//   FiClock,
+//   FiUser,
+//   FiGlobe,
+//   FiDollarSign,
+// } from "react-icons/fi";
 import { useTranslations } from "next-intl";
 
 type Workshop = {
@@ -84,7 +84,7 @@ export default function WorkshopsPage() {
               <div className="p-6 flex flex-col justify-between flex-1">
                 <div>
                   <h3 className="text-lg font-semibold mb-4">{ws.title}</h3>
-                  <div className="flex items-center text-sm gap-2 mb-2">
+                  {/* <div className="flex items-center text-sm gap-2 mb-2">
                     <FiCalendar /> <span>{ws.date}</span>
                   </div>
                   <div className="flex items-center text-sm gap-2 mb-2">
@@ -98,7 +98,7 @@ export default function WorkshopsPage() {
                   </div>
                   <div className="flex items-center text-sm gap-2 mb-4">
                     <FiDollarSign /> <span>{ws.price}</span>
-                  </div>
+                  </div> */}
                 </div>
 
                 <button className="bg-[#9F0A0B] text-white py-2 px-4 mt-auto rounded hover:opacity-90 transition">

@@ -1,10 +1,6 @@
 import type { NextConfig } from "next";
 import createNextIntlPlugin from "next-intl/plugin";
 
-const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: process.env.ANALYZE === 'true',
-})
-
 const nextConfig: NextConfig = {
   images: {
     formats: ["image/webp"],
@@ -27,4 +23,4 @@ const nextConfig: NextConfig = {
 
 const withNextIntl = createNextIntlPlugin();
 
-export default withNextIntl(withBundleAnalyzer(nextConfig));
+export default withNextIntl(nextConfig);

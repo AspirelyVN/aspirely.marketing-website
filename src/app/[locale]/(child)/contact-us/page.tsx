@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { FiUser, FiPhone, FiMail, FiBookOpen } from "react-icons/fi";
+// import { FiUser, FiPhone, FiMail, FiBookOpen } from "react-icons/fi";
 import { useTranslations, useMessages } from "next-intl";
 import FancyButton from "@/components/FancyButton";
 
@@ -68,7 +68,7 @@ export default function ContactUsPage() {
 
   return (
     <div className="max-w-xl mx-auto px-4 py-16">
-      <h1 className="text-3xl lg:text-4xl font-bold text-center mb-8 text-[#9F0A0B]">
+      {/* <h1 className="text-3xl lg:text-4xl font-bold text-center mb-8 text-[#9F0A0B]">
         {t("title")}
       </h1>
       <form onSubmit={handleSubmit} className="space-y-4">
@@ -148,7 +148,7 @@ export default function ContactUsPage() {
         >
           {t("submit")}
         </FancyButton>
-      </form>
+      </form> */}
     </div>
   );
 }

@@ -2,8 +2,7 @@
 
 import Image from "next/image";
 import Script from "next/script";
-import { FaPhone } from "react-icons/fa6";
-import { IoMdMail } from "react-icons/io";
+import { Phone, Mail } from "lucide-react"
 import { useMessages } from "next-intl";
 
 export default function Footer() {
@@ -32,11 +31,11 @@ export default function Footer() {
             className="mb-4"
           />
           <div className="w-full px-3 py-2 flex items-center font-roboto">
-            <FaPhone className="w-4 h-4 mr-2" />
+            <Phone className="w-4 h-4 mr-2" />
             028 62763622
           </div>
           <div className="w-full px-3 py-2 flex items-center font-roboto">
-            <IoMdMail className="w-4 h-4 mr-2" />
+            <Mail className="w-4 h-4 mr-2" />
             aspirely.online@gmail.com
           </div>
           <a

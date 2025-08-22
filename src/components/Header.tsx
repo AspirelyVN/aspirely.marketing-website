@@ -3,8 +3,7 @@ import Image from "next/image";
 import { useRouter, usePathname } from "next/navigation";
 import { Link } from "@/i18n/navigation";
 import { useEffect, useState } from "react";
-import { MdArrowDropDown } from "react-icons/md";
-import { IoIosMenu } from "react-icons/io";
+import { Menu, ChevronDown } from "lucide-react";
 import { useMessages } from "next-intl";
 
 export default function Header() {
@@ -65,7 +64,7 @@ export default function Header() {
           <Image src="/Logo-white.svg" alt="logo" width={120} height={36} priority />
         </Link>
         <button className="lg:hidden text-2xl" onClick={() => setMenuOpen(!menuOpen)}>
-          <IoIosMenu />
+          <Menu />
         </button>
       </div>
 
@@ -74,7 +73,11 @@ export default function Header() {
           menuOpen ? "flex" : "hidden"
         } lg:flex absolute lg:static top-full left-0 w-full bg-black/80 lg:bg-transparent flex-col lg:flex-row justify-end items-start lg:items-center space-y-2 lg:space-y-0 lg:space-x-5 px-10 py-3 z-50`}
       >
-        <Link href="/tutors" className="p-2" onClick={() => setMenuOpen(false)}>
+        <Link
+          href="/#tutors"
+          className="p-2"
+          onClick={() => setMenuOpen(false)}
+        >
           {t("teachers")}
         </Link>
 
@@ -87,10 +90,10 @@ export default function Header() {
             onClick={() => setCourseOpen(!courseOpen)}
             className="flex items-center justify-between w-full lg:w-auto px-3 py-1"
           >
-            {t("courses")} <MdArrowDropDown size={20} />
+            {t("courses")} <ChevronDown size={20} />
           </button>
           {courseOpen && (
-            <div className="w-full lg:w-64 bg-black text-white lg:absolute top-full left-0 z-50 shadow-lg p-3 space-y-3">
+            <div className="w-full lg:w-64 bg-black text-white lg:absolute top-full left-0 z-50 shadow-lg p-3 space-y-3 rounded-lg">
               {courseGroups.map((group) => (
                 <div key={group.key}>
                   <div className="font-bold px-2 py-1">{group.label}</div>
@@ -125,10 +128,10 @@ export default function Header() {
             onClick={() => setLangOpen(!langOpen)}
             className="flex items-center justify-between w-full lg:w-auto px-3 py-1"
           >
-            {currentLocale.label} <MdArrowDropDown size={20} />
+            {currentLocale.label} <ChevronDown size={20} />
           </button>
           {langOpen && (
-            <ul className="w-full lg:w-40 bg-black text-white lg:absolute top-full left-0 z-50 shadow-lg rounded-sm">
+            <ul className="w-full lg:w-40 bg-black text-white lg:absolute top-full left-0 z-50 shadow-lg rounded-lg">
               {locales.map((lang) => (
                 <li
                   key={lang.code}

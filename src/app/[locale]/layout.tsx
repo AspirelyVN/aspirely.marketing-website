@@ -7,6 +7,7 @@ import "../globals.css";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Providers from "@/providers";
 
 export const metadata: Metadata = {
   title: "Aspirely | Học ngôn ngữ online 1-1, chỉnh phát âm & cá nhân hoá",
@@ -29,7 +30,7 @@ const inter = Inter({
 
 const roboto = Roboto({
   subsets: ['latin'],
-  weight: ['400', '500', '600'],
+  weight: ['200', '300', '400', '500', '600'],
   variable: '--font-roboto',
   display: 'swap',
 })
@@ -47,14 +48,16 @@ export default async function LocaleLayout({
   }
 
   return (
-    <html lang={locale} className={`${raleway.variable} ${inter.variable} ${roboto.variable}`}>
+    <html lang={locale} className={`${raleway.variable} ${inter.variable} ${roboto.variable} scroll-smooth`}>
       <head>
         <link rel="preload" as="image" href="/videos/hero-poster.webp" fetchPriority="high"></link>
       </head>
       <body>
         <NextIntlClientProvider>
           <Header />
-          {children}
+          <Providers>
+            {children}
+          </Providers>
           <Footer />
         </NextIntlClientProvider>
       </body>

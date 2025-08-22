@@ -27,9 +27,8 @@
   },
   "tutors": {
     "title": {
-      "part1": "Meet",
-      "part2": "our",
-      "part3": "teachers"
+      "part1": "Our",
+      "part2": "teachers"
     },
     "cta": "Free Trial",
     "greeting": "Hello everyone!",
@@ -81,7 +80,7 @@
       },
       {
         "id": 2,
-        "name": "My Quyên: Teacher",
+        "name": "My Quyen: Teacher",
         "countryCode": "TW",
         "accent": "Taiwanese Accent",
         "experience": "Over 3 years of experience",

@@ -2,13 +2,8 @@
 
 import Image from "next/image";
 import { useMessages } from "next-intl";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+import { Carousel } from "antd";
+import { Star } from "lucide-react";
 
 type Testimonial = {
   image: string;
@@ -23,40 +18,50 @@ export default function TestimonialSection() {
   const t = messages?.testimonial;
 
   return (
-    <section className="w-full bg-[#F7F9FC] py-20 px-4 border-t">
-      <div className="w-full mx-auto space-y-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-[#9F0A0B]">
-          {t.title}
-        </h2>
+    <section className="relative w-full h-[650px] py-10">
+        <Image
+          src="/TestimonialBanner.svg"
+          alt="Testimonial Section"
+          fill
+          sizes="(max-width: 1280px) 100vw, 50vw"
+          className="object-cover"
+        />
 
-        <Carousel className="w-[80%] mx-auto" opts={{ align: "start", loop: true }}>
-          <CarouselContent>
-            {t.items.map((item: Testimonial, idx: number) => (
-              <CarouselItem key={idx} className="flex justify-center">
-                <div className="flex items-center gap-6 bg-white rounded-xl shadow-md border p-6 w-full">
-                  <div className="relative w-[150px] aspect-[3/4] rounded-xl overflow-hidden shrink-0">
+        <Carousel 
+          className="absolute inset-0 left-[8%] translate-y-[36%] w-[580px] h-[360px]" 
+          autoplay
+          dots={false}
+        >
+          {t.items.map((item: Testimonial, i: number) => (
+              <div className="w-full h-full flex flex-col justify-between space-y-10 p-5">
+                <div className="flex justify-between items-center">
+                  <div className="flex items-center gap-10">
                     <Image
                       src={item.image}
                       alt={item.name}
-                      width={150}
-                      height={200}
-                      className="rounded-xl object-cover"
+                      width={80}
+                      height={80}
+                      className="rounded-full aspect-square object-cover"
                     />
+                    <div className="flex space-x-2">
+                      {Array.from({ length: 5 }).map((_, i) => (
+                        <Star key={i} className="w-10 h-10 fill-current text-yellow-300" />
+                      ))}
+                    </div>
                   </div>
-                  <div className="text-center whitespace-pre-line">
-                    <p className="italic text-gray-800">“{item.content}”</p>
-                    <p className="mt-4 font-bold text-[#9F0A0B]">
-                      {item.name}, {item.age}, {item.location}
-                    </p>
-                  </div>
+                  <p className="text-gray-600 text-xl">{i + 1}/{t.items.length}</p>
                 </div>
-              </CarouselItem>
+
+                <div className="text-start whitespace-pre-line">
+                  <p className="italic text-md text-gray-800">“{item.content}”</p>
+                  <p className="mt-4 text-2xl font-bold text-[#9F0A0B]">
+                    {item.name}, {item.age}, {item.location} <br />
+                    <span className="text-base text-gray-600">Tham gia lớp 1 - 1</span>
+                  </p>
+                </div>
+              </div>
             ))}
-          </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
         </Carousel>
-      </div>
     </section>
   );
 }
