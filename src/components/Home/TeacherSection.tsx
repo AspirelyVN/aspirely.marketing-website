@@ -12,9 +12,9 @@ import type { Tutor } from "@/types/tutor";
 
 export default function TeacherSection() {
   const router = useRouter();
-  const t = useTranslations("tutors");
+  const t = useTranslations("Teacher");
   const messages = useMessages();
-  const tutorsData = messages.tutors.list;
+  const tutorsData = messages.Teacher.teachers;
 
   const [isDesktop, setIsDesktop] = useState(true);
 

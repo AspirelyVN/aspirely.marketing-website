@@ -1,0 +1,164 @@
+{
+  "header": {
+    "courses": "Khóa học",
+    "teachers": "Giáo viên",
+    "workshops": "Workshops",
+    "recruit": "Tuyển dụng",
+    "login": "ĐĂNG NHẬP"
+  },
+  "Hero": {
+    "contact": "BẮT ĐẦU NGAY"
+  },
+  "DidYouKnow":{
+    "title": "Bạn có biết?",
+    "point1": "Phần lớn người học mất hàng trăm giờ luyện tập để nói một ngôn ngữ mới, nhưng vẫn lúng túng trước người nước ngoài. Hoang mang vì không nghe hiểu, không có phản xạ?",
+    "point2": "Với đội ngũ giáo viên bản xứ, bạn sẽ nhanh chóng cải thiện phát âm, sự lưu loát và sự tự tin. Nỗi lo <span>“không giao tiếp được với người bản xứ”</span> sẽ hoàn toàn biến mất."
+  },
+  "Highlights": [
+    {
+      "bg": "/assets/images/HighlightsSection/Picture1.png",
+      "overlay": "bg-[#004d8f]/80",
+      "icon": "/assets/images/HighlightsSection/AspirelyIcon.png",
+      "title": "Aspirely là gì?",
+      "content": "Aspirely là nền tảng học ngôn ngữ trực tuyến tập trung 100% vào kỹ năng Nghe và Nói.<br/><br/>Tại đây, bạn học Tiếng Anh và Tiếng Trung qua những buổi trò chuyện thực tế, không giáo trình khô khan - chỉ có luyện nói hiệu quả, tự tin và tự nhiên.",
+      "button": "Tìm hiểu thêm"
+    },
+    {
+      "bg": "/assets/images/HighlightsSection/Picture2.png",
+      "overlay": "bg-[#00356d]/80",
+      "icon": "/assets/images/HighlightsSection/BookIcon.png",
+      "title": "Khoá học",
+      "content": "Giao tiếp hằng ngày nói tự nhiên, phản xạ nhanh hơn<br/><br/>Listening & Speaking IELTS & HSK chinh phục kỳ thi quốc tế<br/><br/>Tiếng Anh/Trung cho công việc, giao tiếp chuyên nghiệp, ứng dụng ngay",
+      "button": "Khoá học của chúng tôi"
+    },
+    {
+      "bg": "/assets/images/HighlightsSection/Picture3.png",
+      "overlay": "bg-[#004d8f]/80",
+      "icon": "/assets/images/HighlightsSection/PeopleIcon.png",
+      "title": "Giáo viên",
+      "content": "Học cùng giáo viên bản ngữ, bạn sẽ dần nói tự nhiên, trôi chảy và tự tin hơn mỗi ngày.<br/><br/>Với Aspirely, bạn không chỉ học thêm một ngôn ngữ, mà còn thật sự sử dụng được trong cuộc sống và công việc.",
+      "button": "Giáo viên của chúng tôi"
+    }
+  ],
+  "WorkshopPromo": {
+    "title": "Trải nghiệm <span>Workshop</span><br></br> Luyện nói Tiếng Anh",
+    "subtitle": "Hiểu nhanh khi nghe — Tự tin khi nói",
+    "point1": "Bắt đầu ngay hôm nay cùng Aspirely!",
+    "point2": "<span>14 NGÀY</span> tham gia workshop hoàn toàn <span>MIỄN PHÍ</span> trải nghiệm học trực tuyến với giáo viên bản xứ, sửa phát âm, luyện phản xạ giao tiếp.",
+    "button": "Miễn phí cho học viên mới"
+  },
+  "Courses": {
+    "title": "Đồng hành cùng <span>Aspirely</span>",
+    "subtitle": "Nâng tầm tiếng nói, mở rộng tương lai",
+    "courses": [
+      {
+        "id": "01",
+        "title": "Luyện nói IELTS",
+        "desc": "Chinh phục IELTS với sự đồng hành của giáo viên chuyên nghiệp. Chúng tôi giúp bạn phát âm chuẩn xác, luyện kỹ năng nói tự nhiên và loại bỏ nỗi lo khi giao tiếp với người nước ngoài.",
+        "backgroundImage": "/assets/images/CoursesSection/EnglishCourseBanner.webp",
+        "filterCode": "#05386D"
+      },
+      { 
+        "id": "02", 
+        "title": "Tiếng Anh Giao Tiếp", 
+        "desc": "Phát triển toàn diện kỹ năng Tiếng Anh Giao Tiếp: phát âm, từ vựng, phản xạ và sự tự tin. Khóa học mang đến trải nghiệm học tập hiệu quả, đồng hành cùng bạn trên con đường hội nhập toàn cầu.",
+        "backgroundImage": "/assets/images/CoursesSection/EnglishCourseBanner.webp",
+        "filterCode": "#05386D"
+      },
+      { 
+        "id": "03", 
+        "title": "Tiếng Anh Thương Mại", 
+        "desc": "Nâng tầm sự nghiệp với Tiếng Anh Thương Mại. Khóa học trang bị cho bạn kỹ năng ngôn ngữ chuyên ngành, khả năng giao tiếp thuyết phục và lợi thế cạnh tranh bền vững trong môi trường quốc tế.",
+        "backgroundImage": "/assets/images/CoursesSection/EnglishCourseBanner.webp",
+        "filterCode": "#05386D"
+      },
+      {
+        "id": "04",
+        "title": "Luyện Nói HSKK ",
+        "desc": "Không chỉ phục vụ mục tiêu thi cử, khóa học Luyện nói HSKK còn mang lại cho bạn khả năng giao tiếp thực tế, từ trò chuyện hàng ngày đến môi trường học tập và công việc.",
+        "backgroundImage": "/assets/images/CoursesSection/ChineseCourseBanner.webp",
+        "filterCode": "#B2B2B2"
+      },
+      { 
+        "id": "05", 
+        "title": "Tiếng Trung Giao Tiếp", 
+        "desc": "Tiếng Trung Giao Tiếp dành cho người bắt đầu từ con số 0, giúp bạn luyện nói trôi chảy với người bản xứ. Đồng thời nâng cao kỹ năng nghe, phản xạ và từ vựng. Khóa học linh hoạt, phù hợp cho mục tiêu học tập, công việc và phát triển sự nghiệp.",
+        "backgroundImage": "/assets/images/CoursesSection/ChineseCourseBanner.webp",
+        "filterCode": "#B2B2B2"
+      },
+      {
+        "id": "06",
+        "title": "Tiếng Trung Thương Mại",
+        "desc": "Tiếng Trung Thương Mại giúp bạn nói trôi chảy với người bản xứ, đồng thời nâng cao kỹ năng nghe, phản xạ và từ vựng. Khóa học linh hoạt, phù hợp cho mục tiêu học tập, công việc và phát triển sự nghiệp.",
+        "backgroundImage": "/assets/images/CoursesSection/ChineseCourseBanner.webp",
+        "filterCode": "#B2B2B2"
+      }
+    ]
+  },
+  "Cefr": {
+    "title": "CEFR là gì?",
+    "subtitle": "Từ Sơ Cấp đến Thành Thạo — Hành Trình Ngôn Ngữ CEFR"
+  },
+  "Teacher": {
+    "title": "Đội ngũ giáo viên",
+    "teachers": [
+      {
+        "id": "1",
+        "name": "Aimie C.",
+        "image": "/assets/images/TeacherSection/Aimie.webp"
+      },
+      {
+        "id": "2",
+        "name": "Mia M.",
+        "image": "/assets/images/TeacherSection/Mia.webp"
+      },
+      {
+        "id": "3",
+        "name": "Leo N.",
+        "image": "/assets/images/TeacherSection/Leo.webp"
+      }
+    ]
+  },
+  "Test": {
+    "subtitle": "Trong Vài Phút",
+    "title": "Kiểm Tra Trình Độ <br></br> Ngoại Ngữ Của Bạn",
+    "email": "Email",
+    "phone": "Số điện thoại",
+    "agreement1": "Tôi đồng ý tham gia danh sách nhận thông tin khóa học trực tuyến",
+    "agreement2": "Tôi đồng ý để ASPIRELY liên hệ với tôi qua điện thoại, email hoặc tin nhắn SMS nhằm hỗ trợ giải đáp thắc mắc của tôi",
+    "button": "Kiểm Tra Miễn Phí"
+  },
+  "Testimonial": {
+    "items": [
+      {
+        "name": "Phương Nghi",
+        "image": "/students/PhuongNghi.webp",
+        "age": "20",
+        "location": "TP. HCM",
+        "content": "Trang web dễ dùng, load nhanh, giao diện xịn và học online rất tiện lợi mà không cần rời khỏi nhà. Giáo trình được cá nhân hóa nên học đúng trình độ, không áp lực hay gò bó. Mình thích nhất là lịch học linh hoạt, phù hợp cả sinh viên bận rộn như mình.",
+        "class": "Tham gia lớp 1 - 1"
+      },
+      {
+        "name": "Nhi Nguyễn",
+        "image": "/students/NhiNguyen.webp",
+        "age": "21",
+        "location": "TP. HCM",
+        "content": "Giảng viên người Anh phát âm cực chuẩn, sửa lỗi kỹ và luôn tập trung vào chất lượng chứ không chạy theo chỉ tiêu. Cô Aimie thân thiện, giảng giải rõ ràng, đặc biệt rất kiên nhẫn với học viên học chậm như mình. Sau một thời gian học, mình tự tin nói tiếng Anh hơn hẳn.",
+        "class": "Tham gia lớp 1 - 1"
+      },
+      {
+        "name": "Mỹ Mỹ",
+        "image": "/students/MyMy.webp",
+        "age": "22",
+        "location": "TP. HCM",
+        "content": "Ban đầu mình khá lo lắng về khả năng nói tiếng Anh, nhưng nhờ chương trình học thực tế và giáo viên tận tâm, mình đã tiến bộ rõ rệt. Các chủ đề đa dạng, dễ áp dụng vào đời sống. Cô sửa phát âm chi tiết từng từ, tạo cảm giác thoải mái khi luyện nói. Cảm ơn trung tâm đã giúp mình tự tin giao tiếp hơn mỗi ngày.",
+        "class": "Tham gia lớp 1 - 1"
+      }
+    ]
+  },
+  "CTA": {
+    "title": "Bạn đã sẵn sàng chưa?",
+    "subtitle": "Trải nghiệm thử miễn phí, cảm nhận sự khác biệt.<br></br>Hãy để Aspirely giúp bạn xoá bỏ lo lắng khi giao tiếp, tự tin kết nối và hòa nhập quốc tế.",
+    "button": "Đăng ký"
+  }
+}

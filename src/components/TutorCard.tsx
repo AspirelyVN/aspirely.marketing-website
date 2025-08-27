@@ -1,19 +1,13 @@
 "use client"
 import Image from "next/image";
-// import { useTranslations } from "next-intl";
-// import { useRouter } from "next/navigation";
 
 import type { Tutor } from "@/types/tutor";
 
 export default function TutorCard({
   id,
   name,
-  experience,
   image = "/tutor.jpg",
 }: Tutor) {
-  // const t = useTranslations("tutors");
-  // const router = useRouter();
-
   return (
     <div
       onClick={() => {
@@ -37,7 +31,6 @@ export default function TutorCard({
         </div>
         <div className="text-center border-t border-gray-200 px-4 py-3 text-black">
           <p className="text-xl font-semibold mb-2">{name}</p>
-          <p className="">{experience}</p>
         </div>
       </div>
     </div>

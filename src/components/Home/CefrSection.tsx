@@ -1,6 +1,9 @@
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function CefrSection() {
+    const t = useTranslations("Cefr");
+
     return (
         <section className="w-screen max-w-7xl p-10 space-y-10">
             <div className="grid grid-cols-2 md:grid-cols-4 grid-rows-2 gap-8">
@@ -70,9 +73,9 @@ export default function CefrSection() {
                 </div>
             </div>
             <div className="w-full space-y-2">
-                <h1 className="text-5xl text-center text-[#0D356B] font-semibold">CEFR là gì?</h1>
-                <h2 className="text-3xl text-center">Từ Sơ Cấp đến Thành Thạo - Hành Trình Ngôn Ngữ CEFR</h2>
-                <div className="relative w-full aspect-[16/9]">
+                <h1 className="text-5xl text-center text-[#0D356B] font-semibold">{t("title")}</h1>
+                <h2 className="text-3xl text-center">{t("subtitle")}</h2>
+                <div className="relative w-full aspect-[18/9]">
                     <Image
                         src="/assets/images/CefrSection/CefrLevel.png"
                         alt="Picture 8"

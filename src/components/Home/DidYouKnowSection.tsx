@@ -1,12 +1,15 @@
 import Image from "next/image"
+import { useTranslations } from "next-intl"
 
 export default function DidYouKnowSection() {
+  const t = useTranslations("DidYouKnow");
+
   return (
-    <section className="w-screen max-w-7xl py-10 space-y-10">
+    <section className="w-screen max-w-7xl px-5 py-10 space-y-10">
         <div className="w-full h-15 flex justify-center items-center space-x-4">
-            <p className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-[#0D356B]">Bạn có biết</p>
+            <p className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-[#0D356B]">{t("title")}</p>
             <div className="relative h-full aspect-square">
-                <Image 
+                <Image
                     src="/assets/images/DidYouKnowSection/FAQ.png" 
                     alt="Icon" 
                     fill
@@ -30,7 +33,7 @@ export default function DidYouKnowSection() {
 
             <div className="grid grid-cols-2 grid-rows-2 gap-5">
                 <div className="p-4 border-2 border-[#0D356B] rounded-xl flex items-center">
-                    <p>Phần lớn người học cần hàng trăm giờ luyện tập mới có thể tự tin nói tiếng Anh/ Trung.<br/>Tại Aspirely, chúng tôi chỉ tập trung vào Kỹ năng Nói từ luyện thi Speaking (IELTS, HSKK) đến giao tiếp thực tế.</p>
+                    <p>{t("point1")}</p>
                 </div>
 
                 <div className="relative bg-[#9F0A0B] rounded-4xl">
@@ -58,7 +61,11 @@ export default function DidYouKnowSection() {
                 </div>
 
                 <div className="p-4 border-2 border-[#0D356B] rounded-xl flex items-center">
-                    <p>Với đội ngũ giáo viên bản ngữ, bạn sẽ nhanh chóng cải thiện phát âm, sự lưu loát và sự tự tin – để nói tiếng Anh tự nhiên hơn bao giờ hết.</p>
+                    <p>
+                        {t.rich("point2", {
+                          span: (chunks) => <span className="font-bold">{chunks}</span>
+                        })}
+                    </p>
                 </div>
             </div>
         </div>

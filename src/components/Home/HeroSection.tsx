@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 import FancyButton from "@/components/FancyButton";
 
 export default function HeroSection() {
-  const t = useTranslations("hero");
+  const t = useTranslations("Hero");
 
   return (
     <div className="relative w-full h-[400px] lg:h-[600px] xl:h-[800px] overflow-hidden">

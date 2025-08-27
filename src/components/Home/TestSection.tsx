@@ -2,8 +2,11 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function TestSection() {
+  const t = useTranslations("Test");
+
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [agree1, setAgree1] = useState(false);
@@ -22,7 +25,7 @@ export default function TestSection() {
   };
 
   return (
-    <div className="relative w-full md:h-[600px] lg:h-[700px] xl:h-[800px] overflow-hidden">
+    <div className="relative w-full md:h-[500px] lg:h-[600px] xl:h-[700px] overflow-hidden">
         <Image
           src="/TestBackground.svg"
           alt="Description"
@@ -43,12 +46,14 @@ export default function TestSection() {
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <span className="text-white md:text-4xl lg:text-5xl xl:text-6xl font-extrabold">
-                    Trong Vài Phút
+                    {t("subtitle")}
                   </span>
                 </div>
               </div>
               <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl text-start font-bold leading-tight ">
-                Kiểm Tra Trình Độ <br /> Ngoại Ngữ Của Bạn
+                {t.rich("title", {
+                  br: () => <br/>
+                })}
               </h1>
               <input
                 id="email"
@@ -56,7 +61,7 @@ export default function TestSection() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="w-full bg-transparent border-b border-white focus:outline-none py-1"
-                placeholder="Email"
+                placeholder={t("email")}
               />
               <input
                 id="phone"
@@ -64,17 +69,17 @@ export default function TestSection() {
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
                 className="w-full bg-transparent border-b border-white focus:outline-none py-1"
-                placeholder="Phone number"
+                placeholder={t("phone")}
               />
 
               <div className="w-[90%] text-start space-y-2 text-sm mt-4">
                 <label className="flex items-start gap-2">
                   <input type="checkbox" className="mt-1" checked={agree1} onChange={(e) => setAgree1(e.target.checked)} />
-                  Tôi đồng ý tham gia danh sách nhận thông tin khóa học trực tuyến.
+                  {t("agreement1")}
                 </label>
                 <label className="flex items-start gap-2">
                   <input type="checkbox" className="mt-1" checked={agree2} onChange={(e) => setAgree2(e.target.checked)} />
-                  Tôi đồng ý để ASPIRELY liên hệ với tôi qua điện thoại, email hoặc tin nhắn SMS nhằm hỗ trợ giải đáp thắc mắc của tôi
+                  {t("agreement2")}
                 </label>
               </div>
 
@@ -85,7 +90,7 @@ export default function TestSection() {
                   type="submit"
                   className="bg-[#9F0A0B] rounded-full px-6 py-2 text-xl font-semibold text-white"
                 >
-                  Kiểm Tra Miễn Phí
+                  {t("button")}
                 </button>
               </div>
             </form>

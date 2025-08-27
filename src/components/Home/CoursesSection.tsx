@@ -2,10 +2,14 @@
 
 import { useEffect, useState } from "react";
 import { Carousel } from "antd";
-import { EnglishItems, ChineseItems, type Course } from "@/constants/courses-data";
+import type { Course } from "@/types/course";
+import { useTranslations, useMessages } from "next-intl";
 
 export default function CoursesSection() {
   const [isDesktop, setIsDesktop] = useState(true);
+  const t = useTranslations("Courses");
+  const messages = useMessages();
+  const data: Course[] = messages.Courses.courses;
 
   useEffect(() => {
     const handle = () => setIsDesktop(window.innerWidth >= 1280);
@@ -14,14 +18,12 @@ export default function CoursesSection() {
     return () => window.removeEventListener("resize", handle);
   }, []);
 
-  const data: Course[] = EnglishItems.concat(ChineseItems);
-
   const Card = ({ item }: { item: Course }) => (
     <div className="border border-gray-300 rounded-2xl overflow-hidden shadow-md hover:shadow-lg relative">
       <div
-        className="relative w-full h-[600px] group"
+        className="relative h-[500px] group"
         style={{
-          height: "600px",
+          height: "500px",
           backgroundImage: `linear-gradient(${item.filterCode}80, ${item.filterCode}80), url(${item.backgroundImage})`,
           backgroundSize: `${3 * 100}% 100%`,
           backgroundPosition: `${((parseInt(item.id) - 1) / (3 - 1)) * 100}% center`,
@@ -57,10 +59,14 @@ export default function CoursesSection() {
             backgroundPosition: 'center',
         }}
     >
-        <div className="w-full max-w-7xl mx-auto">
-            <h2 className="text-3xl md:text-5xl font-bold text-center py-2 text-[#9F0A0B]">Tự Tin Luyện Nói Cùng Aspirely</h2>
+        <div className="w-full max-w-6xl mx-auto">
+            <h2 className="text-3xl md:text-5xl font-bold text-center py-2 text-[#9F0A0B]">
+              {t.rich("title", {
+                span: (chunks) => <span className="text-[#05386D]">{chunks}</span>,
+              })}
+            </h2>
             <p className="text-center text-neutral-700 md:text-2xl font-semibold">
-                Nâng tầm tiếng nói, mở rộng tương lai
+                {t("subtitle")}
             </p>
 
             {isDesktop ? (
