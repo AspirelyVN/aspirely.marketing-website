@@ -27,8 +27,8 @@ export default function Header() {
   const locales = [
     { label: "Tiếng Việt", code: "vi" },
     { label: "English", code: "en" },
-    { label: "简体中文", code: "zh-CN" },
-    { label: "繁體中文", code: "zh-TW" },
+    { label: "中文(简体)", code: "zh-CN" },
+    { label: "中文(繁體)", code: "zh-TW" },
   ];
 
   const currentLocale = locales.find((l) => pathname.startsWith(`/${l.code}`)) || locales[0];
