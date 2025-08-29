@@ -1,3 +1,7 @@
+"use client";
+
+import { useRef } from "react";
+
 import HeroSection from "@/components/Home/HeroSection";
 import DidYouKnowSection from "@/components/Home/DidYouKnowSection";
 import HighlightsSection from "@/components/Home/HighlightsSection";
@@ -13,21 +17,41 @@ import CTASection from "@/components/Home/CTASection";
 
 
 export default function Home() {
+  const teacherRef = useRef<HTMLDivElement | null>(null);
+  const coursesRef = useRef<HTMLDivElement | null>(null);
+
+  const scrollToSection = (index: number) => {
+    const HEADER_OFFSET = 80;
+
+    let ref = null;
+
+    if (index === 1) {
+      ref = coursesRef;
+    } else if (index === 2) {
+      ref = teacherRef;
+    }
+
+    if (ref?.current) {
+      const y = ref.current.getBoundingClientRect().top + window.pageYOffset - HEADER_OFFSET;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="w-full h-full flex flex-col items-center">
       <HeroSection />
 
       <DidYouKnowSection />
 
-      <HighlightsSection />
+      <HighlightsSection onButtonClick={scrollToSection} />
 
       <WorkshopPromoSection />
 
-      <CoursesSection />
+      <CoursesSection sectionRef={coursesRef} />
 
       <CefrSection />
 
-      <TeacherSection />
+      <TeacherSection sectionRef={teacherRef} />
 
       <TestSection />
 

@@ -11,7 +11,7 @@
   },
   "DidYouKnow":{
     "title": "Did you know?",
-    "point1": "Most learners spend hundreds of hours practicing to speak a new language, yet still struggle in front of foreigners. Confused by not understanding, not having a reflex?",
+    "point1": "Most learners spend hundreds of hours practicing to speak a new language, yet still struggle in front of foreigners. Confused by not understanding and not knowing how to react?",
     "point2": "With a team of native teachers, you will quickly improve your pronunciation, fluency, and confidence. The worry of <span>“not being able to communicate with natives”</span> will completely disappear."
   },
   "Highlights": [
@@ -20,7 +20,7 @@
       "overlay": "bg-[#004d8f]/80",
       "icon": "/assets/images/HighlightsSection/AspirelyIcon.png",
       "title": "What is Aspirely?",
-      "content": "Aspirely is an online language learning platform that focuses 100% on Listening and Speaking skills.<br/><br/>At Aspirely, you learn English and Chinese through real-life conversations — no dry textbooks, only effective, confident, and natural speaking practice.",
+      "content": "Aspirely is an online language learning platform that focuses 100% on Listening and Speaking skills.<br/><br/>At Aspirely, you learn English and Chinese through real-life conversations. There are no dry textbooks, only effective, confident, and natural speaking practice.",
       "button": "Learn More"
     },
     {
@@ -28,7 +28,7 @@
       "overlay": "bg-[#00356d]/80",
       "icon": "/assets/images/HighlightsSection/BookIcon.png",
       "title": "Courses",
-      "content": "Daily conversations to speak more naturally and respond faster.<br/><br/>Listening & Speaking for IELTS & HSK to conquer international exams.<br/><br/>English/Chinese for work — professional communication you can apply immediately.",
+      "content": "Daily conversations to speak more naturally and respond faster.<br/><br/>Listening & Speaking for IELTS & HSK to conquer international exams.<br/><br/>English and Chinese for work focusing on professional communication you can apply immediately.",
       "button": "Our Courses"
     },
     {
@@ -36,7 +36,7 @@
       "overlay": "bg-[#004d8f]/80",
       "icon": "/assets/images/HighlightsSection/PeopleIcon.png",
       "title": "Teachers",
-      "content": "By learning with native teachers, you will gradually speak more naturally, fluently, and confidently every day.<br/><br/>With Aspirely, you're not just learning another language — you're truly able to use it in real life and at work.",
+      "content": "By learning with native teachers, you will gradually speak more naturally, fluently, and confidently every day.<br/><br/>With Aspirely, you are not only learning a new language but also developing the skills to apply it in real life and at work.",
       "button": "Our Teachers"
     }
   ],
@@ -45,7 +45,7 @@
     "subtitle": "Understand quickly — Speak confidently",
     "point1": "Start today with Aspirely!",
     "point2": "<span>14 DAYS</span> of completely <span>FREE</span> workshops to experience online learning with native teachers, practice pronunciation, and improve communication reflexes.",
-    "button": "Free for new learners"
+    "button": "Join for free"
   },
   "Courses": {
     "title": "Together with <span>Aspirely</span>",
@@ -74,8 +74,8 @@
       },
       {
         "id": "04",
-        "title": "HSKK Speaking Practice",
-        "desc": "Not only for exam preparation, the HSKK Speaking Practice course also provides you with practical communication skills, from daily conversations to academic and professional settings.",
+        "title": "Chinese for Studying Abroad",
+        "desc": "Not only for exam preparation, the Chinese for Studying Abroad course also provides you with practical communication skills, from daily conversations to academic and professional settings.",
         "backgroundImage": "/assets/images/CoursesSection/ChineseCourseBanner.webp",
         "filterCode": "#B2B2B2"
       },
@@ -124,7 +124,7 @@
     "title": "Test Your <br></br> Language Level",
     "email": "Email",
     "phone": "Phone Number",
-    "agreement1": "I consent to receiving updates about online English courses",
+    "agreement1": "I consent to receiving updates about online courses",
     "agreement2": "I agree to allow ASPIRELY to contact me via phone, email, or SMS to support and address my inquiries",
     "button": "Free Assessment"
   },
@@ -160,5 +160,34 @@
     "title": "Are you ready?",
     "subtitle": "Try it for free and feel the difference.<br></br>Let Aspirely help you remove the worries of communication, gain confidence, and connect globally.",
     "button": "Sign Up"
+  },
+  "footer": {
+    "sections": [
+      {
+        "title": "ENGLISH",
+        "items": [
+          { "key": "ielts", "label": "IELTS Speaking Practice" },
+          { "key": "english_communication", "label": "English Communication" },
+          { "key": "english_business", "label": "Business English" }
+        ]
+      },
+      {
+        "title": "CHINESE",
+        "items": [
+          { "key": "chinese_studying_abroad", "label": "Chinese for Studying Abroad" },
+          { "key": "chinese_communication", "label": "Chinese Communication" },
+          { "key": "chinese_business", "label": "Business Chinese" }
+        ]
+      },
+      {
+        "title": "LEARN MORE",
+        "items": [
+          { "label": "About Aspirely", "key": "about" },
+          { "label": "Privacy Policy", "key": "privacy" },
+          { "label": "Terms of Service", "key": "terms" },
+          { "label": "Contact", "key": "contact" }
+        ]
+      }
+    ]
   }
 }

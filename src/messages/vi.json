@@ -12,7 +12,7 @@
   "DidYouKnow":{
     "title": "Bạn có biết?",
     "point1": "Phần lớn người học mất hàng trăm giờ luyện tập để nói một ngôn ngữ mới, nhưng vẫn lúng túng trước người nước ngoài. Hoang mang vì không nghe hiểu, không có phản xạ?",
-    "point2": "Với đội ngũ giáo viên bản xứ, bạn sẽ nhanh chóng cải thiện phát âm, sự lưu loát và sự tự tin. Nỗi lo <span>“không giao tiếp được với người bản xứ”</span> sẽ hoàn toàn biến mất."
+    "point2": "Với đội ngũ giáo viên bản xứ, bạn sẽ nhanh chóng cải thiện phát âm, sự lưu loát và tự tin. Nỗi lo <span>“không giao tiếp được với người bản xứ”</span> sẽ hoàn toàn biến mất."
   },
   "Highlights": [
     {
@@ -36,7 +36,7 @@
       "overlay": "bg-[#004d8f]/80",
       "icon": "/assets/images/HighlightsSection/PeopleIcon.png",
       "title": "Giáo viên",
-      "content": "Học cùng giáo viên bản ngữ, bạn sẽ dần nói tự nhiên, trôi chảy và tự tin hơn mỗi ngày.<br/><br/>Với Aspirely, bạn không chỉ học thêm một ngôn ngữ, mà còn thật sự sử dụng được trong cuộc sống và công việc.",
+      "content": "Học cùng giáo viên bản ngữ, bạn sẽ học được cách phản xạ, giao tiếp trôi chảy và tự tin hơn mỗi ngày.<br/><br/>Bạn không chỉ học thêm được một ngôn ngữ mà còn ứng dụng được trong cuộc sống và công việc.",
       "button": "Giáo viên của chúng tôi"
     }
   ],
@@ -45,7 +45,7 @@
     "subtitle": "Hiểu nhanh khi nghe — Tự tin khi nói",
     "point1": "Bắt đầu ngay hôm nay cùng Aspirely!",
     "point2": "<span>14 NGÀY</span> tham gia workshop hoàn toàn <span>MIỄN PHÍ</span> trải nghiệm học trực tuyến với giáo viên bản xứ, sửa phát âm, luyện phản xạ giao tiếp.",
-    "button": "Miễn phí cho học viên mới"
+    "button": "Miễn phí tham gia"
   },
   "Courses": {
     "title": "Đồng hành cùng <span>Aspirely</span>",
@@ -54,7 +54,7 @@
       {
         "id": "01",
         "title": "Luyện nói IELTS",
-        "desc": "Chinh phục IELTS với sự đồng hành của giáo viên chuyên nghiệp. Chúng tôi giúp bạn phát âm chuẩn xác, luyện kỹ năng nói tự nhiên và loại bỏ nỗi lo khi giao tiếp với người nước ngoài.",
+        "desc": "Chinh phục IELTS với sự đồng hành của giáo viên chuyên nghiệp. Luyện phát âm, luyện kỹ năng nói tự nhiên và loại bỏ nỗi lo khi giao tiếp với người nước ngoài.",
         "backgroundImage": "/assets/images/CoursesSection/EnglishCourseBanner.webp",
         "filterCode": "#05386D"
       },
@@ -74,15 +74,15 @@
       },
       {
         "id": "04",
-        "title": "Luyện Nói HSKK ",
-        "desc": "Không chỉ phục vụ mục tiêu thi cử, khóa học Luyện nói HSKK còn mang lại cho bạn khả năng giao tiếp thực tế, từ trò chuyện hàng ngày đến môi trường học tập và công việc.",
+        "title": "Tiếng Trung Du Học",
+        "desc": "Khoá học Tiếng Trung Du Học không đơn thuần chỉ để vượt qua các kỳ thi. Chúng tôi mang đến cho bạn nền tảng vững chắc để giao tiếp tự nhiên, tham gia vào môi trường học thuật, và hòa nhập dễ dàng vào cuộc sống tại Đài Loan, Trung Quốc hay bất kỳ quốc gia sử dụng tiếng Trung nào.",
         "backgroundImage": "/assets/images/CoursesSection/ChineseCourseBanner.webp",
         "filterCode": "#B2B2B2"
       },
       { 
         "id": "05", 
         "title": "Tiếng Trung Giao Tiếp", 
-        "desc": "Tiếng Trung Giao Tiếp dành cho người bắt đầu từ con số 0, giúp bạn luyện nói trôi chảy với người bản xứ. Đồng thời nâng cao kỹ năng nghe, phản xạ và từ vựng. Khóa học linh hoạt, phù hợp cho mục tiêu học tập, công việc và phát triển sự nghiệp.",
+        "desc": "Đừng lo nếu bạn mới bắt đầu!<br/><br/>Bạn sẽ dần dần xây dựng sự tự tin, cải thiện khả năng giao tiếp và phát triển kỹ năng nghe nói ngày càng lưu loát, để việc học ngôn ngữ trở thành một trải nghiệm thoải mái và đầy hứng khởi.",
         "backgroundImage": "/assets/images/CoursesSection/ChineseCourseBanner.webp",
         "filterCode": "#B2B2B2"
       },
@@ -160,5 +160,34 @@
     "title": "Bạn đã sẵn sàng chưa?",
     "subtitle": "Trải nghiệm thử miễn phí, cảm nhận sự khác biệt.<br></br>Hãy để Aspirely giúp bạn xoá bỏ lo lắng khi giao tiếp, tự tin kết nối và hòa nhập quốc tế.",
     "button": "Đăng ký"
+  },
+  "footer": {
+    "sections": [
+      {
+        "title": "TIẾNG ANH",
+        "items": [
+          { "key": "ielts", "label": "Luyện nói IELTS" },
+          { "key": "english_communication", "label": "Tiếng Anh giao tiếp" },
+          { "key": "english_business", "label": "Tiếng Anh thương mại" }
+        ]
+      },
+      {
+        "title": "TIẾNG TRUNG",
+        "items": [
+          { "key": "chinese_studying_abroad", "label": "Tiếng Trung du học" },
+          { "key": "chinese_communication", "label": "Tiếng Trung giao tiếp" },
+          { "key": "chinese_business", "label": "Tiếng Trung thương mại" }
+        ]
+      },
+      {
+        "title": "TÌM HIỂU THÊM",
+        "items": [
+          { "label": "Giới thiệu về Aspirely", "key": "about" },
+          { "label": "Chính sách bảo mật", "key": "privacy" },
+          { "label": "Điều khoản dịch vụ", "key": "terms" },
+          { "label": "Liên hệ", "key": "contact" }
+        ]
+      }
+    ]
   }
 }

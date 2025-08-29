@@ -10,7 +10,7 @@ import FancyButton from "@/components/FancyButton";
 import TutorCard from "@/components/TutorCard";
 import type { Tutor } from "@/types/tutor";
 
-export default function TeacherSection() {
+export default function TeacherSection({ sectionRef }: { sectionRef: React.RefObject<HTMLDivElement | null> }) {
   const router = useRouter();
   const t = useTranslations("Teacher");
   const messages = useMessages();
@@ -28,7 +28,7 @@ export default function TeacherSection() {
   }, []);
 
   return (
-    <section id="tutors" className="w-full max-w-6xl mx-auto px-4 py-10">
+    <section ref={sectionRef} id="tutors" className="w-full max-w-6xl mx-auto px-4 py-10">
       <h2 className="text-3xl md:text-5xl font-bold text-center text-[#9F0A0B] mb-6">
         {t("title")}
       </h2>

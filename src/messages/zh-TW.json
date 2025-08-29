@@ -6,272 +6,188 @@
     "recruit": "招聘",
     "login": "登入"
   },
-  "home": {
-    "slogan1": "按照你的方式學習",
-    "slogan2": "像現實生活一樣實踐",
-    "successStories": "成功故事",
-    "upcomingWorkshops": "即將舉行的工作坊"
+  "Hero": {
+    "contact": "立即開始"
   },
-  "hero": {
-    "title": "免費試聽報名\n",
-    "placeholder": {
-      "name": "姓名",
-      "phone": "電話號碼",
-      "email": "電子郵件",
-      "course": "選擇課程"
-    },
-    "button": "立即報名",
-    "cta": "向\n世界\n說話！",
-    "contact": "立即開始",
-    "error": "請填寫完整資訊。"
+  "DidYouKnow": {
+    "title": "你知道嗎？",
+    "point1": "許多學習者花了長時間練習新語言，但一遇到外國人，仍然覺得挫折——聽不懂、反應不及時，常常不知所措？",
+    "point2": "在母語老師團隊的帶領下，你將快速提升發音、流暢度與自信，從此不再擔心<span>「無法與母語者交流」</span>。"
   },
-  "tutors": {
-    "title": {
-      "part1": "認識",
-      "part2": "教師",
-      "part3": "我們的"
+  "Highlights": [
+    {
+      "bg": "/assets/images/HighlightsSection/Picture1.png",
+      "overlay": "bg-[#004d8f]/80",
+      "icon": "/assets/images/HighlightsSection/AspirelyIcon.png",
+      "title": "什麼是 Aspirely？",
+      "content": "Aspirely 是一個專注於聽力和口語技能的線上語言學習平台。<br/><br/>在 Aspirely，你不只是學一門語言，而是真正能把它運用在生活與工作中。",
+      "button": "了解更多"
     },
-    "cta": "免費試聽",
-    "greeting": "大家好！",
-    "specialties": "專長",
-    "noVideo": "無影片",
-    "upcomingWorkshopsTitle": "即將與{name}的課程：",
-    "seeWorkshops": "不確定？查看{name}的工作坊",
-    "chooseSchedule": "選擇課表",
-    "studentReviews": "學生評價",
-    "freeTrialButton": "免費試聽",
-    "list": [
+    {
+      "bg": "/assets/images/HighlightsSection/Picture2.png",
+      "overlay": "bg-[#00356d]/80",
+      "icon": "/assets/images/HighlightsSection/BookIcon.png",
+      "title": "課程",
+      "content": "日常對話，讓你說得更自然、反應更快。<br/><br/>雅思 & HSK 聽力口語，助你征服國際考試。<br/><br/>工作英語/中文——專業溝通，立即應用。",
+      "button": "我們的課程"
+    },
+    {
+      "bg": "/assets/images/HighlightsSection/Picture3.png",
+      "overlay": "bg-[#004d8f]/80",
+      "icon": "/assets/images/HighlightsSection/PeopleIcon.png",
+      "title": "教師",
+      "content": "透過與母語教師學習，你將逐漸每天說得更自然、更流利、更自信。<br/><br/>在 Aspirely，你不僅僅是在學習一門語言——你真正能夠在生活和工作中使用它。",
+      "button": "我們的教師"
+    }
+  ],
+  "WorkshopPromo": {
+    "title": "體驗英語口語 <span>工作坊</span>",
+    "subtitle": "快速理解 —— 自信開口",
+    "point1": "今天就從 Aspirely 開始！",
+    "point2": "<span>14 天</span>完全<span>免費</span>的工作坊，體驗與母語教師線上學習，練習發音，提高溝通反應。",
+    "button": "免費參加"
+  },
+  "Courses": {
+    "title": "與 <span>Aspirely</span> 一起",
+    "subtitle": "提升你的聲音，拓展你的未來",
+    "courses": [
       {
-        "id": 1,
-        "name": "Aimie C: 教師",
-        "countryCode": "GB",
-        "accent": "英國口音",
-        "experience": "超過5年經驗",
-        "language": "英語（母語）",
-        "image": "/tutors/Aimie.webp",
-        "video": "https://www.w3schools.com/html/mov_bbb.mp4",
-        "about": "我是Aimie，來自英國的英語教師，擁有超過5年的英國、越南和泰國教學經驗。期待與你見面，陪伴你提升英語水平！",
-        "skills": ["溝通", "IELTS四項技能", "商務英語"],
-        "reviews": [
-          {
-            "name": "Minh T.",
-            "country": "越南",
-            "content": "Aimie老師教學熱情且易懂，英式發音標準！"
-          }
-        ],
-        "availability": {
-          "2025-07-01": ["12:00", "14:30", "16:00"],
-          "2025-07-02": ["12:00", "14:30", "16:00"],
-          "2025-07-03": ["14:30", "16:00"]
-        },
-        "workshops": [
-          {
-            "title": "初學者基礎會話",
-            "date": "2025-07-15",
-            "time": "19:00",
-            "description": "幫助提升基礎聽說反應的工作坊。"
-          },
-          {
-            "title": "IELTS寫作策略",
-            "date": "2025-07-20",
-            "time": "20:00",
-            "description": "專注於Task 1和Task 2的結構與想法。"
-          }
-        ]
+        "id": "01",
+        "title": "雅思口語訓練",
+        "desc": "征服 IELTS，在專業老師的陪伴下更有信心。<br/><br/>自信走進考場，不再擔心！我們陪伴你，讓你聽懂考官的每一個指令與問題。",
+        "backgroundImage": "/assets/images/CoursesSection/EnglishCourseBanner.webp",
+        "filterCode": "#05386D"
       },
       {
-        "id": 2,
-        "name": "My Quyên: 教師",
-        "countryCode": "TW",
-        "accent": "台灣口音",
-        "experience": "超過3年經驗",
-        "language": "流利中文，越南語（母語）",
-        "image": "/tutors/Quyen.webp",
-        "video": "https://www.w3schools.com/html/mov_bbb.mp4",
-        "about": "我是My Quyên，來自台灣的教師，擁有3年以上教學越南人和外國人的經驗。專注幫助學生自然且自信地說英語。",
-        "skills": ["日常會話", "發音", "語法"],
-        "reviews": [
-          {
-            "name": "Thu N.",
-            "country": "越南",
-            "content": "解釋清楚、溫柔且用心！"
-          }
-        ],
-        "availability": {
-          "2025-07-01": ["09:00", "11:00", "15:00"]
-        },
-        "workshops": []
+        "id": "02",
+        "title": "英語交流",
+        "desc": "全面提升英語交流能力：發音、詞彙、反應、自信。本課程為你帶來高效的學習體驗，陪伴你走向全球化。",
+        "backgroundImage": "/assets/images/CoursesSection/EnglishCourseBanner.webp",
+        "filterCode": "#05386D"
       },
       {
-        "id": 3,
-        "name": "Leo N: 教師",
-        "countryCode": "GB",
-        "accent": "英國口音",
-        "experience": "5年經驗",
-        "language": "英語（母語）、法語（母語）",
-        "image": "/tutors/Leo.webp",
-        "video": "https://www.w3schools.com/html/mov_bbb.mp4",
-        "about": "我是Leo，英語教師，擁有標準英國口音，5年教學經驗，能同時使用英語和法語如母語。",
-        "skills": ["標準發音", "高階溝通", "學術英語"],
-        "reviews": [],
-        "availability": {},
-        "workshops": []
+        "id": "03",
+        "title": "商務英語",
+        "desc": "用商務英語提升你的職業生涯。本課程為你提供專業語言技能、說服性溝通和國際環境中的競爭優勢。",
+        "backgroundImage": "/assets/images/CoursesSection/EnglishCourseBanner.webp",
+        "filterCode": "#05386D"
+      },
+      {
+        "id": "04",
+        "title": "留學中文",
+        "desc": "留學中文課程不僅僅是為了通過考試。我們為你打造扎實的基礎，讓你能自然溝通、融入學術環境，並輕鬆適應在台灣、中國或任何使用中文的國家的生活。",
+        "backgroundImage": "/assets/images/CoursesSection/ChineseCourseBanner.webp",
+        "filterCode": "#B2B2B2"
+      },
+      {
+        "id": "05",
+        "title": "中文交流",
+        "desc": "別擔心，如果你是初學者！<br/><br/>你將逐步建立自信，提升溝通能力，讓聽說技能越來越流暢，讓語言學習成為一段輕鬆而充滿熱情的體驗。",
+        "backgroundImage": "/assets/images/CoursesSection/ChineseCourseBanner.webp",
+        "filterCode": "#B2B2B2"
+      },
+      {
+        "id": "06",
+        "title": "商務中文",
+        "desc": "商務中文幫助你與母語者流利交流，同時加強聽力、反應和詞彙。靈活的課程，專為學習、工作和職業發展而設。",
+        "backgroundImage": "/assets/images/CoursesSection/ChineseCourseBanner.webp",
+        "filterCode": "#B2B2B2"
       }
     ]
   },
-  "whyChooseUs": {
-    "title": "為什麼選擇我們？",
-    "items": [
+  "Cefr": {
+    "title": "什麼是 CEFR？",
+    "subtitle": "從初學者到精通者 —— CEFR 語言之旅"
+  },
+  "Teacher": {
+    "title": "教師團隊",
+    "teachers": [
       {
-        "title": "專業教師團隊 - 品質保證",
-        "desc": "經驗豐富的母語教師，持有證書，激勵你每堂課都有進步。"
+        "id": "1",
+        "name": "Aimie C.",
+        "image": "/assets/images/TeacherSection/Aimie.webp"
       },
       {
-        "title": "有趣且有效的學習",
-        "desc": "從日常對話到考試準備，實用且互動性強的課程，貼合個人目標。"
+        "id": "2",
+        "name": "Mia M.",
+        "image": "/assets/images/TeacherSection/Mia.webp"
       },
       {
-        "title": "靈活學習，適合忙碌人士",
-        "desc": "學生或上班族皆可輕鬆安排個人課程。"
-      },
-      {
-        "title": "一對一學習，依你所願，選擇教師",
-        "desc": "參加線上試聽，找到最適合你的教師。"
+        "id": "3",
+        "name": "Leo N.",
+        "image": "/assets/images/TeacherSection/Leo.webp"
       }
     ]
   },
-  "testimonial": {
-    "title": "成功故事",
+  "Test": {
+    "subtitle": "幾分鐘內完成",
+    "title": "測試你的 <br></br> 語言水平",
+    "email": "電子郵件",
+    "phone": "電話號碼",
+    "agreement1": "我同意接收關於線上英語課程的最新資訊",
+    "agreement2": "我同意 Aspirely 透過電話、電子郵件或簡訊聯繫我以提供支援並解答疑問",
+    "button": "免費測評"
+  },
+  "Testimonial": {
     "items": [
       {
-        "name": "Phương Nghi",
+        "name": "Phuong Nghi",
         "image": "/students/PhuongNghi.webp",
         "age": "20",
         "location": "胡志明市",
-        "content": "網站易用，載入快速，介面優秀，線上學習方便，不用出門。教材個人化，符合程度，無壓力。最喜歡彈性課表，適合忙碌學生。"
+        "content": "網站易於使用，載入快速，介面精美，線上學習非常方便，無需離開家。課程是個性化的，因此我能在合適的水平學習，沒有壓力或束縛。我最喜歡的是靈活的時間安排，即使是像我這樣忙碌的學生也很合適。",
+        "class": "參加 1 - 1 課程"
       },
       {
-        "name": "Nhi Nguyễn",
+        "name": "Nhi Nguyen",
         "image": "/students/NhiNguyen.webp",
         "age": "21",
         "location": "胡志明市",
-        "content": "英國教師發音標準，糾錯仔細，注重品質非數量。Aimie老師親切，講解清楚，耐心對待學習較慢學生。學習後自信提升。"
+        "content": "英國講師的發音非常標準，她細心糾正錯誤，總是注重品質而不是數量。Aimie 老師很友好，講解清楚，對像我這樣進度慢的學生尤其有耐心。學習一段時間後，我說英語自信了很多。",
+        "class": "參加 1 - 1 課程"
       },
       {
-        "name": "Mỹ Mỹ",
+        "name": "My My",
         "image": "/students/MyMy.webp",
         "age": "22",
         "location": "胡志明市",
-        "content": "起初擔心英語口說能力，感謝實用課程與用心教師，進步明顯。主題多樣，易應用生活。老師細心糾正發音，練習時感覺輕鬆。謝謝中心，讓我每天更有自信。"
+        "content": "一開始我對自己的英語口語能力很擔心，但感謝實用的學習計劃和敬業的教師，我取得了明顯的進步。話題多樣，容易應用於日常生活。老師逐字逐句地糾正發音，營造了輕鬆的練習氛圍。多虧了 Aspirely，我每天都更有信心交流。",
+        "class": "參加 1 - 1 課程"
       }
     ]
   },
-  "cta": {
-    "title": "今天就開始你的語言征服之旅！",
-    "desc": "免費諮詢我們專業的學生支援團隊。",
-    "button": "免費報名諮詢"
+  "CTA": {
+    "title": "你準備好了嗎？",
+    "subtitle": "免費體驗，感受不同。<br></br>讓 Aspirely 幫助你消除交流的擔憂，自信溝通，連接世界。",
+    "button": "立即註冊"
   },
-  "courseGroups": [
-    {
-      "key": "english",
-      "label": "英語",
-      "courses": [
-        { "key": "pte", "label": "PTE口說訓練" },
-        { "key": "ielts", "label": "IELTS口說訓練" },
-        { "key": "toefl", "label": "TOEFL口說訓練" },
-        { "key": "toeic", "label": "TOEIC口說訓練" },
-        { "key": "english_communication", "label": "英語會話" },
-        { "key": "english_business", "label": "商務英語" }
-      ]
-    },
-    {
-      "key": "chinese",
-      "label": "中文",
-      "courses": [
-        { "key": "hskk", "label": "HSKK口說訓練" },
-        { "key": "tocfl", "label": "TOCFL口說訓練" },
-        { "key": "chinese_basic", "label": "基礎中文" },
-        { "key": "chinese_communication", "label": "中文會話" },
-        { "key": "chinese_business", "label": "商務中文" }
-      ]
-    }
-  ],
   "footer": {
     "sections": [
       {
+        "title": "英語",
+        "items": [
+          { "key": "ielts", "label": "雅思口語訓練" },
+          { "key": "english_communication", "label": "英語交流" },
+          { "key": "english_business", "label": "商務英語" }
+        ]
+      },
+      {
+        "title": "中文",
+        "items": [
+          { "key": "chinese_study_abroad", "label": "留學中文" },
+          { "key": "chinese_communication", "label": "中文交流" },
+          { "key": "chinese_business", "label": "商務中文" }
+        ]
+      },
+      {
         "title": "了解更多",
         "items": [
-          { "label": "關於Aspirely", "key": "about" },
+          { "label": "關於 Aspirely", "key": "about" },
           { "label": "隱私政策", "key": "privacy" },
           { "label": "服務條款", "key": "terms" },
           { "label": "聯絡我們", "key": "contact" }
         ]
       }
     ]
-  },
-  "workshops": {
-    "title": {
-      "part1": "工作坊",
-      "part2": "列表"
-    },
-    "cta": "報名",
-    "list": [
-      {
-        "title": "提升IELTS聽力分數（5.5提升至8）- 2025年7月",
-        "date": "2025/07/14",
-        "time": "20:00（越南時間）",
-        "language": "英語",
-        "speaker": "Aimie Cook"
-      },
-      {
-        "title": "Writing Task 2構思 - 2025年7月",
-        "date": "2025/07/21",
-        "time": "20:00（越南時間）",
-        "language": "英語",
-        "speaker": "Aimie Cook"
-      },
-      {
-        "title": "7天攻克IELTS閱讀 - 2025年7月",
-        "date": "2025/07/28",
-        "time": "20:00（越南時間）",
-        "language": "英語",
-        "speaker": "Aimie Cook"
-      }
-    ]
-  },
-  "contact": {
-    "title": "免費諮詢報名",
-    "name": "姓名",
-    "phone": "電話號碼",
-    "email": "電子郵件（非必填）",
-    "selectCourse": "感興趣課程",
-    "note": "附註",
-    "submit": "送出資訊"
-  },
-  "thankyou": {
-    "invalid": "無效頁面，正在返回首頁...",
-    "loading": {
-      "title": "正在處理報名...",
-      "desc": "請稍候"
-    },
-    "success": {
-      "title": "感謝您的報名！",
-      "desc": "幾秒後將返回首頁..."
-    },
-    "error": {
-      "title": "發生錯誤！",
-      "desc": "請返回並稍後再試。"
-    },
-    "back": "返回首頁"
-  },
-  "recruitment": {
-    "title": "教師招募",
-    "name": "姓名",
-    "phone": "電話號碼",
-    "email": "電子郵件",
-    "cv": "履歷連結（Google Drive等）",
-    "message": "自我介紹或留言",
-    "submit": "送出資訊",
-    "success": "感謝您！我們將儘快聯繫您。"
   }
 }

@@ -5,7 +5,7 @@ import { Carousel } from "antd";
 import type { Course } from "@/types/course";
 import { useTranslations, useMessages } from "next-intl";
 
-export default function CoursesSection() {
+export default function CoursesSection({ sectionRef }: { sectionRef: React.RefObject<HTMLDivElement | null> }) {
   const [isDesktop, setIsDesktop] = useState(true);
   const t = useTranslations("Courses");
   const messages = useMessages();
@@ -44,20 +44,21 @@ export default function CoursesSection() {
 
         <div className="absolute left-6 right-6 bottom-6 z-10">
           <div className="h-[4px] w-28 bg-white/95 mb-4" />
-          <h3 className="text-white text-2xl font-bold drop-shadow">{item.title}</h3>
+          <h3 className="text-white text-2xl font-bold drop-shadow line-clamp-1" title={item.title}>{item.title}</h3>
         </div>
       </div>
     </div>
   );
 
   return (
-    <section 
-        className="w-full mx-auto px-4 py-8"
-        style={{
-            backgroundImage: 'linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(/assets/images/CoursesSection/Banner.png)',
-            backgroundSize: '100% 100%',
-            backgroundPosition: 'center',
-        }}
+    <section
+      ref={sectionRef}
+      className="w-full mx-auto px-4 py-8"
+      style={{
+        backgroundImage: 'linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(/assets/images/CoursesSection/Banner.png)',
+        backgroundSize: '100% 100%',
+        backgroundPosition: 'center',
+      }}
     >
         <div className="w-full max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-5xl font-bold text-center py-2 text-[#9F0A0B]">

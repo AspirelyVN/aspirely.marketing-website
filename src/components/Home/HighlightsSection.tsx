@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useMessages } from "next-intl";
 
-export default function HighlightsSection() {
+export default function HighlightsSection({ onButtonClick }: { onButtonClick: (index: number) => void; }) {
   const messages = useMessages();
   const items = messages.Highlights as {
     bg: string;
@@ -33,14 +33,17 @@ export default function HighlightsSection() {
               <p className="text-2xl xl:text-4xl font-semibold text-center">{item.title}</p>
             </div>
 
-            <div className="h-full row-span-4 flex items-center justify-center">
+            <div className="h-full row-span-4 flex items-start justify-center">
               <div
                 className="text-base lg:text-lg xl:text-xl leading-relaxed text-start"
                 dangerouslySetInnerHTML={{ __html: item.content }}
               />
             </div>
 
-            <button className="justify-self-center inline-flex items-center h-11 px-6 rounded-lg border border-white">
+            <button
+              className="justify-self-center inline-flex items-center h-11 px-6 rounded-lg border border-white cursor-pointer"
+              onClick={() => onButtonClick(i)}
+            >
               {item.button}
             </button>
           </div>
