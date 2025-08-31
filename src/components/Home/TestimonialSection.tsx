@@ -19,16 +19,41 @@ export default function TestimonialSection() {
   const items = messages.Testimonial.items;
 
   return (
-    <section className="relative w-full max-w-7xl h-[650px] py-10">
+    <section className="relative w-full h-[650px] flex items-center">
+      <div className="absolute h-[200px] aspect-[3/2] top-10 right-0 max-xl:hidden">
         <Image
-          src="/TestimonialBanner.svg"
-          alt="Testimonial Section"
+          src="/assets/images/TestimonialSection/Logo.svg"
+          alt="Logo"
           fill
-          sizes="(max-width: 1280px) 100vw, 50vw"
           className="object-contain"
         />
-
-        <Carousel 
+      </div>
+      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 xl:h-[550px] 2xl:h-[600px] aspect-[16/9]">
+        <div className="relative w-full h-full">
+          <div className="absolute left-[75%] top-1/2 -translate-x-1/2 -translate-y-1/2 h-full aspect-[9/16]">
+            <Image
+              src="/assets/images/TestimonialSection/Phone.svg"
+              alt="Phone"
+              fill
+              className="object-contain"
+            />
+          </div>
+          <div className="absolute left-[26%] top-1/2 -translate-x-1/2 -translate-y-1/2 h-[90%] aspect-[16/9] flex flex-col">
+            <p className="text-center mr-[5%] mb-4 text-6xl font-semibold text-[#9F0A0B]">
+              Cảm nhận học viên
+            </p>
+            <div className="relative w-full h-full">
+              <Image
+                src="/assets/images/TestimonialSection/Chatbox.svg"
+                alt="Chatbox"
+                fill
+                className="object-contain"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+        {/* <Carousel 
           className="absolute inset-0 lg:left-[8%] translate-y-[40%] w-[40%] h-[360px]" 
           autoplay
           dots={false}
@@ -62,7 +87,7 @@ export default function TestimonialSection() {
                 </div>
               </div>
             ))}
-        </Carousel>
+        </Carousel> */}
     </section>
   );
 }
