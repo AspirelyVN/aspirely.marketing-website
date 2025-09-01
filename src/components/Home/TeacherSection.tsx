@@ -6,7 +6,6 @@ import { useRouter } from "next/navigation";
 import { useTranslations, useMessages } from "next-intl";
 import { Carousel } from "antd";
 
-import FancyButton from "@/components/FancyButton";
 import TutorCard from "@/components/TutorCard";
 import type { Tutor } from "@/types/tutor";
 
