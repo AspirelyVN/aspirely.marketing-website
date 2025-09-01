@@ -6,7 +6,6 @@ import { useRouter } from "next/navigation";
 import { useTranslations, useMessages } from "next-intl";
 import { Carousel } from "antd";
 
-import FancyButton from "@/components/FancyButton";
 import TutorCard from "@/components/TutorCard";
 import type { Tutor } from "@/types/tutor";
 
@@ -67,17 +66,6 @@ export default function TeacherSection({ sectionRef }: { sectionRef: React.RefOb
                   </div>
                   <div className="text-center border-t border-gray-200 px-4 py-3 text-xl text-black">
                     <p className="font-semibold mb-2">{tutor.name}</p>
-                    <ul className="flex flex-col justify-start text-start space-y-1 mb-3 text-base">
-                    </ul>
-                    <FancyButton
-                      className="bg-[#9F0A0B] text-white px-4 py-1.5 text-sm rounded-full font-semibold hover:opacity-90 transition"
-                      onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
-                        e.stopPropagation();
-                        window.location.href = "https://app.aspirely.edu.vn/register";
-                      }}
-                    >
-                      {t("cta")}
-                    </FancyButton>
                   </div>
                 </div>
               </div>

@@ -6,8 +6,8 @@ export default function DidYouKnowSection() {
 
   return (
     <section className="w-screen max-w-7xl px-5 py-10 space-y-10">
-        <div className="w-full h-15 flex justify-center items-center space-x-4">
-            <p className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-[#0D356B]">{t("title")}</p>
+        <div className="w-full h-10 md:h-15 flex justify-center items-center space-x-4">
+            <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center text-[#0D356B]">{t("title")}</p>
             <div className="relative h-full aspect-square">
                 <Image
                     src="/assets/images/DidYouKnowSection/FAQ.png" 
@@ -31,7 +31,7 @@ export default function DidYouKnowSection() {
                 </div>
             </div>
 
-            <div className="grid grid-cols-2 grid-rows-2 gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-5">
                 <div className="p-4 border-2 border-[#0D356B] rounded-xl flex items-center">
                     <p>{t("point1")}</p>
                 </div>
