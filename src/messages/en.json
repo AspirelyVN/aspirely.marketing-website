@@ -4,7 +4,27 @@
     "teachers": "Teachers",
     "workshops": "Workshops",
     "recruit": "Recruitment",
-    "login": "LOGIN"
+    "login": "LOGIN",
+    "coursesMenu": [
+      {
+        "key": "english",
+        "title": "ENGLISH",
+        "items": [
+          { "key": "ielts", "label": "IELTS Speaking Practice" },
+          { "key": "communication", "label": "English Communication" },
+          { "key": "business", "label": "Business English" }
+        ]
+      },
+      {
+        "key": "chinese",
+        "title": "CHINESE",
+        "items": [
+          { "key": "chinese_studying_abroad", "label": "Chinese for Studying Abroad" },
+          { "key": "chinese_communication", "label": "Chinese Communication" },
+          { "key": "chinese_business", "label": "Business Chinese" }
+        ]
+      }
+    ]
   },
   "Hero": {
     "contact": "GET STARTED"
