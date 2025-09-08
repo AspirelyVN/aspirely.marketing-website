@@ -7,13 +7,6 @@ import { useMessages } from "next-intl";
 
 export default function Footer() {
   const messages = useMessages();
-
-  const courseData = (messages?.courseGroups || []) as {
-    key: string;
-    label: string;
-    courses: { key: string; label: string }[];
-  }[];
-
   const infoSections = (messages?.footer?.sections || []) as {
     title: string;
     items: { label: string; key: string }[];
@@ -55,17 +48,6 @@ export default function Footer() {
             strategy="afterInteractive"
           />
         </div>
-
-        {courseData.map((course, index) => (
-          <div key={index}>
-            <p className="font-bold mb-3 text-lg">{course.label}</p>
-            <ul className="space-y-2">
-              {course.courses.map((program, idx) => (
-                <li key={idx}>{program.label}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
 
         {infoSections.map((section, index) => (
           <div key={index}>

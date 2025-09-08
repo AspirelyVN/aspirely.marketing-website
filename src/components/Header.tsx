@@ -4,7 +4,8 @@ import { useRouter, usePathname } from "next/navigation";
 import { Link } from "@/i18n/navigation";
 import { useEffect, useState } from "react";
 import { Menu, ChevronDown } from "lucide-react";
-import { useMessages } from "next-intl";
+import { useMessages, useTranslations } from "next-intl";
+import { div } from "framer-motion/client";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,11 +14,11 @@ export default function Header() {
   const [scrolled, setScrolled] = useState(false);
 
   const messages = useMessages();
-  const t = (key: string) => messages?.header?.[key] ?? key;
-  const courseGroups = ( messages?.courseGroups || [] ) as {
+  const t = useTranslations("header");
+  const courseData = (messages?.header.coursesMenu || []) as {
     key: string;
-    label: string;
-    courses: { key: string; label: string }[];
+    title: string;
+    items: { key: string; label: string }[];
   }[];
 
   const router = useRouter();
@@ -40,6 +41,12 @@ export default function Header() {
     setMenuOpen(false);
   };
 
+  const handleProgramClick = (course: { key: string; title: string; items: { key: string; label: string }[] }, program: { key: string; label: string }) => {
+    router.push(`/courses/${course.key}/${program.key}`);
+    setCourseOpen(false);
+    setMenuOpen(false);
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 30);
@@ -51,19 +58,19 @@ export default function Header() {
 
   return (
     <header
-      className={`w-screen fixed top-0 left-0 z-50 px-5 py-2 flex justify-between font-semibold transition-all duration-300 ${
+      className={`w-screen min-h-20 fixed top-0 left-0 z-50 px-5 py-2 flex justify-between font-semibold transition-all duration-300 ${
         isHome
           ? scrolled
-            ? "bg-black/80 backdrop-blur-md text-white shadow-lg"
+            ? "bg-black/80 backdrop-blur-md text-white shadow-xl"
             : "bg-transparent text-white"
           : "bg-black text-white shadow-md"
       }`}
     >
-      <div className="w-full lg:w-auto flex justify-between items-center">
+      <div className="w-full xl:w-auto flex justify-between items-center">
         <Link href="/">
           <Image src="/Logo-white.svg" alt="logo" width={120} height={36} priority />
         </Link>
-        <button className="lg:hidden text-2xl" onClick={() => setMenuOpen(!menuOpen)}>
+        <button className="xl:hidden text-2xl" onClick={() => setMenuOpen(!menuOpen)}>
           <Menu />
         </button>
       </div>
@@ -71,7 +78,7 @@ export default function Header() {
       <nav
         className={`${
           menuOpen ? "flex" : "hidden"
-        } lg:flex absolute lg:static top-full left-0 w-full bg-black/80 lg:bg-transparent flex-col lg:flex-row justify-end items-start lg:items-center space-y-2 lg:space-y-0 lg:space-x-5 px-10 py-3 z-50`}
+        } xl:flex absolute xl:static top-full left-0 w-full bg-black/80 xl:bg-transparent flex-col xl:flex-row justify-end items-start xl:items-center space-y-2 xl:space-y-0 xl:space-x-5 px-10 py-3 z-50`}
       >
         <Link
           href="/#tutors"
@@ -85,32 +92,21 @@ export default function Header() {
           {t("workshops")}
         </Link>
 
-        <div className="relative w-full lg:w-auto">
+        <div className="relative w-full xl:w-auto">
           <button
             onClick={() => setCourseOpen(!courseOpen)}
-            className="flex items-center justify-between w-full lg:w-auto px-3 py-1"
+            className="flex items-center justify-between w-full xl:w-auto px-3 py-1"
           >
             {t("courses")} <ChevronDown size={20} />
           </button>
           {courseOpen && (
-            <div className="w-full lg:w-64 bg-black text-white lg:absolute top-full left-0 z-50 shadow-lg p-3 space-y-3 rounded-lg">
-              {courseGroups.map((group) => (
-                <div key={group.key}>
-                  <div className="font-bold px-2 py-1">{group.label}</div>
+            <div className="w-full xl:w-64 bg-black text-white xl:absolute top-full left-0 z-50 shadow-xl p-3 space-y-3 rounded-xl">
+              {courseData.map((course, index) => (
+                <div key={index}>
+                  <p className="font-bold mb-3 text-xl">{course.title}</p>
                   <ul className="space-y-1">
-                    {group.courses.map((course) => (
-                      <li key={course.key}>
-                        <Link
-                          href={`/courses/${course.key}`}
-                          className="block px-4 py-1 hover:bg-black/50 rounded"
-                          onClick={() => {
-                            setCourseOpen(false);
-                            setMenuOpen(false);
-                          }}
-                        >
-                          {course.label}
-                        </Link>
-                      </li>
+                    {course.items.map((program, idx) => (
+                      <li key={idx} className="cursor-pointer" onClick={() => handleProgramClick(course, program)}>{program.label}</li>
                     ))}
                   </ul>
                 </div>
@@ -123,15 +119,15 @@ export default function Header() {
           {t("recruit")}
         </Link>
 
-        <div className="relative w-full lg:w-auto">
+        <div className="relative w-full xl:w-auto">
           <button
             onClick={() => setLangOpen(!langOpen)}
-            className="flex items-center justify-between w-full lg:w-auto px-3 py-1"
+            className="flex items-center justify-between w-full xl:w-auto px-3 py-1"
           >
             {currentLocale.label} <ChevronDown size={20} />
           </button>
           {langOpen && (
-            <ul className="w-full lg:w-40 bg-black text-white lg:absolute top-full left-0 z-50 shadow-lg rounded-lg">
+            <ul className="w-full xl:w-40 bg-black text-white xl:absolute top-full left-0 z-50 shadow-xl rounded-xl">
               {locales.map((lang) => (
                 <li
                   key={lang.code}

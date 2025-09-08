@@ -1,6 +1,26 @@
 {
   "header": {
     "courses": "Khóa học",
+    "coursesMenu": [
+      {
+        "key": "english",
+        "title": "TIẾNG ANH",
+        "items": [
+          { "key": "ielts", "label": "Luyện nói IELTS" },
+          { "key": "communication", "label": "Tiếng Anh giao tiếp" },
+          { "key": "business", "label": "Tiếng Anh thương mại" }
+        ]
+      },
+      {
+        "key": "chinese",
+        "title": "TIẾNG TRUNG",
+        "items": [
+          { "key": "chinese_studying_abroad", "label": "Tiếng Trung du học" },
+          { "key": "chinese_communication", "label": "Tiếng Trung giao tiếp" },
+          { "key": "chinese_business", "label": "Tiếng Trung thương mại" }
+        ]
+      }
+    ],
     "teachers": "Giáo viên",
     "workshops": "Workshops",
     "recruit": "Tuyển dụng",
@@ -41,8 +61,8 @@
     }
   ],
   "WorkshopPromo": {
-    "title": "Trải nghiệm <span>Workshop</span><br></br> Luyện nói Tiếng Anh",
-    "subtitle": "Hiểu nhanh khi nghe — Tự tin khi nói",
+    "title": "Trải nghiệm học thử <br></br><span>Speaking Class</span>",
+    "subtitle": "Hiểu nhanh khi nghe, tự tin khi nói",
     "point1": "Bắt đầu ngay hôm nay cùng Aspirely!",
     "point2": "<span>14 NGÀY</span> tham gia workshop hoàn toàn <span>MIỄN PHÍ</span> trải nghiệm học trực tuyến với giáo viên bản xứ, sửa phát âm, luyện phản xạ giao tiếp.",
     "button": "Miễn phí tham gia"
@@ -82,7 +102,7 @@
       { 
         "id": "05", 
         "title": "Tiếng Trung Giao Tiếp", 
-        "desc": "Đừng lo nếu bạn mới bắt đầu!<br/><br/>Bạn sẽ dần dần xây dựng sự tự tin, cải thiện khả năng giao tiếp và phát triển kỹ năng nghe nói ngày càng lưu loát, để việc học ngôn ngữ trở thành một trải nghiệm thoải mái và đầy hứng khởi.",
+        "desc": "Đừng lo nếu bạn mới bắt đầu! <br></br> Bạn sẽ dần dần xây dựng sự tự tin, cải thiện khả năng giao tiếp và phát triển kỹ năng nghe nói ngày càng lưu loát, để việc học ngôn ngữ trở thành một trải nghiệm thoải mái và đầy hứng khởi.",
         "backgroundImage": "/assets/images/CoursesSection/ChineseCourseBanner.webp",
         "filterCode": "#B2B2B2"
       },
