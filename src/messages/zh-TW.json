@@ -4,7 +4,27 @@
     "teachers": "教師",
     "workshops": "工作坊",
     "recruit": "招聘",
-    "login": "登入"
+    "login": "登入",
+    "coursesMenu": [
+      {
+        "key": "english",
+        "title": "英語",
+        "items": [
+          { "key": "ielts", "label": "雅思口語訓練" },
+          { "key": "communication", "label": "英語交流" },
+          { "key": "business", "label": "商務英語" }
+        ]
+      },
+      {
+        "key": "chinese",
+        "title": "中文",
+        "items": [
+          { "key": "chinese_study_abroad", "label": "留學中文" },
+          { "key": "chinese_communication", "label": "中文交流" },
+          { "key": "chinese_business", "label": "商務中文" }
+        ]
+      }
+    ]
   },
   "Hero": {
     "contact": "立即開始"
