@@ -16,17 +16,19 @@ const Card = ({ item }: { item: Course }) => (
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="absolute left-4 right-4 sm:left-6 sm:right-6 top-4 lg:top-auto lg:bottom-28 z-10">
+      <div className="absolute left-4 right-4 sm:left-6 sm:right-6 top-1/3 lg:top-auto lg:bottom-20 z-10">
         <div className="text-white text-5xl sm:text-6xl md:text-7xl font-extrabold leading-none lg:transform lg:transition-transform lg:group-hover:-translate-y-2">
           {item.id}
         </div>
-        <div className="mt-2 text-white/95 text-sm sm:text-base lg:overflow-hidden lg:max-h-0 lg:opacity-0 lg:transition-all lg:duration-500 lg:group-hover:max-h-40 lg:group-hover:opacity-100">
-          {item.desc}
+        <div className="text-white/95 text-sm sm:text-base lg:overflow-hidden lg:max-h-0 lg:opacity-0 lg:transition-all lg:duration-500 lg:group-hover:max-h-45 lg:group-hover:opacity-100">
+          <p
+            dangerouslySetInnerHTML={{ __html: item.desc }}
+          />
         </div>
       </div>
 
       <div className="absolute left-4 right-4 sm:left-6 sm:right-6 bottom-6 z-10 h-[60px] sm:h-[68px] md:h-[76px] flex flex-col justify-end">
-        <div className="h-[3px] w-20 sm:w-24 md:w-28 bg-white/95 mb-3" />
+        <div className="h-[3px] w-20 sm:w-24 md:w-40 bg-white/95 mb-2" />
         <h3
           className="text-white text-lg sm:text-xl md:text-2xl font-bold drop-shadow truncate"
           title={item.title}
