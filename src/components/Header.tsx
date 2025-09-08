@@ -5,7 +5,6 @@ import { Link } from "@/i18n/navigation";
 import { useEffect, useState } from "react";
 import { Menu, ChevronDown } from "lucide-react";
 import { useMessages, useTranslations } from "next-intl";
-import { div } from "framer-motion/client";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
