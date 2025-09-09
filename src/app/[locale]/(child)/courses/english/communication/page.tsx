@@ -1,13 +1,7 @@
 import Image from "next/image";
-import clsx from "clsx";
 import { ChevronRight } from "lucide-react";
-import {
-  Speech,
-  Target,
-  MessageSquare,
-  BookOpen,
-  KeyRound,
-} from "lucide-react";
+import { MessageSquare, Briefcase, BookOpen, Globe } from "lucide-react";
+import { UserRoundPlus, Gauge, CalendarDays, Users, CheckCircle2 } from "lucide-react";
 
 function EnglishCommunicationSection() {
   return (
@@ -57,172 +51,143 @@ function EnglishCommunicationSection() {
   );
 }
 
-function SpeakingSection() {
+function WhyPracticeSpeakingSection({
+  imageSrc = "/assets/images/courses/english/communication/WhyPracticeSpeakingSection/image.png",
+}) {
   return (
-    <section className="w-full bg-[#F7F7F5]">
-      <div className="mx-auto max-w-7xl px-6 py-16">
-        <div className="mx-auto max-w-6xl text-center">
-          <h2 className="text-5xl md:text-6xl font-extrabold leading-tight text-[#0A2E73]">
-            Chinh phục IELTS Speaking
-          </h2>
-          <h3 className="text-4xl md:text-5xl font-extrabold text-[#0A2E73] mt-2">
-            Tăng band điểm, tự tin giao tiếp
-          </h3>
-          <p className="mt-6 text-lg text-gray-700">
-            Bài thi Nói IELTS không chỉ là từ vựng, mà là cách bạn truyền tải ý tưởng rõ ràng, tự nhiên và đầy tự tin. Dù bạn đặt
-            mục tiêu Band 6.0 hay 8.5, chúng tôi sẽ giúp bạn chinh phục cả 3 phần thi để tỏa sáng trong ngày thi
-          </p>
-        </div>
-
-        <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-10 items-end">
-          <div className="space-y-6">
-            <div className="rounded-2xl border border-gray-300 shadow-sm p-6">
-              <p className="text-lg text-gray-800">
-                <span className="font-semibold">Phần 1 – Giới Thiệu &amp; Phỏng Vấn</span>
-                <br />
-                Chúng tôi sẽ hướng dẫn bạn trả lời các câu hỏi đời thường một cách trôi chảy, tự nhiên và gây ấn tượng ngay từ đầu.
-              </p>
-            </div>
-            <div className="rounded-2xl border border-gray-300 shadow-sm p-6">
-              <p className="text-lg text-gray-800">
-                <span className="font-semibold">Phần 2 – Nói Liên Tục (Long Turn)</span>
-                <br />
-                Bạn sẽ học cách sắp xếp ý tưởng, nói liên tục 2 phút không ngập ngừng và sử dụng vốn từ phong phú để ghi điểm cao.
-              </p>
-            </div>
-            <div className="rounded-2xl border border-gray-300 shadow-sm p-6">
-              <p className="text-lg text-gray-800">
-                <span className="font-semibold">Phần 3 – Thảo Luận</span>
-                <br />
-                Chúng tôi sẽ huấn luyện bạn xử lý các câu hỏi phức tạp, bày tỏ quan điểm và lập luận rõ ràng, sâu sắc.
-              </p>
-            </div>
-          </div>
-
-          <div className="relative h-[520px]">
-            <Image
-              src="/assets/images/courses/ielts/student-speaking.png"
-              alt="Học viên cầm chứng chỉ IELTS"
-              fill
-              className="object-contain object-bottom"
-              priority
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function NativeTeacherSection() {
-  return (
-    <section className="w-full bg-[#F7F7F5] py-16">
-      <h2 className="text-4xl md:text-5xl font-extrabold text-[#0A2E73] text-center mb-8 leading-tight">
-        Học cùng giáo viên bản ngữ <br /> &amp; giàu kinh nghiệm
-      </h2>
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        {/* Image */}
-        <div className="relative w-full h-[400px] lg:h-[500px]">
-          <Image
-            src="/assets/images/courses/ielts/teacher.png"
-            alt="Học cùng giáo viên bản ngữ"
-            fill
-            className="object-cover rounded-xl"
-            priority
-          />
-        </div>
-
-        {/* Content */}
-        <div>
-          <ul className="space-y-6 text-lg text-gray-800">
-            <li className="flex items-center gap-4">
-              <Speech className="w-7 h-7 text-black" />
-              <span>Cách nói trôi chảy mà không ngập ngừng lâu</span>
-            </li>
-            <li className="flex items-center gap-4">
-              <Target className="w-7 h-7 text-red-500" />
-              <span>Cách cải thiện phát âm và giảm giọng địa phương</span>
-            </li>
-            <li className="flex items-center gap-4">
-              <MessageSquare className="w-7 h-7 text-cyan-500" />
-              <span>Dùng thành ngữ, cụm từ và diễn đạt như người bản xứ</span>
-            </li>
-            <li className="flex items-center gap-4">
-              <BookOpen className="w-7 h-7 text-orange-600" />
-              <span>Cách sắp xếp ý tưởng rõ ràng trong Phần 2 và 3</span>
-            </li>
-            <li className="flex items-center gap-4">
-              <KeyRound className="w-7 h-7 text-yellow-500" />
-              <span>Cách xử lý những câu hỏi khó một cách tự tin</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-type Item = {
-  title: string;
-  desc: string;
-  className?: string;
-};
-
-const Card = ({ title, desc, className }: Item) => (
-  <div className={clsx("relative h-full", className)}>
-    <div className="absolute inset-0 translate-x-3 translate-y-3 bg-[#0A2E73] rounded-2xl"></div>
-    <div className="relative h-full rounded-2xl border-2 border-[#0A2E73] bg-white p-6 md:p-7 lg:p-8 shadow-sm flex flex-col">
-      <h4 className="text-[#0A2E73] font-semibold text-lg md:text-xl mb-2">
-        {title}
-      </h4>
-      <p className="text-gray-700 leading-relaxed flex-1">{desc}</p>
-    </div>
-  </div>
-);
-
-function WhySpeakingSection() {
-  return (
-    <section className="w-full bg-[#F7F7F5] py-16">
-      <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-center text-[#0A2E73] leading-tight">
-          Tại Sao Aspirely Chỉ Tập Trung
-          <br className="hidden md:block" /> Vào Kỹ Năng Nói?
+    <section className="w-full bg-white">
+      <div className="mx-auto max-w-6xl px-6 py-14 lg:py-20">
+        <h2 className="text-3xl text-center leading-tight font-extrabold tracking-tight text-blue-900 sm:text-4xl lg:text-5xl">
+          Tại sao chỉ luyện nói?
         </h2>
-
-        <div className="mt-12 grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <div className="flex flex-col items-stretch">
-            <Card
-              title="Nói là kỹ năng khó tự cải thiện nhất"
-              desc="Bạn có thể tự luyện đọc, nghe và viết bằng sách, ứng dụng hoặc tài liệu online."
-            />
+        <div className="mt-10 grid grid-cols-1 gap-10 lg:mt-14 lg:grid-cols-2 lg:gap-16">
+          <div className="space-y-8 text-gray-900">
+            <div>
+              <h3 className="text-lg font-extrabold">Khó Tự Luyện Nhất</h3>
+              <p className="mt-2 text-base leading-7 text-gray-600">
+                Người mới cần hướng dẫn để bắt đầu, người nâng cao cần chỉnh sửa để tự nhiên hơn. Sách và ứng dụng không thể thay thế giao tiếp thực tế.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-lg font-extrabold">Xây Dựng Sự Tự Tin Thực Sự</h3>
+              <p className="mt-2 text-base leading-7 text-gray-600">
+                Từ chào hỏi đến họp hành, luyện nói giúp bạn dùng tiếng Anh một cách tự nhiên trong đời sống hằng ngày.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-lg font-extrabold">Tiến Bộ Nhanh Hơn Với Giáo Viên Bản Ngữ</h3>
+              <p className="mt-2 text-base leading-7 text-gray-600">
+                Ở mọi trình độ, giáo viên bản ngữ giúp bạn cải thiện phát âm, từ vựng và độ trôi chảy.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-lg font-extrabold">Tiếng Anh Thực Tiễn Cho Cuộc Sống Và Công Việc</h3>
+              <p className="mt-2 text-base leading-7 text-gray-600">
+                Aspirely giúp bạn giao tiếp tự tin trong những tình huống thực tế — từ du lịch, trò chuyện hằng ngày đến phỏng vấn, họp và thuyết trình.
+              </p>
+            </div>
           </div>
-
-          <div>
-            <Card
-              title="Tiết kiệm thời gian và chi phí"
-              desc="Thay vì trả tiền cho một khóa học tổng hợp đủ kỹ năng, Aspirely chỉ tập trung vào phần mà bạn không thể tự luyện hiệu quả — đó chính là kỹ năng Nói."
-            />
-          </div>
-
-          <div className="flex flex-col items-stretch">
-            <Card
-              title="Nói tiến bộ nhanh nhất khi học với giáo viên bản ngữ"
-              desc="Chỉ có giáo viên bản ngữ mới giúp bạn nói tự nhiên hơn, chỉnh phát âm ngay lập tức và rèn luyện sự trôi chảy."
-            />
+          <div className="relative">
+            <div className="absolute -bottom-6 -right-10 h-72 w-72 rounded-lg bg-cyan-700 opacity-30 blur-[1px] hidden sm:block"></div>
+            <div className="absolute -bottom-2 -right-4 h-72 w-72 rounded-lg bg-cyan-600 opacity-40 hidden sm:block"></div>
+            <div className="relative rounded-2xl overflow-hidden shadow-xl ring-1 ring-black/5">
+              <div className="relative w-full aspect-[5/6]">
+                <Image src={imageSrc} alt="online speaking practice" fill className="object-cover" />
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+    </section>
+  );
+}
 
-        <div className="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
-          <Card
-            title="Câu trả lời tự nhiên hiệu quả hơn học thuộc"
-            desc="Học thuộc câu trả lời IELTS thường khiến bạn ngập ngừng và kém trôi chảy. Aspirely giúp bạn luyện cách trả lời tự nhiên và linh hoạt, để nói mượt mà và tự tin hơn."
-            className="h-full"
+function WhatYouWillGetSection() {
+  const items = [
+    {
+      icon: <MessageSquare className="h-8 w-8 text-white" />,
+      title: "Luyện nói trong đời sống, du lịch, trò chuyện",
+    },
+    {
+      icon: <Briefcase className="h-8 w-8 text-white" />,
+      title: "Giao tiếp trong họp, thuyết trình, phỏng vấn",
+    },
+    {
+      icon: <BookOpen className="h-8 w-8 text-white" />,
+      title: "Học từ và cụm từ hữu ích",
+    },
+    {
+      icon: <Globe className="h-8 w-8 text-white" />,
+      title: "Giao tiếp thoải mái ở mọi nơi",
+    },
+  ];
+
+  return (
+    <section className="relative w-full h-[720px]">
+      {/* Banner background */}
+      <Image
+        src="/assets/images/courses/english/communication/WhatYouWillGetSection/Banner.png"
+        alt="What you will get background"
+        fill
+        priority
+        className="object-cover -z-10"
+      />
+
+      <div className="relative max-w-7xl h-full mx-auto flex flex-col lg:flex-row items-center px-6">
+        <div className="w-full lg:w-1/3 h-full flex items-end justify-center">
+          <Image
+            src="/assets/images/courses/english/communication/WhatYouWillGetSection/Person.png"
+            alt="Person pointing"
+            width={400}
+            height={500}
+            className="object-contain"
           />
-          <Card
-            title="Xây dựng sự tự tin với giáo viên bản ngữ"
-            desc="Nhiều thí sinh cảm thấy lo lắng khi trả lời câu hỏi IELTS trước giám khảo bản ngữ trong kỳ thi. Với Aspirely, việc luyện tập thường xuyên cùng giáo viên bản ngữ sẽ giúp bạn giảm căng thẳng trong phòng thi và giao tiếp thoải mái bằng tiếng Anh."
-            className="h-full"
-          />
+        </div>
+
+        {/* Right content */}
+        <div className="w-full lg:w-2/3">
+          <h2 className="text-3xl font-extrabold text-center lg:text-left text-gray-900 sm:text-4xl lg:text-5xl">
+            Bạn sẽ nhận được gì?
+          </h2>
+          <div className="mt-10 rounded-2xl bg-white/90 shadow-md ring-1 ring-gray-200 p-8 backdrop-blur-sm">
+            <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
+              {items.map((item, index) => (
+                <div key={index} className="flex flex-col items-center text-center">
+                  <div className="flex items-center justify-center h-20 w-20 rounded-full bg-blue-900 shadow-md">
+                    {item.icon}
+                  </div>
+                  <div className="mt-2 flex justify-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-10 w-6 text-blue-900"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                    >
+                      <line
+                        x1="12"
+                        y1="0"
+                        x2="12"
+                        y2="18"
+                        strokeDasharray="4,4"
+                        stroke="currentColor"
+                      />
+                      <polyline
+                        points="6,18 12,24 18,18"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                      />
+                    </svg>
+                  </div>
+                  <p className="mt-4 text-base font-medium text-gray-700 leading-snug">
+                    {item.title}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -241,7 +206,7 @@ function AnywhereSection() {
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="relative w-full h-[320px] md:h-[420px]">
             <Image
-              src="/assets/images/courses/ielts/anywhere-1.jpg"
+              src="/assets/images/courses/english/communication/AnywhereSection/image1.png"
               alt="Học trực tuyến 1"
               fill
               className="object-cover rounded-2xl"
@@ -251,7 +216,7 @@ function AnywhereSection() {
 
           <div className="relative w-full h-[320px] md:h-[420px]">
             <Image
-              src="/assets/images/courses/ielts/anywhere-2.jpg"
+              src="/assets/images/courses/english/communication/AnywhereSection/image2.png"
               alt="Học trực tuyến 2"
               fill
               className="object-cover rounded-2xl"
@@ -261,7 +226,7 @@ function AnywhereSection() {
 
           <div className="relative w-full h-[320px] md:h-[420px]">
             <Image
-              src="/assets/images/courses/ielts/anywhere-3.jpg"
+              src="/assets/images/courses/english/communication/AnywhereSection/image3.png"
               alt="Học trực tuyến 3"
               fill
               className="object-cover rounded-2xl"
@@ -274,103 +239,49 @@ function AnywhereSection() {
   );
 }
 
-
-const testimonials = [
-  {
-    name: "Nguyen T.",
-    role: "Sinh viên Đại học",
-    text: "Trước đây, tôi thường ngập ngừng và không tìm được từ để nói. Sau chỉ 2 tháng học, tôi đã có thể nói trôi chảy 2 phút liền mà không dừng lại. Điểm Nói IELTS của tôi đã tăng từ 5.5 lên 6.5.",
-    rating: 5,
-    avatar: "/assets/images/courses/ielts/students/nguyen-t.jpg",
-    active: true,
-  },
-  {
-    name: "Linh P.",
-    role: "Nhân viên văn phòng trẻ",
-    text: "Tôi thường nói quá nhanh và phát âm chưa chuẩn. Giáo viên đã giúp tôi luyện cách nói chậm rãi hơn, dùng từ nối và phát âm rõ ràng. Trong buổi thi thử, giám khảo nhận xét rằng phát âm của tôi dễ hiểu hơn nhiều.",
-    rating: 5,
-    avatar: "/assets/images/courses/ielts/students/linh-p.jpg",
-  },
-  {
-    name: "Anh K",
-    role: "Học sinh cấp 3",
-    text: "Được luyện tập với giáo viên bản ngữ hàng tuần giúp tôi tự tin hơn rất nhiều. Giờ đây tôi có thể diễn đạt ý tưởng một cách tự nhiên, không còn học thuộc câu trả lời nữa. Điểm Nói của tôi tăng từ 5.0 lên 6.5.",
-    rating: 5,
-    avatar: "/assets/images/courses/ielts/students/anh-k.jpg",
-  },
-  {
-    name: "Minh H.",
-    role: "Thí sinh IELTS",
-    text: "Tôi từng rất lo lắng ở phần Thảo luận (Part 3). Giáo viên đã chỉ cho tôi cách phát triển câu trả lời dài và đưa ra quan điểm rõ ràng. Trong kỳ thi thật, tôi bình tĩnh hơn và đạt 7.5 Speaking.",
-    rating: 5,
-    avatar: "/assets/images/courses/ielts/students/minh-h.jpg",
-  },
-];
-
-function TestimonialSection() {
+function StepCard({ color, bg, title, text, icon, number }: { color: string; bg: string; title: string; text: string; icon: React.ReactNode; number: string }) {
   return (
-    <section className="w-full bg-[#F7F7F5] py-16">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-        {/* Left: Image + title */}
-        <div>
-          <h2 className="text-4xl md:text-5xl font-extrabold text-[#0A2E73] leading-tight mb-10">
-            Học viên thực sự,
-            <br /> Thành công thực sự
-            <br /> trong kỹ năng Nói
-          </h2>
-          <div className="relative w-full h-[420px] rounded-2xl overflow-hidden shadow-md">
-            <Image
-              src="/assets/images/courses/ielts/students/ielts-success.jpg"
-              alt="Học viên đạt IELTS"
-              fill
-              className="object-cover"
-              priority
-            />
-            <div className="absolute bottom-0 left-0 bg-white/90 px-4 py-2 text-sm font-medium">
-              Nguyen T., IELTS 6.5
-            </div>
+    <div className={`relative rounded-xl p-6 md:p-7 ${bg} shadow-md border border-gray-200`}>      
+      <div className={`absolute -top-4 -right-4 h-14 w-14 rounded-full flex items-center justify-center ${color} shadow-lg`}>{icon}</div>
+      <p className="text-xl font-extrabold text-gray-900">{title}</p>
+      <p className="mt-2 text-[16px] leading-6 text-gray-700">{text}</p>
+      <div className="mt-4 inline-block bg-white rounded px-3 py-1 shadow ring-1 ring-gray-200 font-bold text-sm text-gray-900">{number}</div>
+    </div>
+  );
+}
+
+function HowItWorks1Section() {
+  const steps = [
+    { title: "Bước 1", text: "Đăng ký", color: "bg-teal-600", bg: "bg-cyan-100", icon: <UserRoundPlus className="h-9 w-9 text-white"/>, number: "01" },
+    { title: "Bước 2", text: "Kiểm tra trình độ", color: "bg-purple-600", bg: "bg-violet-100", icon: <Gauge className="h-9 w-9 text-white"/>, number: "02" },
+    { title: "Bước 3", text: "Tham gia lớp luyện nói", color: "bg-amber-500", bg: "bg-amber-100", icon: <CalendarDays className="h-9 w-9 text-white"/>, number: "03" },
+    { title: "Bước 4", text: "Luyện trong tình huống thực tế", color: "bg-green-600", bg: "bg-green-100", icon: <Users className="h-9 w-9 text-white"/>, number: "04" },
+    { title: "Bước 5", text: "Xây dựng sự tự tin và trôi chảy", color: "bg-orange-600", bg: "bg-rose-100", icon: <CheckCircle2 className="h-9 w-9 text-white"/>, number: "06" },
+  ];
+
+  return (
+    <section className="w-full bg-[#f5f6f4] py-16 md:py-20">
+      <div className="mx-auto max-w-7xl px-6">
+        <div className="grid gap-10 lg:grid-cols-3">
+          <div className="lg:pr-10">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight text-blue-900">Aspirely hoạt động như thế nào?</h2>
+          </div>
+          <div className="lg:col-span-2 grid gap-10 md:grid-cols-2">
+            <StepCard {...steps[0]} />
+            <StepCard {...steps[1]} />
           </div>
         </div>
-
-        {/* Right: Testimonials */}
-        <div className="space-y-6 max-h-[500px] overflow-y-auto pr-2">
-          {testimonials.map((t, idx) => (
-            <div
-              key={idx}
-              className={`rounded-xl p-5 shadow-sm border ${
-                t.active ? "border-red-400 bg-red-50" : "border-gray-200 bg-white"
-              }`}
-            >
-              <div className="flex items-center gap-4 mb-3">
-                <Image
-                  src={t.avatar}
-                  alt={t.name}
-                  width={48}
-                  height={48}
-                  className="rounded-full object-cover"
-                />
-                <div>
-                  <p className="font-semibold">{t.name}</p>
-                  <p className="text-sm text-gray-500">{t.role}</p>
-                </div>
-                <div className="ml-auto flex">
-                  {Array.from({ length: t.rating }).map((_, i) => (
-                    <span key={i} className="text-red-500 text-lg">
-                      ★
-                    </span>
-                  ))}
-                </div>
-              </div>
-              <p className="text-gray-700 leading-relaxed">{t.text}</p>
-            </div>
-          ))}
+        <div className="mt-10 grid gap-10 lg:grid-cols-3">
+          <StepCard {...steps[2]} />
+          <StepCard {...steps[3]} />
+          <StepCard {...steps[4]} />
         </div>
       </div>
     </section>
   );
 }
 
-function HowItWorksSection() {
+function HowItWorks2Section() {
   return (
     <section className="w-full bg-[#F7F7F5] py-16">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -393,7 +304,7 @@ function HowItWorksSection() {
         {/* Right image */}
         <div className="relative w-full h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-lg">
           <Image
-            src="/assets/images/courses/ielts/how-it-works.jpg"
+            src="/assets/images/courses/english/communication/HowItWorks2Section/image.png"
             alt="Học viên Aspirely"
             fill
             className="object-cover"
@@ -416,19 +327,19 @@ const items: Course[] = [
   {
     title: "LUYỆN NÓI TIẾNG ANH IELTS",
     desc: "Cách nhanh nhất để chinh phục kỳ thi IELTS",
-    img: "/assets/images/courses/tiles/ielts.jpg",
+    img: "/assets/images/courses/english/communication/CoursesSection/image1.png",
     cta: "Phổ biến và tự nhiên",
   },
   {
     title: "LUYỆN NÓI TIẾNG ANH GIAO TIẾP",
     desc: "Từ Tiếng Anh Trong Lớp Học Đến Giao Tiếp Thực Tế",
-    img: "/assets/images/courses/tiles/communication.jpg",
+    img: "/assets/images/courses/english/communication/CoursesSection/image2.png",
     cta: "Phổ biến và tự nhiên",
   },
   {
     title: "LUYỆN NÓI TIẾNG TRUNG GIAO TIẾP",
     desc: "Học Tiếng Trung Trong Lớp, Tự Tin Nói Ngoài Đời",
-    img: "/assets/images/courses/tiles/chinese.jpg",
+    img: "/assets/images/courses/english/communication/CoursesSection/image3.png",
     cta: "Phổ biến và tự nhiên",
   },
 ];
@@ -482,12 +393,11 @@ export default function EnglishCommunicationCoursePage() {
   return (
     <main className="w-full">
       <EnglishCommunicationSection />
-      <SpeakingSection />
-      <NativeTeacherSection />
-      <WhySpeakingSection />
+      <WhyPracticeSpeakingSection />
+      <WhatYouWillGetSection />
       <AnywhereSection />
-      <TestimonialSection />
-      <HowItWorksSection />
+      <HowItWorks1Section />
+      <HowItWorks2Section />
       <CoursesSection />
     </main>
   );

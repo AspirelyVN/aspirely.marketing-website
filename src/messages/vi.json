@@ -22,7 +22,6 @@
       }
     ],
     "teachers": "Giáo viên",
-    "workshops": "Workshops",
     "recruit": "Tuyển dụng",
     "login": "ĐĂNG NHẬP"
   },
@@ -64,7 +63,7 @@
     "title": "Trải nghiệm học thử <br></br><span>Speaking Class</span>",
     "subtitle": "Hiểu nhanh khi nghe, tự tin khi nói",
     "point1": "Bắt đầu ngay hôm nay cùng Aspirely!",
-    "point2": "<span>14 NGÀY</span> tham gia workshop hoàn toàn <span>MIỄN PHÍ</span> trải nghiệm học trực tuyến với giáo viên bản xứ, sửa phát âm, luyện phản xạ giao tiếp.",
+    "point2": "Nhận ngay: Kiểm tra trình độ miễn phí + 2 buổi học thử miễn phí trải nghiệm học trực tuyến với giáo viên bản xứ, sửa phát âm, luyện phản xạ giao tiếp.",
     "button": "Miễn phí tham gia"
   },
   "Courses": {
@@ -184,19 +183,21 @@
   "footer": {
     "sections": [
       {
+        "key": "english",
         "title": "TIẾNG ANH",
         "items": [
           { "key": "ielts", "label": "Luyện nói IELTS" },
-          { "key": "english_communication", "label": "Tiếng Anh giao tiếp" },
-          { "key": "english_business", "label": "Tiếng Anh thương mại" }
+          { "key": "communication", "label": "Tiếng Anh giao tiếp" },
+          { "key": "business", "label": "Tiếng Anh thương mại" }
         ]
       },
       {
+        "key": "chinese",
         "title": "TIẾNG TRUNG",
         "items": [
-          { "key": "chinese_studying_abroad", "label": "Tiếng Trung du học" },
-          { "key": "chinese_communication", "label": "Tiếng Trung giao tiếp" },
-          { "key": "chinese_business", "label": "Tiếng Trung thương mại" }
+          { "key": "studying_abroad", "label": "Tiếng Trung du học" },
+          { "key": "communication", "label": "Tiếng Trung giao tiếp" },
+          { "key": "business", "label": "Tiếng Trung thương mại" }
         ]
       },
       {

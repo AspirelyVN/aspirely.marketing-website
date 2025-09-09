@@ -2,7 +2,6 @@
   "header": {
     "courses": "课程",
     "teachers": "教师",
-    "workshops": "工作坊",
     "recruit": "招聘",
     "login": "登录",
     "coursesMenu": [
@@ -64,7 +63,7 @@
     "title": "体验英语口语 <span>工作坊</span>",
     "subtitle": "快速理解 —— 自信开口",
     "point1": "今天就从 Aspirely 开始！",
-    "point2": "<span>14 天</span>完全<span>免费</span>的工作坊，体验与母语教师在线学习，练习发音，提高沟通反应。",
+    "point2": "立即获取: 免费水平测试 + 2 节免费体验课，与母语教师在线学习，练习发音，提高沟通反应。",
     "button": "免费参加"
   },
   "Courses": {
@@ -184,19 +183,21 @@
   "footer": {
     "sections": [
       {
+        "key": "english",
         "title": "英语",
         "items": [
           { "key": "ielts", "label": "雅思口语训练" },
-          { "key": "english_communication", "label": "英语交流" },
-          { "key": "english_business", "label": "商务英语" }
+          { "key": "communication", "label": "英语交流" },
+          { "key": "business", "label": "商务英语" }
         ]
       },
       {
+        "key": "chinese",
         "title": "中文",
         "items": [
-          { "key": "chinese_studying_abroad", "label": "留学中文" },
-          { "key": "chinese_communication", "label": "中文交流" },
-          { "key": "chinese_business", "label": "商务中文" }
+          { "key": "studying_abroad", "label": "留学中文" },
+          { "key": "communication", "label": "中文交流" },
+          { "key": "business", "label": "商务中文" }
         ]
       },
       {

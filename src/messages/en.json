@@ -2,7 +2,6 @@
   "header": {
     "courses": "Courses",
     "teachers": "Teachers",
-    "workshops": "Workshops",
     "recruit": "Recruitment",
     "login": "LOGIN",
     "coursesMenu": [
@@ -64,7 +63,7 @@
     "title": "Experience English Speaking <span>Workshop</span>",
     "subtitle": "Understand quickly — Speak confidently",
     "point1": "Start today with Aspirely!",
-    "point2": "<span>14 DAYS</span> of completely <span>FREE</span> workshops to experience online learning with native teachers, practice pronunciation, and improve communication reflexes.",
+    "point2": "Get started today: Free level test + 2 free trial lessons! to experience online learning with native teachers, practice pronunciation, and improve communication reflexes.",
     "button": "Join for free"
   },
   "Courses": {
@@ -184,19 +183,21 @@
   "footer": {
     "sections": [
       {
+        "key": "english",
         "title": "ENGLISH",
         "items": [
           { "key": "ielts", "label": "IELTS Speaking Practice" },
-          { "key": "english_communication", "label": "English Communication" },
-          { "key": "english_business", "label": "Business English" }
+          { "key": "communication", "label": "English Communication" },
+          { "key": "business", "label": "Business English" }
         ]
       },
       {
+        "key": "chinese",
         "title": "CHINESE",
         "items": [
-          { "key": "chinese_studying_abroad", "label": "Chinese for Studying Abroad" },
-          { "key": "chinese_communication", "label": "Chinese Communication" },
-          { "key": "chinese_business", "label": "Business Chinese" }
+          { "key": "studying_abroad", "label": "Chinese for Studying Abroad" },
+          { "key": "communication", "label": "Chinese Communication" },
+          { "key": "business", "label": "Business Chinese" }
         ]
       },
       {
