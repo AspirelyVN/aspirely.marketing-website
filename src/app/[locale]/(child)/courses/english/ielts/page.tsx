@@ -106,6 +106,22 @@ function SpeakingSection() {
   );
 }
 
+function VideoIntroSection() {
+  return (
+    <section className="w-full bg-[#F7F7F5] py-16">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="mt-8 mx-auto w-full max-w-5xl">
+          <div className="relative w-full h-[220px] sm:h-[300px] md:h-[400px] lg:h-[460px] rounded-2xl overflow-hidden bg-gray-200">
+            <video className="w-full h-full object-cover" controls muted playsInline>
+              <source src="/assets/videos/ielts/placeholder.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function NativeTeacherSection() {
   return (
     <section className="w-full bg-[#F7F7F5] py-16">
@@ -116,7 +132,7 @@ function NativeTeacherSection() {
         {/* Image */}
         <div className="relative w-full h-[400px] lg:h-[500px]">
           <Image
-            src="/assets/images/courses/ielts/teacher.png"
+            src="/assets/images/courses/english/ielts/NativeTeacherSection/image.png"
             alt="Học cùng giáo viên bản ngữ"
             fill
             className="object-cover rounded-xl"
@@ -233,7 +249,7 @@ function AnywhereSection() {
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="relative w-full h-[320px] md:h-[420px]">
             <Image
-              src="/assets/images/courses/ielts/anywhere-1.jpg"
+              src="/assets/images/courses/english/ielts/AnywhereSection/image1.png"
               alt="Học trực tuyến 1"
               fill
               className="object-cover rounded-2xl"
@@ -243,7 +259,7 @@ function AnywhereSection() {
 
           <div className="relative w-full h-[320px] md:h-[420px]">
             <Image
-              src="/assets/images/courses/ielts/anywhere-2.jpg"
+              src="/assets/images/courses/english/ielts/AnywhereSection/image2.png"
               alt="Học trực tuyến 2"
               fill
               className="object-cover rounded-2xl"
@@ -253,7 +269,7 @@ function AnywhereSection() {
 
           <div className="relative w-full h-[320px] md:h-[420px]">
             <Image
-              src="/assets/images/courses/ielts/anywhere-3.jpg"
+              src="/assets/images/courses/english/ielts/AnywhereSection/image3.png"
               alt="Học trực tuyến 3"
               fill
               className="object-cover rounded-2xl"
@@ -385,7 +401,7 @@ function HowItWorksSection() {
         {/* Right image */}
         <div className="relative w-full h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-lg">
           <Image
-            src="/assets/images/courses/ielts/how-it-works.jpg"
+            src="/assets/images/courses/english/ielts/HowItWorksSection/image.png"
             alt="Học viên Aspirely"
             fill
             className="object-cover"
@@ -408,19 +424,19 @@ const items: Course[] = [
   {
     title: "LUYỆN NÓI TIẾNG ANH IELTS",
     desc: "Cách nhanh nhất để chinh phục kỳ thi IELTS",
-    img: "/assets/images/courses/tiles/ielts.jpg",
+    img: "/assets/images/courses/english/ielts/CoursesSection/image1.png",
     cta: "Phổ biến và tự nhiên",
   },
   {
     title: "LUYỆN NÓI TIẾNG ANH GIAO TIẾP",
     desc: "Từ Tiếng Anh Trong Lớp Học Đến Giao Tiếp Thực Tế",
-    img: "/assets/images/courses/tiles/communication.jpg",
+    img: "/assets/images/courses/english/ielts/CoursesSection/image2.png",
     cta: "Phổ biến và tự nhiên",
   },
   {
     title: "LUYỆN NÓI TIẾNG TRUNG GIAO TIẾP",
     desc: "Học Tiếng Trung Trong Lớp, Tự Tin Nói Ngoài Đời",
-    img: "/assets/images/courses/tiles/chinese.jpg",
+    img: "/assets/images/courses/english/ielts/CoursesSection/image3.png",
     cta: "Phổ biến và tự nhiên",
   },
 ];
@@ -475,6 +491,7 @@ export default function IeltsCoursePage() {
     <main className="w-full">
       <IeltsSection />
       <SpeakingSection />
+      <VideoIntroSection />
       <NativeTeacherSection />
       <WhySpeakingSection />
       <AnywhereSection />

@@ -87,10 +87,6 @@ export default function Header() {
           {t("teachers")}
         </Link>
 
-        <Link href="/workshops" className="p-2" onClick={() => setMenuOpen(false)}>
-          {t("workshops")}
-        </Link>
-
         <div className="relative w-full xl:w-auto">
           <button
             onClick={() => setCourseOpen(!courseOpen)}

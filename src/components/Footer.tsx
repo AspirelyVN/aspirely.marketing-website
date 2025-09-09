@@ -1,13 +1,16 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Script from "next/script";
 import { Phone, Mail } from "lucide-react"
 import { useMessages } from "next-intl";
 
 export default function Footer() {
+  const router = useRouter();
   const messages = useMessages();
   const infoSections = (messages?.footer?.sections || []) as {
+    key: string;
     title: string;
     items: { label: string; key: string }[];
   }[];
@@ -54,7 +57,7 @@ export default function Footer() {
             <p className="font-bold mb-3 text-lg">{section.title}</p>
             <ul className="space-y-2">
               {section.items.map((item, idx) => (
-                <li key={idx}>{item.label}</li>
+                <li key={idx} className="cursor-pointer" onClick={() => router.push(`/courses/${section.key}/${item.key}`)}>{item.label}</li>
               ))}
             </ul>
           </div>

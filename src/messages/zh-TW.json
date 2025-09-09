@@ -2,7 +2,6 @@
   "header": {
     "courses": "課程",
     "teachers": "教師",
-    "workshops": "工作坊",
     "recruit": "招聘",
     "login": "登入",
     "coursesMenu": [
@@ -64,7 +63,7 @@
     "title": "體驗英語口語 <span>工作坊</span>",
     "subtitle": "快速理解 —— 自信開口",
     "point1": "今天就從 Aspirely 開始！",
-    "point2": "<span>14 天</span>完全<span>免費</span>的工作坊，體驗與母語教師線上學習，練習發音，提高溝通反應。",
+    "point2": "立即獲取: 免費水平測試 + 2 節免費體驗課，與母語教師線上學習，練習發音，提高溝通反應。",
     "button": "免費參加"
   },
   "Courses": {

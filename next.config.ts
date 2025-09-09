@@ -16,6 +16,12 @@ const nextConfig: NextConfig = {
         hostname: "images.dmca.com",
         port: "",
         pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+        port: "",
+        pathname: "/**",
       }
     ],
   },
