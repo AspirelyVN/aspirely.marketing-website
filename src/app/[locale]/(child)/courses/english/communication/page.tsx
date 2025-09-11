@@ -137,46 +137,112 @@ function AnywhereSection() {
   );
 }
 
-function StepCard({ color, bg, title, text, icon, number }: { color: string; bg: string; title: string; text: string; icon: React.ReactNode; number: string }) {
+type Props = {
+  title: string
+  text: string
+  number: string
+  accent?: string
+  panelBg?: string
+  icon?: React.ReactNode
+  iconColor?: string
+}
+
+function StepCard({
+  title,
+  text,
+  number,
+  accent = "#230E6A",
+  panelBg = "#cfeef0",
+  icon,
+  iconColor = "#ffffff",
+}: Props) {
   return (
-    <div className={`relative rounded-xl p-5 sm:p-6 md:p-7 ${bg} shadow-md border border-gray-200`}>
-      <div className={`absolute -top-4 -right-4 h-12 w-12 sm:h-14 sm:w-14 rounded-full flex items-center justify-center ${color} shadow-lg`}>{icon}</div>
-      <p className="text-lg sm:text-xl font-extrabold text-gray-900">{title}</p>
-      <p className="mt-2 text-sm sm:text-[16px] leading-6 text-gray-700">{text}</p>
-      <div className="mt-3 sm:mt-4 inline-block bg-white rounded px-2.5 sm:px-3 py-1 shadow ring-1 ring-gray-200 font-bold text-xs sm:text-sm text-gray-900">{number}</div>
+    <div className="relative w-56 aspect-square">
+      <div className="relative h-full w-full">
+        <svg viewBox="0 0 100 100" className="absolute inset-0 w-full h-full" preserveAspectRatio="none">
+          <rect x="16" y="18" width="65" height="65" rx="10" ry="10" fill={panelBg} />
+          <g stroke={accent} strokeWidth="3" fill="none" strokeLinecap="round">
+            <path d="M26 10 H50" />
+            <circle cx="56" cy="10" r="1" fill={accent} />
+            <circle cx="64" cy="10" r="1" fill={accent} />
+            <circle cx="72" cy="10" r="1" fill={accent} />
+            <path d="M26 10 A16 16 0 0 0 10 26" />
+            <path d="M10 26 V90" />
+            <path d="M10 90 H74" />
+            <path d="M74 90 A16 16 0 0 0 86 74" />
+            <path d="M86 74 V26" />
+            <path d="M86 26 H98" />
+            <path d="M98 26 L94 22" />
+            <path d="M98 26 L94 30" />
+          </g>
+        </svg>
+
+        <div className="absolute inset-0 flex flex-col px-12 py-12">
+          <p className="text-lg sm:text-xl font-extrabold text-gray-900">{title}</p>
+          <p className="mt-2 text-sm sm:text-base leading-6 text-gray-800">{text}</p>
+        </div>
+
+        <div className="absolute -top-5 -right-5 z-10">
+          <div
+            className="h-14 w-14 sm:h-16 sm:w-16 rounded-full flex items-center justify-center shadow-xl"
+            style={{ backgroundColor: iconColor, border: "8px solid white" }}
+          >
+            {icon ?? (
+              <svg viewBox="0 0 24 24" className="h-6 w-6" fill={iconColor}>
+                <path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5Zm0 2c-4.418 0-8 2.239-8 5v1h16v-1c0-2.761-3.582-5-8-5Z" />
+              </svg>
+            )}
+          </div>
+        </div>
+
+        <div className="absolute -bottom-6 left-8 z-10">
+          <div className="relative w-12 h-16 sm:w-14 sm:h-20">
+            <svg viewBox="0 0 64 80" className="w-full h-full">
+              <path d="M6 6 H58 V74 L32 64 6 74 Z" fill="#ffffff" />
+              <path d="M14 14 H50 V66 L32 56 14 66 Z" fill={iconColor} />
+            </svg>
+            <span className="absolute inset-0 flex items-center justify-center text-white font-extrabold text-sm sm:text-base leading-none">
+              {number}
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
-  );
+  )
 }
 
 function HowItWorks1Section() {
   const steps = [
-    { title: "Bước 1", text: "Đăng ký", color: "bg-teal-600", bg: "bg-cyan-100", icon: <UserRoundPlus className="h-7 w-7 sm:h-9 sm:w-9 text-white" />, number: "01" },
-    { title: "Bước 2", text: "Kiểm tra trình độ", color: "bg-purple-600", bg: "bg-violet-100", icon: <Gauge className="h-7 w-7 sm:h-9 sm:w-9 text-white" />, number: "02" },
-    { title: "Bước 3", text: "Tham gia lớp luyện nói", color: "bg-amber-500", bg: "bg-amber-100", icon: <CalendarDays className="h-7 w-7 sm:h-9 sm:w-9 text-white" />, number: "03" },
-    { title: "Bước 4", text: "Luyện trong tình huống thực tế", color: "bg-green-600", bg: "bg-green-100", icon: <Users className="h-7 w-7 sm:h-9 sm:w-9 text-white" />, number: "04" },
-    { title: "Bước 5", text: "Xây dựng sự tự tin và trôi chảy", color: "bg-orange-600", bg: "bg-rose-100", icon: <CheckCircle2 className="h-7 w-7 sm:h-9 sm:w-9 text-white" />, number: "06" }
-  ];
+    { title: "Bước 1", text: "Đăng ký", panelBg: "#C6E3E5", iconColor: "#17939E", icon: <UserRoundPlus className="h-7 w-7 sm:h-9 sm:w-9 text-white" />, number: "01" },
+    { title: "Bước 2", text: "Kiểm tra trình độ", panelBg: "#D7D4E9", iconColor: "#6849D3", icon: <Gauge className="h-7 w-7 sm:h-9 sm:w-9 text-white" />, number: "02" },
+    { title: "Bước 3", text: "Tham gia lớp luyện nói", panelBg: "#E7D4B6", iconColor: "#E0AB23", icon: <CalendarDays className="h-7 w-7 sm:h-9 sm:w-9 text-white" />, number: "03" },
+    { title: "Bước 4", text: "Luyện trong tình huống thực tế", panelBg: "#BEDEB9", iconColor: "#139C25", icon: <Users className="h-7 w-7 sm:h-9 sm:w-9 text-white" />, number: "04" },
+    { title: "Bước 5", text: "Xây dựng sự tự tin và trôi chảy", panelBg: "#EEC6C6", iconColor: "#E04423", icon: <CheckCircle2 className="h-7 w-7 sm:h-9 sm:w-9 text-white" />, number: "05" }
+  ]
 
   return (
-    <section className="w-full bg-[#f5f6f4] py-12 sm:py-14 md:py-20">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="grid gap-8 md:gap-10 lg:grid-cols-3">
+    <section className="w-full bg-[#f5f6f4] py-10 sm:py-14 md:py-20">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+        <div className="grid gap-6 md:gap-10 lg:grid-cols-3 items-start">
           <div className="lg:pr-10">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight text-blue-900">Aspirely hoạt động như thế nào?</h2>
+            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-extrabold text-center lg:text-start leading-tight text-blue-900">
+              Aspirely hoạt động như thế nào?
+            </h2>
           </div>
-          <div className="lg:col-span-2 grid gap-6 sm:gap-8 md:grid-cols-2">
+          <div className="lg:col-span-2 grid gap-6 sm:gap-8 sm:grid-cols-2 justify-items-center">
             <StepCard {...steps[0]} />
             <StepCard {...steps[1]} />
           </div>
         </div>
-        <div className="mt-8 md:mt-10 grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+        <div className="mt-6 sm:mt-8 md:mt-10 grid gap-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3 justify-items-center">
           <StepCard {...steps[2]} />
           <StepCard {...steps[3]} />
           <StepCard {...steps[4]} />
         </div>
       </div>
     </section>
-  );
+  )
 }
 
 function HowItWorks2Section() {
