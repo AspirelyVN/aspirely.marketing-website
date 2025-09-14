@@ -6,8 +6,7 @@ export default function WorkshopPromoSection() {
   const t = useTranslations("WorkshopPromo");
 
   return (
-    <div className="relative w-full min-h-[60svh] lg:h-[600px] flex flex-col justify-center lg:justìy-start items-center lg:items-end gap-5 px-4 sm:px-6 md:px-10 py-8 md:py-10">
-      {/* Banner background */}
+    <div className="relative w-full min-h-[60svh] lg:min-h-[600px] flex flex-col justify-center lg:justify-start items-center lg:items-end gap-5 px-4 sm:px-6 md:px-10 py-14 md:py-16">
       <Image
         src="/assets/images/WorkshopPromoSection/MobileBanner.svg"
         alt="Workshop Banner"
@@ -23,7 +22,6 @@ export default function WorkshopPromoSection() {
         className="object-cover hidden lg:block"
       />
 
-      {/* Overlay content */}
       <div className="relative z-10 flex flex-col items-end w-full gap-5">
         <h1 className="w-full lg:w-2/3 text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-center lg:text-right text-[#9F0A0B]">
           {t.rich("title", {
