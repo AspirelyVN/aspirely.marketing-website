@@ -1,3 +1,4 @@
+import React from "react";
 import Image from "next/image";
 import { ChevronLeft, Globe2, BriefcaseBusiness, Rocket } from "lucide-react";
 
@@ -6,17 +7,17 @@ function EnglishBusinessSection() {
     <section className="relative w-full min-h-[420px] md:min-h-[520px] xl:min-h-[720px] flex items-center justify-end bg-[#4B0082] lg:bg-transparent">
       <Image src="/assets/images/courses/english/business/Banner.png" alt="English Business Background" fill className="object-cover hidden lg:block" priority />
       <div className="relative z-10 w-full lg:w-1/2 flex flex-col items-start space-y-6 sm:space-y-8 md:space-y-10">
-        <div className="px-6 sm:px-8 md:px-10 space-y-3 sm:space-y-4 md:space-y-5 pt-8 md:pt-10 text-white">
+        <div className="px-6 sm:px-8 md:px-10 space-y-3 sm:space-y-4 md:space-y-5 pt-8 md:pt-10">
           <h1 className="font-extrabold uppercase inline-block leading-tight">
             <span className="text-3xl sm:text-4xl">LUYỆN NÓI</span>
             <br />
-            <span className="text-6xl sm:text-7xl md:text-8xl text-white lg:text-[#4B0082]">THƯƠNG MẠI</span>
+            <span className="text-6xl sm:text-7xl md:text-8xl lg:text-[#4B0082]">THƯƠNG MẠI</span>
           </h1>
           <p className="text-2xl sm:text-3xl md:text-4xl">Tiếng Anh của bạn<br />Sự nghiệp của bạn<br />Vươn cao</p>
         </div>
-        <button className="w-full text-white font-bold flex items-center justify-end gap-2 transition px-6 sm:px-8 md:px-10 mb-8">
-          <ChevronLeft className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-white lg:bg-[#4B0082] text-[#4B0082] lg:text-white rounded-full" />
-          <p className="bg-white lg:bg-[#4B0082] text-[#4B0082] lg:text-white text-2xl sm:text-3xl md:text-4xl py-3 px-10 sm:px-16 md:px-20 rounded-l-full">THAM GIA NGAY</p>
+        <button className="w-full font-bold flex items-center justify-end gap-2 transition px-6 sm:px-8 md:px-10 mb-8">
+          <ChevronLeft className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-white lg:bg-[#4B0082] text-white rounded-full" />
+          <p className="bg-white lg:bg-[#4B0082] text-white text-2xl sm:text-3xl md:text-4xl py-3 px-10 sm:px-16 md:px-20 rounded-l-full">THAM GIA NGAY</p>
         </button>
       </div>
     </section>
@@ -55,7 +56,7 @@ function Section2({ personSrc = "/assets/images/courses/english/business/Section
   );
 }
 
-function TargetAudienceSection({ imageSrc = "/assets/images/courses/english/business/Section3/audience.jpg" }) {
+function TargetAudienceSection({ imageSrc = "/assets/images/courses/english/business/TargetAudienceSection/image.png" }) {
   const items = [
     "Các chuyên gia mong muốn thăng tiến và phát triển sự nghiệp",
     "Doanh nhân đang mở rộng ra thị trường quốc tế",
@@ -84,31 +85,116 @@ function TargetAudienceSection({ imageSrc = "/assets/images/courses/english/busi
   );
 }
 
-function AchievementsSection({ imageSrc = "/assets/images/courses/english/business/Section4/team.png" }) {
-  const points = [
-    { title: "Từ vựng thực tiễn", desc: "Làm chủ ngôn ngữ kinh doanh quốc tế", position: "bottom-0 left-[15%]" },
-    { title: "Hiểu biết văn hóa", desc: "Xây dựng mối quan hệ bền vững xuyên văn hóa", position: "top-[30%] left-[35%]" },
-    { title: "Giao tiếp tự tin", desc: "Nói rõ ràng và tự nhiên trong mọi tình huống kinh doanh", position: "bottom-8 left-[55%]" },
-    { title: "Phát triển sự nghiệp", desc: "Nổi bật trong phỏng vấn, cuộc họp và các dự án toàn cầu", position: "top-[20%] right-0" }
+function AchievementsSection({
+  imageSrc = "/assets/images/courses/english/business/AchievementsSection/image.png",
+}) {
+  const W = 600, H = 300;
+  const pct = (v: number, total: number) => `${(v / total) * 100}%`;
+
+  const anchors = [
+    { ax: 5, ay: 200, side: "bottom", title: "Từ vựng thực tiễn", desc: "Làm chủ ngôn ngữ kinh doanh quốc tế" },
+    { ax: 150, ay: 140, side: "top",    title: "Hiểu biết văn hóa", desc: "Xây dựng mối quan hệ bền vững xuyên văn hóa" },
+    { ax: 380, ay: 150, side: "bottom", title: "Giao tiếp tự tin",  desc: "Nói rõ ràng và tự nhiên trong mọi tình huống kinh doanh" },
+    { ax: 450, ay: 90, side: "top",    title: "Phát triển sự nghiệp", desc: "Nổi bật trong phỏng vấn, cuộc họp và các dự án toàn cầu" },
   ];
+
+  const minGapX = 0;
+  const gapTop = 70;
+  const gapBottom = 90;
+  const dotOffset = 10;
+
+  let lastBX = -Infinity;
+  const points = anchors.map((a) => {
+    let bx = a.ax;
+    if (bx - lastBX < minGapX) bx = lastBX + minGapX;
+    lastBX = bx;
+    const by = a.side === "top" ? a.ay - gapTop : a.ay + gapBottom;
+    const dcy = a.side === "top" ? by - dotOffset : by + dotOffset;
+    return { ...a, bx, by, dcy };
+  });
 
   return (
     <section className="w-full bg-[#efeff2] py-12 sm:py-14 lg:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
-        <h2 className="text-center text-3xl sm:text-4xl lg:text-5xl font-extrabold text-purple-700">Những gì bạn sẽ đạt được</h2>
-        <div className="mt-10 sm:mt-12 grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 items-center">
-          <div className="hidden lg:flex justify-center">
-            <Image src={imageSrc} alt="Team working" width={480} height={380} className="object-contain" />
+        <h2 className="text-center text-3xl sm:text-4xl lg:text-5xl font-extrabold text-purple-700">
+          Những gì bạn sẽ đạt được
+        </h2>
+
+        <div className="mt-10 sm:mt-12 grid grid-cols-1 xl:grid-cols-2 gap-8 sm:gap-10 items-center">
+          <div className="hidden xl:flex justify-center">
+            <Image
+              src={imageSrc}
+              alt="Team working"
+              width={480}
+              height={380}
+              className="object-contain"
+            />
           </div>
-          <div className="relative w-full h-[320px] sm:h-[380px] md:h-[420px] lg:h-[480px]">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" preserveAspectRatio="none" className="absolute inset-0 w-full h-full">
-              <polyline points="0,200 150,100 300,150 450,80 600,120" fill="none" stroke="#2563eb" strokeWidth="12" />
-              <polygon points="600,110 600,130 630,120" fill="#2563eb" />
+
+          <div className="hidden xl:block relative w-full aspect-[2/1]">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox={`0 0 ${W} ${H}`}
+              preserveAspectRatio="none"
+              className="absolute inset-0 w-full h-full"
+            >
+              <defs>
+                <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="3" markerHeight="3" orient="auto">
+                  <path d="M0 0 L10 5 L0 10 Z" fill="#5276A9" />
+                </marker>
+              </defs>
+
+              <polyline
+                fill="none"
+                stroke="#5276A9"
+                strokeWidth="20"
+                strokeLinejoin="round"
+                strokeLinecap="round"
+                markerEnd="url(#arrow)"
+                points={[
+                  [0,200],
+                  [50,160],
+                  [100,190],
+                  [160,140],
+                  [220,170],
+                  [290,120],
+                  [360,150],
+                  [570,40],
+                ].map(p=>p.join(",")).join(" ")}
+              />
+
+              {points.map((p, i) => (
+                <g key={i}>
+                  <line x1={p.ax} y1={p.ay} x2={p.bx} y2={p.by} stroke="#1e3a8a" strokeWidth="2" strokeDasharray="4 4" />
+                  <circle cx={p.bx} cy={p.dcy} r="4" fill="#1e3a8a" />
+                </g>
+              ))}
             </svg>
+
             {points.map((p, i) => (
-              <div key={i} className={`absolute ${p.position} bg-white px-3 sm:px-4 py-2 border border-dashed border-blue-900 text-center max-w-[220px]`}>
-                <p className="font-bold text-blue-900 text-sm sm:text-base">{p.title}</p>
-                <p className="text-xs sm:text-sm text-gray-700 mt-1">{p.desc}</p>
+              <div
+                key={i}
+                className="absolute min-w-[220px] max-w-[260px] bg-white border border-dashed border-blue-900 px-4 py-3 text-sm text-center shadow-md z-10"
+                style={{
+                  left: pct(p.bx, W),
+                  top: pct(p.by, H),
+                  transform: p.side === "top" ? "translate(-50%, -100%)" : "translate(-50%, 0)",
+                }}
+              >
+                <p className="font-bold text-blue-900">{p.title}</p>
+                <p className="text-gray-700 mt-1">{p.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="xl:hidden mt-6 grid grid-cols-1 gap-4">
+            {points.map((p, i) => (
+              <div
+                key={i}
+                className="bg-white border border-dashed border-blue-900 px-4 py-3 text-sm text-center shadow-md"
+              >
+                <p className="font-bold text-blue-900">{p.title}</p>
+                <p className="text-gray-700 mt-1">{p.desc}</p>
               </div>
             ))}
           </div>
@@ -118,7 +204,7 @@ function AchievementsSection({ imageSrc = "/assets/images/courses/english/busine
   );
 }
 
-function HowYouWillLearnSection({ leftPerson = "/assets/images/courses/english/business/Section5/left.png", rightPerson = "/assets/images/courses/english/business/Section5/right.png" }) {
+function HowYouWillLearnSection({ leftPerson = "/assets/images/courses/english/business/HowYouWillLearnSection/image1.png", rightPerson = "/assets/images/courses/english/business/HowYouWillLearnSection/image2.png" }) {
   const items = [
     "Các buổi học trực tuyến cùng giáo viên bản ngữ giàu kinh nghiệm",
     "Đóng vai tương tác dựa trên các tình huống kinh doanh thực tế",
@@ -150,7 +236,7 @@ function HowYouWillLearnSection({ leftPerson = "/assets/images/courses/english/b
   );
 }
 
-function BusinessCorporateContactSection({ imageSrc = "/assets/images/courses/english/business/SectionContact/team.png" }) {
+function BusinessCorporateContactSection({ imageSrc = "/assets/images/courses/english/business/BusinessCorporateContactSection/image.png" }) {
   return (
     <section className="w-full bg-[#efeff2] py-12 sm:py-14 lg:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
@@ -186,9 +272,9 @@ function BusinessCorporateContactSection({ imageSrc = "/assets/images/courses/en
 type Course = { title: string; desc: string; img: string; cta: string };
 
 const items: Course[] = [
-  { title: "LUYỆN NÓI TIẾNG ANH IELTS", desc: "Cách nhanh nhất để chinh phục kỳ thi IELTS", img: "/assets/images/courses/tiles/ielts.jpg", cta: "Phổ biến và tự nhiên" },
-  { title: "LUYỆN NÓI TIẾNG ANH GIAO TIẾP", desc: "Từ Tiếng Anh Trong Lớp Học Đến Giao Tiếp Thực Tế", img: "/assets/images/courses/tiles/communication.jpg", cta: "Phổ biến và tự nhiên" },
-  { title: "LUYỆN NÓI TIẾNG TRUNG GIAO TIẾP", desc: "Học Tiếng Trung Trong Lớp, Tự Tin Nói Ngoài Đời", img: "/assets/images/courses/tiles/chinese.jpg", cta: "Phổ biến và tự nhiên" }
+  { title: "LUYỆN NÓI TIẾNG ANH IELTS", desc: "Cách nhanh nhất để chinh phục kỳ thi IELTS", img: "/assets/images/courses/english/business/CoursesSection/image1.png", cta: "Phổ biến và tự nhiên" },
+  { title: "LUYỆN NÓI TIẾNG ANH GIAO TIẾP", desc: "Từ Tiếng Anh Trong Lớp Học Đến Giao Tiếp Thực Tế", img: "/assets/images/courses/english/business/CoursesSection/image2.png", cta: "Phổ biến và tự nhiên" },
+  { title: "LUYỆN NÓI TIẾNG TRUNG GIAO TIẾP", desc: "Học Tiếng Trung Trong Lớp, Tự Tin Nói Ngoài Đời", img: "/assets/images/courses/english/business/CoursesSection/image3.png", cta: "Phổ biến và tự nhiên" }
 ];
 
 function CoursesSection() {
